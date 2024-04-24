@@ -26,7 +26,7 @@ function Header() {
                 </Link>
             </div>
             <motion.div 
-                 variants={opacity} animate={isActive ? 'closed' : 'open'}
+                 variants={opacity} animate={isActive ? "closed" : "open"}
                 className='hidden sm:inline-block uppercase text-[.8vw] text-left'
             >
                 / Index
@@ -46,13 +46,19 @@ function Header() {
                     border-r-[1px] rounded-r-full flex items-center justify-center 
                     sm:px-[1.1vw] `}
                 >
-                    <motion.div variants={opacity} animate={isActive ? 'closed' : 'open'}
+                    <motion.p 
+                        variants={opacity} 
+                        animate={isActive ? "closed" : "open"}
                     >
                         <HiOutlineMenuAlt4 className='text-[3.8vw] sm:text-[1.2vw]' />
-                    </motion.div>
-                    <motion.div className='absolute'  variants={opacity} animate={!isActive ? 'closed' : 'open'}  >
+                    </motion.p>
+                    <motion.p 
+                        variants={opacity} 
+                        animate={!isActive ? "closed" : "open"} 
+                        className='absolute' 
+                    >
                         <IoCloseOutline className='text-[3.8vw] sm:text-[1.2vw]' />
-                    </motion.div>
+                    </motion.p>
                 </div>
             </div>
         </div> 
