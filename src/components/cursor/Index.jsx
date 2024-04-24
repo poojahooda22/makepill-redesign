@@ -30,8 +30,8 @@ function Cursor() {
             let y = coords.y;
 
             circles.forEach(function(circle, index) {
-                circle.style.left = x - 8 + "px";
-                circle.style.top = y - 8 + "px";
+                circle.style.left = x - 4 + "px";
+                circle.style.top = y - 4 + "px";
                 circle.style.scale = (circles.length - index)/ circles.length;
                 circle.x = x;
                 circle.y = y;
