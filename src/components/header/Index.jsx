@@ -62,7 +62,7 @@ function Header() {
                 </div>
             </div>
         </div> 
-        { <Nav/> }
+        {isActive && <Nav/> }
     </div>
   )
 }
