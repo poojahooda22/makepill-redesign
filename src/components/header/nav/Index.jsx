@@ -16,7 +16,7 @@ function Nav() {
     },
     {
       title: 'Works',
-      link: 'https://res.cloudinary.com/'
+      link: 'https://res.cloudinary.'
     },
     {
       title: 'Services',
