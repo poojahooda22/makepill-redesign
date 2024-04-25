@@ -16,7 +16,7 @@ function Nav() {
     },
     {
       title: 'Works',
-      link: 'https://res.cloudinary.com/mkp'
+      link: 'https://res.cloudinary.com/'
     },
     {
       title: 'Services',
