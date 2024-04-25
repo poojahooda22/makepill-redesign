@@ -28,7 +28,7 @@ function Nav() {
     },
     {
       title: 'Vision',
-      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_he'
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/about'
     }
 
   ]
