@@ -12,7 +12,7 @@ function Nav() {
   const data = [
     {
       title: 'Home',
-      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4'
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm'
     },
     {
       title: 'Works',
