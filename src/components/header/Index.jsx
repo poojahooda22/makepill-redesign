@@ -14,7 +14,7 @@ function Header() {
     const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className='header w-full px-[5vw] py-[4vw] sm:px-[2.5vw] z-[9999] cursor-pointer relative
+    <div className='header w-full px-[5vw] py-[4vw] sm:px-[2.5vw] z-[9] cursor-pointer relative
     sm:pt-[2vw]'>
         <div className='w-full flex items-center justify-between'>
             <div>
@@ -31,7 +31,7 @@ function Header() {
             </motion.div>
             <div 
                 
-                className=' sm:w-[5vw] flex items-center justify-center sticky z-[10]'
+                className=' sm:w-[5vw] flex items-center justify-center sticky z-[99]'
             >
                 <motion.div 
                     variants={rotate2}
