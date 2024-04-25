@@ -24,7 +24,7 @@ function Nav() {
     },
     {
       title: 'Contact',
-      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_hev1527d1e.mp4'
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_27d1e.mp4'
     },
     {
       title: 'Vision',
