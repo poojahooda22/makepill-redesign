@@ -16,7 +16,7 @@ function Nav() {
     },
     {
       title: 'Works',
-      link: 'https://res.'
+      link: 'https://'
     },
     {
       title: 'Services',
