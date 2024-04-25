@@ -9,7 +9,29 @@ import { gsap } from 'gsap';
 
 function Nav() {
 
-  
+  const data = [
+    {
+      title: 'Home',
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4'
+    },
+    {
+      title: 'Works',
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4'
+    },
+    {
+      title: 'Services',
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4'
+    },
+    {
+      title: 'Contact',
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4'
+    },
+    {
+      title: 'Vision',
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4'
+    }
+
+  ]
 
   useEffect(() => {
     gsap.to(".page4 .underline", {
