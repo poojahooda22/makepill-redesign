@@ -28,7 +28,7 @@ function Nav() {
     },
     {
       title: 'Vision',
-      link: 'https://res.cloudinary.com/mkpill/video/o/93'
+      link: 'https://res.cloudinary.com/mkpill/v/o/93'
     }
 
   ]
