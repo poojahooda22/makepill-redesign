@@ -1,0 +1,21 @@
+
+.underline {
+    width: 7.5%;
+    height: 0.2vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.underline::after {
+    content: "";
+    width: 0%; /* Start width at 0 */
+    height: 100%; /* Full height of the parent */
+    position: absolute;
+    left: 0; /* Start from the left */
+    background-color: #fff;
+    transition: width 0.5s ease; /* Smooth transition for the width */
+}
+
+.ptag:hover .underline::after {
+    width: 100%; /* Expand to full width on hover */
+}
