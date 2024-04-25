@@ -71,7 +71,7 @@ function Nav() {
           <div className='overflow-hidden'>
             {
               ['Home', 'Works', 'Services', 'Contact', 'Vision', 'Home',
-              'Works', 'Services', 
+              'Works',  
               ].map((item, index) => 
               {
                 return (
