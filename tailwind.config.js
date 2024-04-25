@@ -16,6 +16,7 @@ module.exports = {
         primary: {
           loader: '#0f0f10',
           main: '#0f0f0f',
+          landing: '#100f0f',
         },
         secondary: {
           vibrant: 'deff00',
