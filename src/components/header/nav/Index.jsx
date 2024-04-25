@@ -24,7 +24,7 @@ function Nav() {
     },
     {
       title: 'Contact',
-      link: 'https://res.cloudinary.com//v44'
+      link: 'https://res.cloudinar/v44'
     },
     {
       title: 'Vision',
