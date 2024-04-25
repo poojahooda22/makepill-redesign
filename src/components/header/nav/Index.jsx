@@ -22,7 +22,7 @@ function Nav() {
       className='page4 absolute top-0 left-0 w-full h-full px-[2.5vw]  bg-red-300 text-white overflow-hidden'
     >
       <div className='wrapper flex items-center justify-between'>
-        <div className='m-0 flex flex-col items-start justify-between'>
+        <div className='m-0 flex flex-col items-start gap-40 border-r-[.1vw]'>
           <div></div>
           <div>
             {['Instagram', 'Twitter', 'Facebook', 'LinkedIn', 'Dribbble'].map((item,index) => {
@@ -40,8 +40,6 @@ function Nav() {
             <p>hello@makepill.com</p>
           </div>
         </div> 
-
-        <div>line</div>
 
         <div className='content'>content</div>
 
