@@ -16,7 +16,7 @@ function Nav() {
     },
     {
       title: 'Works',
-      link: 'https://res.cloud'
+      link: 'https://res.cl'
     },
     {
       title: 'Services',
