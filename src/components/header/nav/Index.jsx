@@ -19,29 +19,31 @@ function Nav() {
 
   return (
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" 
-      className='page4 absolute top-0 left-0 w-full h-full px-[2.5vw]  bg-red-300 text-white overflow-hidden'
+      className='page4 absolute top-0 left-0 w-full h-full px-[2.5vw]  bg-primary-landing text-white overflow-hidden'
     >
       <div className='wrapper flex items-center justify-between'>
-        <div className='m-0 flex flex-col items-start gap-40 border-r-[.1vw]'>
+        <div className='m-0 w-1/5 flex flex-col items-start gap-40 border-r-[.02vw] border-[#333]'>
           <div></div>
           <div>
             {['Instagram', 'Twitter', 'Facebook', 'LinkedIn', 'Dribbble'].map((item,index) => {
               return (
-                <div key={index} className={`ptag ${styles.ptag} `}>
-                  <p className='leading-none ' >
+                <div key={index} className={`ptag ${styles.ptag} pb-[1vw]`}>
+                  <p className='leading-none sm:text-[1.3vw] ' >
                     {item}
-                    <div className={`underline ${styles.underline}`}></div>
+                    <div className={`underline ${styles.underline}  `}></div>
                   </p>              
                 </div>
               )
             })}
           </div>
           <div>
-            <p>hello@makepill.com</p>
+            <p className='sm:text-[1vw]'>hello@makepill.com</p>
           </div>
         </div> 
 
-        <div className='content'>content</div>
+        <div className='content'>
+          
+        </div>
 
         <div className='pillImages'>pill</div>
       </div>
