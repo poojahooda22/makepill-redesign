@@ -28,7 +28,7 @@ export default function Home() {
       containerRef={containerRef}
     >
       <main data-scroll-container ref={containerRef}>
-        <div className=" text-white bg-primary-landing ">
+        <div className=" text-white bg-primary-main ">
           {/* Your content here */}
             
           <Loader/>
