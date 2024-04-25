@@ -16,7 +16,7 @@ function Nav() {
     },
     {
       title: 'Works',
-      link: 'https://res.cloudinary.com/mkpill/video/upload/v16'
+      link: 'https://res.cloudinary.com/mkpill/video/upload/'
     },
     {
       title: 'Services',
