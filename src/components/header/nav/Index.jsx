@@ -5,7 +5,11 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 
 
+
+
 function Nav() {
+
+  
 
   useEffect(() => {
     gsap.to(".page4 .underline", {
@@ -19,7 +23,7 @@ function Nav() {
 
   return (
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" 
-      className='page4 absolute top-0 left-0 w-full h-full px-[2.5vw] text-white overflow-hidden'
+      className='page4 absolute top-0 left-0 w-full h-full bg-black px-[2.5vw] text-white overflow-hidden'
     >
       <div className='wrapper flex items-center justify-between'>
         <div className='m-0 w-1/5 flex flex-col items-start gap-40 border-r-[.02vw] border-[#333]'>
@@ -41,7 +45,7 @@ function Nav() {
           </div>
         </div> 
 
-        <div className='content w-2/3 flex items-center justify-between'>
+        <div className='menu w-2/3 flex items-center justify-between'>
           <div className='overflow-hidden'>
             {
               ['Home', 'Works', 'Services', 'Contact', 'Vision', 'Home',
@@ -50,14 +54,14 @@ function Nav() {
               ].map((item, index) => 
               {
                 return (
-                  <div key={index}>
-                    <p className='sm:text-[2.5vw]'>{item}</p>
+                  <div key={index} className='links'>
+                    <p className='link sm:text-[2.5vw]'>{item}</p>
                   </div>
                 )
             })}
           </div>
-          <div className='pillImages'>
-              <video autoplay loop muted className='image' data-id="1"
+          <div className='pill'>
+              <video autoplay loop muted className='image w-full h-full object-cover' data-id="1"
                 src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4"
               ></video>
           </div>        
