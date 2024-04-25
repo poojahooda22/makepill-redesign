@@ -16,19 +16,19 @@ function Nav() {
     },
     {
       title: 'Works',
-      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4'
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377145/works_x1_hevc_e68aee2722.mp4'
     },
     {
       title: 'Services',
-      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4'
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/expertises_x1_hevc_fc90e497c9.mp4'
     },
     {
       title: 'Contact',
-      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4'
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_hevc_ea41527d1e.mp4'
     },
     {
       title: 'Vision',
-      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4'
+      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_hevc_46ec02e0f6.mp4'
     }
 
   ]
@@ -71,8 +71,7 @@ function Nav() {
           <div className='overflow-hidden'>
             {
               ['Home', 'Works', 'Services', 'Contact', 'Vision', 'Home',
-              'Works', 'Services', 'Contact', 'Vision', 'Home', 'Works', 
-              'Services', 'Contact', 'Vision'
+              'Works', 'Services', 'Contact'
               ].map((item, index) => 
               {
                 return (
@@ -82,10 +81,10 @@ function Nav() {
                 )
             })}
           </div>
-          <div className='pill'>
-              <video autoplay loop muted className='image w-full h-full object-cover' data-id="1"
-                src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/index_x1_hevc_00117f587b.mp4"
-              ></video>
+          <div className='pill w-[22vw]'>
+            <video autoplay loop muted className='image w-full h-full object-fit' data-id="1"
+              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
+            ></video>
           </div>        
         </div> 
       </div>
