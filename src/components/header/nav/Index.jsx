@@ -46,7 +46,7 @@ function Nav() {
   //     "--width": "100%",
   //     scrollTrigger: {
   //       trigger: ".page4 .underline",    
-  //       scru
+  //       s
   // })
 
   return (
