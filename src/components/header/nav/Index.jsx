@@ -42,7 +42,7 @@ function Nav() {
   })
 
   // useEffect(() => {
-  //   gsap.to(".page4 .underline", {   
+  //   gsap.to(".page4 .underline   
   // })
 
   return (
