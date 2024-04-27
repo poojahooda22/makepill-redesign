@@ -41,7 +41,7 @@ function Nav() {
 
   })
 
-  // useEffec
+  // useEff
   return (
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" 
       className='page4 absolute top-0 left-0 w-full h-full bg-black px-[2.5vw] text-white overflow-hidden'
