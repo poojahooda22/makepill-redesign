@@ -32,15 +32,15 @@ function Nav() {
 
   ]
 
-  useEffect(() => {
-    gsap.to(".page4 .underline", {
-      "--width": "100%",
-      scrollTrigger: {
-        trigger: ".page4 .underline",    
-        scrub: 2,
-      }
-    });
-  })
+  // useEffect(() => {
+  //   gsap.to(".page4 .underline", {
+  //     "--width": "100%",
+  //     scrollTrigger: {
+  //       trigger: ".page4 .underline",    
+  //       scrub: 2,
+  //     }
+  //   });
+  // })
 
   return (
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" 
@@ -81,7 +81,7 @@ function Nav() {
                 return (
                   <div key={index} className='links  overflow-hidden'>
                     <div className='link'>
-                      <p className='sm:text-[2.5vw] text-[#333] transition hover:[text-white]'>{item}</p>
+                      <p className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>{item}</p>
                     </div>
                   </div>
                 )
