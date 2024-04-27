@@ -13,10 +13,10 @@ function Nav() {
       title: 'Home',
       link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm'
     },
-    {
-      title: 'Works',
-      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm'
-    },
+    // {
+    //   title: 'Works',
+    //   link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm'
+    // },
     // {
     //   title: 'Services',
     //   link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm'
