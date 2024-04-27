@@ -71,7 +71,7 @@ function Nav() {
           </div>
         </div> 
 
-        <div className='menu w-2/3 h-[100%] flex items-center justify-between overflow-hidden relative'>
+        <div className='menu w-2/3 flex items-center justify-between relative'>
           <div className=''>
             {
               ['Home', 'Works', 'Services', 'Contact', 'Vision', 'Home',
@@ -87,14 +87,14 @@ function Nav() {
                 )
             })}
           </div>
-          <div className={`pill ${styles.pill} w-[22vw] opacity-1 absolute top-[50%] right-[10%] -translate-y-1/2 bg-red-400 `}>
+          <div className={`pill ${styles.pill} w-[22vw] h-[100%] absolute top-[50%] right-[10%] -translate-y-1/2 bg-red-400 `}>
             <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="1"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
-            <video autoplay loop muted className={`img w-full h-full object-fit`} data-id="2"
+            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="2"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
-            <video autoplay loop muted className={`img w-full h-full object-fit`} data-id="3"
+            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
           </div>        
