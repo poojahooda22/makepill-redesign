@@ -81,7 +81,7 @@ function Nav() {
                 return (
                   <div key={index} className='links  overflow-hidden'>
                     <div className='link'>
-                      <p className='sm:text-[2.5vw] text-[#333] transition'>{item}</p>
+                      <p className='sm:text-[2.5vw] text-[#333] transition hover:[text-white]'>{item}</p>
                     </div>
                   </div>
                 )
