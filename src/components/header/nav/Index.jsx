@@ -38,7 +38,7 @@ function Nav() {
     }
     const linksContainer = document.querySelector('.links');
     let currentScroll = 0;
-    
+
   })
 
   // useEffect(() => {
@@ -48,7 +48,7 @@ function Nav() {
   //       trigger: ".page4 .underline",    
   //       scrub: 2,
   //     }
-  //   });
+  //   
   // })
 
   return (
