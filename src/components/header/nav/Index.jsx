@@ -75,13 +75,13 @@ function Nav() {
           <div className=''>
             {
               ['Home', 'Works', 'Services', 'Contact', 'Vision', 'Home',
-              'Works', 'Services', 'Contact', 'Vision', 'Home', 'Home',
+              'Works', 'Services', 'Contact', 'Vision', 'Home'
               ].map((item, index) => 
               {
                 return (
-                  <div key={index} className='links overflow-hidden'>
+                  <div key={index} className='links  overflow-hidden'>
                     <div className='link'>
-                      <p className='sm:text-[2.5vw] text-[#333]'>{item}</p>
+                      <p className='sm:text-[2.5vw] text-[#333] transition'>{item}</p>
                     </div>
                   </div>
                 )
@@ -97,10 +97,10 @@ function Nav() {
             <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm"
             ></video>
-            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
+            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="4"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm"
             ></video>
-            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
+            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="5"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm"
             ></video>
           </div>        
