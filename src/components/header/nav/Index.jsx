@@ -32,6 +32,15 @@ function Nav() {
 
   ]
 
+  useEffect(() => {
+    function lerp(start, end, t) {
+      return start * (1-t) + end * t;
+    }
+    const linksContainer = document.querySelector('.links');
+    let currentScroll = 0;
+    
+  })
+
   // useEffect(() => {
   //   gsap.to(".page4 .underline", {
   //     "--width": "100%",
