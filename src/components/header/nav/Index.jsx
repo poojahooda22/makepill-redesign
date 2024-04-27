@@ -87,14 +87,14 @@ function Nav() {
                 )
             })}
           </div>
-          <div className={`pill w-[22vw] opacity-1 absolute top-[50%] right-[10%] -translate-y-1/2 bg-red-400 `}>
-            <video autoplay loop muted className='image absolute top-0 left-0 w-full h-full object-fit' data-id="1"
+          <div className={`pill ${styles.pill} w-[22vw] opacity-1 absolute top-[50%] right-[10%] -translate-y-1/2 bg-red-400 `}>
+            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="1"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
-            <video autoplay loop muted className='image w-full h-full object-fit' data-id="2"
+            <video autoplay loop muted className={`img w-full h-full object-fit`} data-id="2"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
-            <video autoplay loop muted className='image w-full h-full object-fit' data-id="3"
+            <video autoplay loop muted className={`img w-full h-full object-fit`} data-id="3"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
           </div>        
