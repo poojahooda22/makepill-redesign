@@ -87,7 +87,7 @@ function Nav() {
                 )
             })}
           </div>
-          <div className='pill w-[22vw] opacity-1 absolute top-[50%] right-[10%] -translate-y-1/2 bg-red-400 '>
+          <div className={`pill w-[22vw] opacity-1 absolute top-[50%] right-[10%] -translate-y-1/2 bg-red-400 `}>
             <video autoplay loop muted className='image absolute top-0 left-0 w-full h-full object-fit' data-id="1"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
