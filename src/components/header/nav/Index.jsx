@@ -45,7 +45,7 @@ function Nav() {
   //   gsap.to(".page4 .underline", {
   //     "--width": "100%",
   //     scrollTrigger: {
-  //       trigger: ".page4 .un 
+  //       trigger: ".page4 .
   // })
 
   return (
