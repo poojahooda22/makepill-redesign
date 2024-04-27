@@ -42,7 +42,7 @@ function Nav() {
   })
 
   // useEffect(() => {
-  //   gsap.to(".page4 .unde
+  //   gsap.to(".page4 .
   // })
 
   return (
