@@ -92,10 +92,16 @@ function Nav() {
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
             <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="2"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
+              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm"
             ></video>
             <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
+              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm"
+            ></video>
+            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
+              src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm"
+            ></video>
+            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
+              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm"
             ></video>
           </div>        
         </div> 
