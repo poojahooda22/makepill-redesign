@@ -34,3 +34,10 @@
     z-index: 10;
     opacity: 1;
 }
+.textmain {
+    transition: all 0.3d ease-in-out;
+}
+
+.textmain:hover {
+    color: #fff;
+}
