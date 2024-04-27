@@ -87,7 +87,7 @@ function Nav() {
                 )
             })}
           </div>
-          <div className={`pill ${styles.pill} w-[22vw] h-[100%] absolute top-[50%] right-[10%] -translate-y-1/2 bg-red-400 `}>
+          <div className={`pill ${styles.pill} w-[22vw] h-[100%] absolute top-[50%] right-[10%] -translate-y-1/2 `}>
             <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="1"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
