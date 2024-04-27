@@ -21,10 +21,10 @@ function Nav() {
       title: 'Services',
       link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm'
     },
-    {
-      title: 'Contact',
-      link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm'
-    },
+    // {
+    //   title: 'Contact',
+    //   link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm'
+    // },
     // {
     //   title: 'Vision',
     //   image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm'
