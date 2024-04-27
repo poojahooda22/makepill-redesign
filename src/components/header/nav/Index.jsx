@@ -42,7 +42,7 @@ function Nav() {
   })
 
   // useEffect(() => {
-  //   gsap.to(".
+  //   gsap.to.
   // })
 
   return (
