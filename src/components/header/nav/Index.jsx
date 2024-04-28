@@ -80,17 +80,18 @@ function Nav() {
 
   return (
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" 
-      className='page4 absolute top-0 left-0 w-full h-full bg-black px-[2.5vw] text-white overflow-hidden'
+      className='page4 absolute top-0 left-0 w-full h-full bg-black pl-[5vw] pt-[4vw] sm:pt-0  sm:px-[2.5vw] text-white overflow-hidden'
     >
-      <div className='wrapper flex items-center justify-between py-[2vw] overflow-hidden'>
-        <div className='m-0 w-1/5 flex flex-col items-start justify-between gap-[13.5vw] border-r-[.02vw] border-[#333] '>
+      <div className='wrapper flex items-center justify-between py-[2vw] overflow-hidden '>
+        <div className='m-0 w-1/5 h-[95vh] flex flex-col items-start justify-between sm:gap-[13.5vw] sm:border-r-[.02vw] border-[#333] '>
           <div>
             <Link href="/"> 
                 <h2 className='text-[4.5vw] sm:text-[1.3vw] font-semibold
                   tracking-wider leading-[2vw]'
                 >makepill</h2>
-              </Link></div>
-          <div>
+            </Link>
+          </div>
+          <div className='hidden sm:inline-block'>
             {['Instagram', 'Twitter', 'Facebook', 'LinkedIn', 'Dribbble'].map((item,index) => {
               return (
                 <div key={index} className={`ptag ${styles.ptag} pb-[1.5vw]`}>
@@ -160,7 +161,7 @@ function Nav() {
               </p>
             </div> */}
           </div>
-          <div  className={`pill ${styles.pill} w-[22vw] h-[100%] absolute top-[50%] right-[10%] -translate-y-1/2 `}>
+          <div  className={`pill ${styles.pill} w-[50vw] sm:w-[22vw] h-[100%] absolute top-[50%] right-[-16%] sm:right-[10%] -translate-y-1/2 `}>
             <video
               autoPlay 
               loop 
