@@ -84,9 +84,10 @@ function Nav() {
             gsap.set(pill, {
               rotation: 0,
             });
-          }
+          },
+        });
 
-        })
+        
         
       })
     })
