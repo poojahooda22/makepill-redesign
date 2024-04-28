@@ -109,29 +109,29 @@ function Nav() {
         </div> 
 
         <div className='menu w-2/3 h-[90vh] flex items-center justify-between relative '>
-          <div className='links  overflow-hidden'>
+          <div className='links  overflow-hidden -ml-[32vw] sm:ml-0'>
             <div className='link'>
-              <p data-image="1" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
+              <p data-image="1" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
                 Home
               </p>
             </div>
             <div className='link'>
-              <p data-image="2" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
+              <p data-image="2" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
               Works
               </p>
             </div>
             <div className='link'>
-              <p data-image="3" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
+              <p data-image="3" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
                 Services
               </p>
             </div>
             <div className='link'>
-              <p data-image="4" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
+              <p data-image="4" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
                 Contact
               </p>
             </div>
             <div className='link'>
-              <p data-image="5" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
+              <p data-image="5" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
                 Vision
               </p>
             </div>
