@@ -14,7 +14,7 @@ function Header() {
     const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className='header sticky w-full px-[5vw] py-[4vw] sm:px-[2.5vw] z-[9] cursor-pointer 
+    <div data-scroll-section className='header sticky w-full px-[5vw] py-[4vw] sm:px-[2.5vw] z-[9] cursor-pointer 
     sm:pt-[2vw]'>
         <div className='w-full flex items-center justify-between'>
             <div>
