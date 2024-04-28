@@ -174,7 +174,7 @@ function Nav() {
             <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="2"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm"
             ></video>
-            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
+            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm"
             ></video>
             <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="4"
