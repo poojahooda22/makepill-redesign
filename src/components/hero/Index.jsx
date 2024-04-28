@@ -9,7 +9,7 @@ function LandingPage() {
                 <Header/>
             </div>
             {/* Hero section video */}
-            <div className='heroVideo w-full -mt-[10vw] sm:-mt-[8vw] flex items-center justify-center'>                    
+            <div className='heroVideo w-full -mt-[12vw] sm:-mt-[8vw] flex items-center justify-center'>                    
                 <video 
                         className='w-full h-[100vh] object-cover'
                         src="https://res.cloudinary.com/mkpill/video/upload/v1691860071/mp_intro_robot_v2_32611febe2.mp4"
@@ -19,7 +19,7 @@ function LandingPage() {
                     >
                     </video>
                 <div className='w-full absolute top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/4 flex flex-col items-center justify-center'>
-                    <div className='flex sm:text-[6.5vw] sm:leading-[8vw] tracking-tighter'>
+                    <div className='flex  sm:text-[6.5vw] sm:leading-[8vw] tracking-tighter'>
                         <div className='pr-[1vw]'>
                             <h1>Digital</h1>
                         </div>
