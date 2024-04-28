@@ -45,7 +45,7 @@ function Nav() {
     textElem.forEach(link => {
       link.addEventListener("mouseenter", function() {
         const targetImageId = parseInt(this.getAttribute("data-image"));
-        let rotationValue = targetImageId > currentImageIdd ? 360 : -360;
+        let rotationValue = targetImageId > currentImageIdd ? 360 : 360;
 
         const pill = document.querySelector('.pill');
         const images = document.querySelectorAll('.pill .img');
