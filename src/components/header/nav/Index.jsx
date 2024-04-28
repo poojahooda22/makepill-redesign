@@ -7,7 +7,16 @@ import Link from "next/link";
 
 
 function Nav() {
+  const videoRef = useRef(null);
 
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      videoRef.current.onended = () => {
+        videoRef.current.play();
+      };
+    }
+  }, []);
 
   useEffect(() => {
     function lerp(start, end, t) {
@@ -20,7 +29,7 @@ function Nav() {
 
     document.addEventListener('mousemove', (e) => {
       const extraHeight = linksContainer.offsetHeight - window.innerWidth;
-      targetScroll = (e.clientY / window.innerHeight)
+      targetScroll = (e.clientY / window.innerHeight);
     });
 
     function animate() {
@@ -98,61 +107,58 @@ function Nav() {
           </div>
         </div> 
 
-        <div className='menu w-2/3 flex items-center justify-between relative overflow-hidden'>
-          <div className=''>
-            <div className='links  overflow-hidden'>
-              <div className='link'>
-                <p data-image="1" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
-                  Home
-                </p>
-              </div>
-              <div className='link'>
-                <p data-image="2" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
-                Works
-                </p>
-              </div>
-              <div className='link'>
-                <p data-image="3" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
-                  Services
-                </p>
-              </div>
-              <div className='link'>
-                <p data-image="4" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
-                  Contact
-                </p>
-              </div>
-              <div className='link'>
-                <p data-image="5" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
-                  Vision
-                </p>
-              </div>
-              <div className='link'>
-                <p data-image="6" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
-                  Home
-                </p>
-              </div>
-              <div className='link'>
-                <p data-image="7" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
-                Works
-                </p>
-              </div>
-              <div className='link'>
-                <p data-image="8" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
-                  Services
-                </p>
-              </div>
-              <div className='link'>
-                <p data-image="9" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
-                  Contact
-                </p>
-              </div>
-              <div className='link'>
-                <p data-image="10" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
-                  Vision
-                </p>
-              </div>
-              
+        <div className='menu w-2/3 h-[90vh] flex items-center justify-between relative '>
+          <div className='links  overflow-hidden'>
+            <div className='link'>
+              <p data-image="1" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
+                Home
+              </p>
             </div>
+            <div className='link'>
+              <p data-image="2" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
+              Works
+              </p>
+            </div>
+            <div className='link'>
+              <p data-image="3" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
+                Services
+              </p>
+            </div>
+            <div className='link'>
+              <p data-image="4" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
+                Contact
+              </p>
+            </div>
+            <div className='link'>
+              <p data-image="5" className={`${styles.textmain} textmain sm:text-[4.5vw] text-[#333]`}>
+                Vision
+              </p>
+            </div>
+            {/* <div className='link'>
+              <p data-image="6" className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
+                Home
+              </p>
+            </div>
+            <div className='link'>
+              <p data-image="7" className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
+              Works
+              </p>
+            </div>
+            <div className='link'>
+              <p data-image="8" className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
+                Services
+              </p>
+            </div>
+            <div className='link'>
+              <p data-image="9" className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
+                Contact
+              </p>
+            </div>
+            <div className='link'>
+              <p data-image="10" className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
+                Vision
+              </p>
+            </div> */}
           </div>
           <div  className={`pill ${styles.pill} w-[22vw] h-[100%] absolute top-[50%] right-[10%] -translate-y-1/2 `}>
             <video
@@ -174,7 +180,7 @@ function Nav() {
             <video  autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="5"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm"
             ></video>
-            <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="6"
+            {/* <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="6"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
             <video  autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="7"
@@ -188,7 +194,7 @@ function Nav() {
             ></video>
             <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="10"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm"
-            ></video>
+            ></video> */}
           </div>        
         </div> 
       </div>
