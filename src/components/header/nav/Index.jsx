@@ -195,7 +195,7 @@ function Nav() {
             <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="9"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm"
             ></video>
-            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="10"
+            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="10"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm"
             ></video>
           </div>        
