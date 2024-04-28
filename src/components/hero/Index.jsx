@@ -5,7 +5,7 @@ import { useLocomotiveScroll } from 'react-locomotive-scroll'
 function LandingPage() {
     const { scroll } = useLocomotiveScroll()
   return (
-    <div data-scroll-section className='first w-full h-[100vh] overflow-x-hidden'>
+    <div data-scroll-section className='first w-full h-[100vh] overflow-hidden'>
         <div className='page1 relative'>
             <div className='relative z-[999]'>
                 <Header/>
