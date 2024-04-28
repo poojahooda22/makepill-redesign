@@ -201,7 +201,8 @@ function Nav() {
             </div>
           </div>
           <div className={`pill ${styles.pill} w-[22vw] h-[100%] absolute top-[50%] right-[10%] -translate-y-1/2 `}>
-            <video 
+            <video
+              ref={videoRef} 
               autoplay 
               loop 
               muted 
