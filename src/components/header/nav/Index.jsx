@@ -11,8 +11,6 @@ function Nav() {
 
 
   // const items = [
-  //   {name: 'Home', key:"1"},
-  //   {name: 'Works', key:"2"},
 
   // ]
 
