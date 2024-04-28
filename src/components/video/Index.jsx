@@ -4,8 +4,8 @@ import { useLocomotiveScroll } from 'react-locomotive-scroll'
 function Video() {
     const { scroll } = useLocomotiveScroll()
   return (
-    <div data-scroll-section className='w-full sm:h-[100vh]'>
-      <div>
+    <div data-scroll-section className='w-full mb-[5vw]'>
+      <div className='h-[60vh] sm:h-full'>
         <video
             autoPlay
             loop
