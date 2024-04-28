@@ -70,6 +70,7 @@ function Nav() {
           zIndex: 10,
           opacity: 1,
           delay: 0.25,
+          ease: "power4.inOut",
         })
         currentImageIdd = targetImageId;
       })
