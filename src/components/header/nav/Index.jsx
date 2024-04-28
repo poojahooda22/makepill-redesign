@@ -13,11 +13,7 @@ function Nav() {
     
     
    
-    // {
-    //   title: 'Contact',
-    //   link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm'
-    // },
-    // {
+
     
 
   ]
