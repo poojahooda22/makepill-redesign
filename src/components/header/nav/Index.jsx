@@ -9,14 +9,6 @@ import Link from "next/link";
 function Nav() {
   const videoRef = useRef(null);
 
-  const data = [
-    
-    
-   
-
-    
-
-  ]
 
   // const items = [
   //   {name: 'Home', key:"1"},
