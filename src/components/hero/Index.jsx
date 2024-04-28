@@ -35,7 +35,7 @@ function LandingPage() {
                             <h1>immersives<span className='text-[#deff00]'>*</span></h1>
                         </div>
                     </div>
-                    <div className='text-center sm:text-[1.2vw] mt-[2vw]'>
+                    <div className='text-center text-[4.6vw] sm:text-[1.2vw] mt-[8vw] sm:mt-[2vw]'>
                         <div>
                             <h4>We think and design unique experiences</h4>
                         </div>
