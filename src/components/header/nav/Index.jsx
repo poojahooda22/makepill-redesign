@@ -19,7 +19,7 @@ function Nav() {
   //   {name: 'Home', key:"6"},
   //   {name: 'Works', key:"7"},
   //   {name: 'Services', key:"8"},
-  //   {name: 'contact', key:"9"},
+
 
   // ]
 
