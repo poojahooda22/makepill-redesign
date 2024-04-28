@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { height } from '../anime';
 import styles from './Style.module.css'
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import Link from "next/link";
 
