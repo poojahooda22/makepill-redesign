@@ -32,12 +32,64 @@ function Nav() {
 
   ]
 
+  const items = [
+    {name: 'Home', key:"1"},
+    {name: 'Works', key:"2"},
+    {name: 'Services', key:"3"},
+    {name: 'contact', key:"4"},
+    {name: 'Vision', key:"5"},
+    {name: 'Home', key:"6"},
+    {name: 'Works', key:"7"},
+    {name: 'Services', key:"8"},
+    {name: 'contact', key:"9"},
+    {name: 'Vision', key:"10"},
+  ]
+
   useEffect(() => {
     function lerp(start, end, t) {
       return start * (1-t) + end * t;
     }
     const linksContainer = document.querySelector('.links');
     let currentScroll = 0;
+    let targetScroll = 0;
+    const ease = 0.1;
+
+    document.addEventListener('mousemove', (e) => {
+      const extraHeight = linksContainer.offsetHeight - window.innerWidth;
+      targetScroll = (e.clientY / window.innerHeight) * extraHeight;
+    });
+
+    function animate() {
+      currentScroll = lerp(currentScroll, targetScroll, ease);
+      linksContainer.style.transform = `translateY(${currentScroll}px)`;
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    let currentImageIdd = 1;
+    const textElem =  document.querySelectorAll('[data-image]');
+
+    textElem.forEach(link => {
+      link.addEventListener("mouseenter", function() {
+        const targetImageId = parseInt(this.getAttribute("data-image"));
+        let rotationValue = targetImageId > currentImageIdd ? 360 : -360;
+
+        const pill = document.querySelector('.pill');
+        const images = document.querySelectorAll('.pill video');
+
+        gsap.to('.pill', {
+          rotation: rotationValue,
+          duration: 0.4,
+          onComplete: function () {
+            gsap.set(pill, {
+              rotation: 0,
+            });
+          }
+
+        })
+        
+      })
+    })
 
   })
 
@@ -72,15 +124,14 @@ function Nav() {
 
         <div className='menu w-2/3 flex items-center justify-between relative'>
           <div className=''>
-            {
-              ['Home', 'Works', 'Services', 'Contact', 'Vision', 'Home',
-              'Works', 'Services', 'Contact', 'Vision', 'Home'
-              ].map((item, index) => 
+            {items.map((item, index) => 
               {
                 return (
                   <div key={index} className='links  overflow-hidden'>
                     <div className='link'>
-                      <p className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>{item}</p>
+                      <p data-image={item.key} className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
+                        {item.name}
+                      </p>
                     </div>
                   </div>
                 )
