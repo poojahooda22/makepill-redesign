@@ -7,6 +7,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css'
 import LandingPage from '@/components/hero/Index';
 import Video from '@/components/video/Index';
 import About from '@/components/services/Index';
+import Cursor from '@/components/cursor/Index';
 
 export default function Home() {
   const containerRef = useRef(null)
@@ -32,7 +33,7 @@ export default function Home() {
       <main data-scroll-container ref={containerRef}>
         <div className=" text-white bg-primary-main ">
           {/* Your content here */}
-            
+          <Cursor/> 
           <Loader/>
           <LandingPage/>
           <Video/>
