@@ -18,8 +18,8 @@ function LandingPage() {
                         muted
                     >
                     </video>
-                <div className='w-full absolute top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/4 flex flex-col items-center justify-center'>
-                    <div className='flex  sm:text-[6.5vw] sm:leading-[8vw] tracking-tighter'>
+                <div className='w-full mt-[2vw] sm:mt-0 absolute top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/4 flex flex-col items-center justify-center'>
+                    <div className='flex text-[12vw] leading-[16vw] sm:text-[6.5vw] sm:leading-[8vw] tracking-tighter'>
                         <div className='pr-[1vw]'>
                             <h1>Digital</h1>
                         </div>
@@ -27,7 +27,7 @@ function LandingPage() {
                             <h1>products</h1>
                         </div>
                     </div>
-                    <div className='flex sm:text-[6.5vw] sm:leading-[8vw] tracking-tighter'>
+                    <div className='sm:flex text-[10vw] leading-[14vw] sm:text-[6.5vw] sm:leading-[8vw] tracking-tighter'>
                         <div className='pr-[1vw]'>
                             <h1>creatives &</h1>
                         </div>
