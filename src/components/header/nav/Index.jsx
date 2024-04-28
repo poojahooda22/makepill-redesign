@@ -12,10 +12,7 @@ function Nav() {
   const data = [
     
     
-    // {
-    //   title: 'Services',
-    //   link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm'
-    // },
+   
     // {
     //   title: 'Contact',
     //   link: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm'
