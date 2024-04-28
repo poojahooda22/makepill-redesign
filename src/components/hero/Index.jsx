@@ -1,7 +1,9 @@
 import React from 'react'
 import Header from '../header/Index'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 function LandingPage() {
+    const { scroll } = useLocomotiveScroll()
   return (
     <div data-scroll-section className='first w-full h-[100vh] overflow-x-hidden'>
         <div className='page1 relative'>
