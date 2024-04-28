@@ -165,8 +165,7 @@ function Nav() {
           </div>
           <div  className={`pill ${styles.pill} w-[22vw] h-[100%] absolute top-[50%] right-[10%] -translate-y-1/2 `}>
             <video
-              ref={videoRef} 
-              autoplay 
+              autoPlay 
               loop 
               muted 
               className={`${styles.img} img w-full h-full object-fit`} data-id="1"
