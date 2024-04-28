@@ -45,7 +45,7 @@ function Header() {
                     variants={rotate}
                     animate={!isActive ? "closed" : "open"}
                     onMouseDown={() => {setIsActive(!isActive)}}
-                    className={`pill w-[8vw] h-[7vw] sm:w-[2.2vw] sm:h-[2vw] border-b-[1px] border-t-[1px]  border-l-[.5px]
+                    className={`pill1 w-[8vw] h-[7vw] sm:w-[2.2vw] sm:h-[2vw] border-b-[1px] border-t-[1px]  border-l-[.5px]
                     border-r-[1px] rounded-r-full flex items-center justify-center hover:bg-white hover:text-black
                     sm:px-[1.1vw] `}
                 >
