@@ -87,7 +87,11 @@ function Nav() {
           },
         });
 
-        
+        gsap.set(images, {
+          zIndex: 0,
+          opacity: 0,
+          delay: 0.25,
+        });
         
       })
     })
