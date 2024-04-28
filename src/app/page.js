@@ -6,6 +6,7 @@ import Loader from '@/components/loader/Index';
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 import LandingPage from '@/components/hero/Index';
 import Video from '@/components/video/Index';
+import About from '@/components/services/Index';
 
 export default function Home() {
   const containerRef = useRef(null)
@@ -35,6 +36,7 @@ export default function Home() {
           <Loader/>
           <LandingPage/>
           <Video/>
+          <About/>
         </div>
       </main>
     </LocomotiveScrollProvider>
