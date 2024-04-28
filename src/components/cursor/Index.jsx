@@ -45,7 +45,7 @@ function Cursor() {
         animateCircles();
     })
   return (
-    <div className={``}>
+    <div className={`hidden sm:block`}>
         <div className={`circle ${styles.circle}`}></div>
         <div className={`circle ${styles.circle}`}></div>
         <div className={`circle ${styles.circle}`}></div>
