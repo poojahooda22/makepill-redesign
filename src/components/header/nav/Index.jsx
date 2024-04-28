@@ -9,12 +9,6 @@ import Link from "next/link";
 function Nav() {
   const videoRef = useRef(null);
 
-
-  // const items = [
-
-  // ]
-
-
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play();
