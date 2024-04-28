@@ -183,7 +183,7 @@ function Nav() {
             <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="5"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm"
             ></video>
-            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="6"
+            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="6"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
             <video  autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="7"
