@@ -48,10 +48,10 @@ function Nav() {
 
 
   useEffect(() => {
-    const videoElement = document.querySelectorAll('.img');
-    if (videoElement) {
-      videoElement.onended = () => {
-        videoElement.play();
+    if (videoRef.current) {
+      videoRef.current.play();
+      videoRef.current.onended = () => {
+        videoRef.current.play();
       };
     }
   }, []);
