@@ -14,7 +14,7 @@ function Header() {
     const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className='header w-full px-[5vw] py-[4vw] sm:px-[2.5vw] z-[9] cursor-pointer relative
+    <div className='header fixed w-full px-[5vw] py-[4vw] sm:px-[2.5vw] z-[9] cursor-pointer relative
     sm:pt-[2vw]'>
         <div className='w-full flex items-center justify-between'>
             <div>
