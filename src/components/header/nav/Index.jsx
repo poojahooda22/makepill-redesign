@@ -13,8 +13,7 @@ function Nav() {
   // const items = [
   //   {name: 'Home', key:"1"},
   //   {name: 'Works', key:"2"},
-  //   {name: 'Services', key:"3"},
-  //   {name: 'contact', key:"4"},
+
   // ]
 
 
