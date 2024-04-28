@@ -1,8 +1,10 @@
 import React from 'react'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
-function Index() {
+function Video() {
+    const { scroll } = useLocomotiveScroll()
   return (
-    <div className='w-full sm:h-[100vh]'>
+    <div data-scroll-section className='w-full sm:h-[100vh]'>
       <div>
         <video
             autoPlay
@@ -18,4 +20,4 @@ function Index() {
   )
 }
 
-export default Index
+export default Video
