@@ -162,7 +162,7 @@ function Nav() {
               
             </div>
           </div>
-          <div className={`pill ${styles.pill} w-[22vw] h-[100%] absolute top-[50%] right-[10%] -translate-y-1/2 `}>
+          <div  className={`pill ${styles.pill} w-[22vw] h-[100%] absolute top-[50%] right-[10%] -translate-y-1/2 `}>
             <video
               ref={videoRef} 
               autoplay 
@@ -171,31 +171,31 @@ function Nav() {
               className={`${styles.img} img w-full h-full object-fit`} data-id="1"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
-            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="2"
+            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="2"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm"
             ></video>
-            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
+            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm"
             ></video>
-            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="4"
+            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="4"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm"
             ></video>
-            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="5"
+            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="5"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm"
             ></video>
-            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="6"
+            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="6"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
-            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="7"
+            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="7"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm"
             ></video>
             <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="8"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm"
             ></video>
-            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="9"
+            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="9"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm"
             ></video>
-            <video autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="10"
+            <video ref={videoRef} autoplay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="10"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm"
             ></video>
           </div>        
