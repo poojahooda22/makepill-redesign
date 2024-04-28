@@ -18,29 +18,29 @@ function LandingPage() {
                         muted
                     >
                     </video>
-                <div className='w-full bg-red-400 absolute top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center'>
-                    <div className='flex'>
-                        <div>
+                <div className='w-full absolute top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/4 flex flex-col items-center justify-center'>
+                    <div className='flex sm:text-[6.5vw] sm:leading-[8vw] tracking-tighter'>
+                        <div className='pr-[1vw]'>
                             <h1>Digital</h1>
                         </div>
                         <div>
                             <h1>products</h1>
                         </div>
                     </div>
-                    <div className='flex'>
-                        <div>
-                            <h1>creatives</h1>
+                    <div className='flex sm:text-[6.5vw] sm:leading-[8vw] tracking-tighter'>
+                        <div className='pr-[1vw]'>
+                            <h1>creatives &</h1>
                         </div>
                         <div>
-                            <h1>& immersives<span>*</span></h1>
+                            <h1>immersives<span className='text-[#deff00]'>*</span></h1>
                         </div>
                     </div>
-                    <div>
+                    <div className='text-center sm:text-[1.2vw] mt-[2vw]'>
                         <div>
                             <h4>We think and design unique experiences</h4>
                         </div>
                         <div>
-                            <h4>for tomorrownbsps innovative products</h4>
+                            <h4>for tomorrow's innovative products</h4>
                         </div>
                     </div>
                 </div>
