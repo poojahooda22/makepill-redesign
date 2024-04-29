@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap'
 
+import { IoVolumeMediumSharp } from "react-icons/io5";
+
 function Video() {
 
   useEffect(() => {
@@ -8,7 +10,10 @@ function Video() {
     video.addEventListener('mouseenter', () => {
       gsap.to('.cursor', {
         width: '100px',
-        height: '100px'
+        height: '100px',
+        innerHTML: '<IoVolumeMediumSharp/>',
+        color: 'black',
+        margin: '20px'
       })
     })
   })
