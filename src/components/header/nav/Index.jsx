@@ -80,7 +80,7 @@ function Nav() {
 
   return (
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" 
-      className='page4 absolute top-0 left-0 w-full h-full bg-black pl-[5vw] pt-[4vw] sm:pt-0  sm:px-[2.5vw] text-white overflow-hidden'
+      className='page4 absolute top-0 left-0 w-full bg-black pl-[5vw] pt-[4vw] sm:pt-0  sm:px-[2.5vw] text-white overflow-hidden'
     >
       <div className='wrapper flex items-center justify-between py-[2vw] overflow-hidden '>
         <div className='m-0 w-1/5 h-[95vh] flex flex-col items-start justify-between sm:gap-[13.5vw] sm:border-r-[.02vw] border-[#333] '>
