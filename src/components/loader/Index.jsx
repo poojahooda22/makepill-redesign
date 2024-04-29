@@ -72,8 +72,8 @@ function Loader() {
     }, []);
 
   return (
-    <div data-scroll-section >
-        <div data-scroll className='loader w-full bg-primary-loader relative'>
+    <div>
+        <div className='loader w-full bg-primary-loader relative'>
             {/* video on the loader screen */}
             <div className='video-wrapper flex items-center justify-center '>
                 <div className='videoContainer w-full  sm:h-[50vw] '>
