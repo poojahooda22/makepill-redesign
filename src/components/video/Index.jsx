@@ -28,7 +28,7 @@ function Video() {
   })
   
   return (
-    <div className=' videoDiv w-full mb-[5vw]'>
+    <div className=' videoDiv w-full'>
       <div className=' h-[60vh] sm:h-full'>
         <video
             autoPlay
