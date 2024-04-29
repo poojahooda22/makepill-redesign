@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import Header from '../header/Index'
 import { gsap } from 'gsap'
