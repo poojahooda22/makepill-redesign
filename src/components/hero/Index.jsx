@@ -6,20 +6,20 @@ import { gsap } from 'gsap'
 
 function LandingPage() {
 
-    useEffect(() => {
-        const texthighLight = document.querySelector('.highlightText');
+    // useEffect(() => {
+    //     const texthighLight = document.querySelector('.highlightText');
 
-        texthighLight.addEventListener('mouseenter', () => {
-            gsap.to('.heroText h1, h4', {
-                opacity: 0.5,
-            })
-        })
-        texthighLight.addEventListener('mouseleave', () => {
-            gsap.to('.heroText h1, h4', {
-                opacity: 1,
-            })
-        })
-    })
+    //     texthighLight.addEventListener('mouseenter', () => {
+    //         gsap.to('.heroText h1, h4', {
+    //             opacity: 0.5,
+    //         })
+    //     })
+    //     texthighLight.addEventListener('mouseleave', () => {
+    //         gsap.to('.heroText h1, h4', {
+    //             opacity: 1,
+    //         })
+    //     })
+    // })
 
    
   return (
