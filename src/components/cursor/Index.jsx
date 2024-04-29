@@ -22,8 +22,8 @@ function Cursor() {
 
     // Update mouse position on the 'mousemove' event
     window.addEventListener('mousemove', (e) => {
-      mouse.x = e.x;
-      mouse.y = e.y;
+      mouse.x = e.x ;
+      mouse.y = e.y ;
     });
 
     // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
