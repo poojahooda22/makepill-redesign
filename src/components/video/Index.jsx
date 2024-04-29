@@ -7,15 +7,16 @@ function Video() {
 
   useEffect(() => {
     const video = document.querySelector('.videoDiv video');
-    video.addEventListener('mouseenter', () => {
-      gsap.to('.cursor', {
-        width: '100px',
-        height: '100px',
-        innerHTML: '<IoVolumeMediumSharp/>',
-        color: 'black',
-        margin: '20px'
-      })
-    })
+
+    // video.addEventListener('mouseenter', () => {
+    //   gsap.to('.cursor', {
+    //     width: '100px',
+    //     height: '100px',
+    //     innerHTML: "<IoVolumeMediumSharp size={32} color='black' />",
+    //     // color: 'black',
+        
+    //   })
+    // })
   })
   
   return (
