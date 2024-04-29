@@ -25,7 +25,7 @@ export default function Home() {
         {/* Your content here */}
         <Cursor/> 
         <Loader/>
-          <LandingPage/>
+        <LandingPage/>
           <Video/>
           <About/>           
       </div>
