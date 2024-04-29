@@ -27,7 +27,7 @@ export default function Home() {
         <Loader/>
         <LandingPage/>
         <Video/>
-          <About/>           
+        <About/>           
       </div>
     </main>
 
