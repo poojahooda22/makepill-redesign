@@ -7,7 +7,6 @@ import { useState } from 'react';
 import Nav from './nav/Index';
 import Link from "next/link";
 
-
 function Header() {
     const [isActive, setIsActive] = useState(false);
 
