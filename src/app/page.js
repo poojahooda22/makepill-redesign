@@ -10,10 +10,17 @@ import Cursor from '@/components/cursor/Index';
 
 
 export default function Home() {
-  
+  useEffect(() => {
+    (
+      async() => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
 
   return (
-    <main data-scroll-container ref={containerRef}>
+    <main>
       <div className=" text-white bg-primary-main ">
         {/* Your content here */}
         <Cursor/> 
