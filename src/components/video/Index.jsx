@@ -3,14 +3,15 @@ import { gsap } from 'gsap'
 
 function Video() {
 
-  useEffect(() => {
-    const video = document.querySelector('.videoDiv video');
-    video.addEventListener('mouseenter', () => {
-      gsap.to('.circle', {
-        width: '100px',
-      })
-    })
-  })
+  // useEffect(() => {
+  //   const video = document.querySelector('.videoDiv video');
+  //   video.addEventListener('mouseenter', () => {
+  //     gsap.to('.circle', {
+  //       width: '100px',
+  //       height: '100px'
+  //     })
+  //   })
+  // })
   
   return (
     <div className='w-full mb-[5vw]'>
