@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap'
-
 import { IoVolumeMediumSharp } from "react-icons/io5";
 
 function Video() {
