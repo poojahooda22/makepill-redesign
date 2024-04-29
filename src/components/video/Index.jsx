@@ -1,11 +1,20 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import { gsap } from 'gsap'
 
 function Video() {
+
+  useEffect(() => {
+    const video = document.querySelector('.videoDiv video');
+    video.addEventListener('mouseenter', () => {
+      gsap.to('.circle', {
+        width: '100px',
+      })
+    })
+  })
   
   return (
     <div className='w-full mb-[5vw]'>
-      <div className='h-[60vh] sm:h-full'>
+      <div className='videoDiv h-[60vh] sm:h-full'>
         <video
             autoPlay
             loop
