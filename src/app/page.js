@@ -26,7 +26,7 @@ export default function Home() {
         <Cursor/> 
         <Loader/>
         <LandingPage/>
-          <Video/>
+        <Video/>
           <About/>           
       </div>
     </main>
