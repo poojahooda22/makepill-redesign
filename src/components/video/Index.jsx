@@ -31,7 +31,7 @@ function Video() {
     <div className=' videoDiv w-full'>
       <div className=' h-[60vh] sm:h-full'>
         <video
-            autoPlay
+          autoPlay
             loop
             muted
             className='w-full h-full object-cover'
