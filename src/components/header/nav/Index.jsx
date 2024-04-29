@@ -7,16 +7,6 @@ import Link from "next/link";
 
 
 function Nav() {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      videoRef.current.onended = () => {
-        videoRef.current.play();
-      };
-    }
-  }, []);
 
   useEffect(() => {
     function lerp(start, end, t) {
