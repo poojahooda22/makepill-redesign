@@ -8,20 +8,28 @@ function Video() {
   useEffect(() => {
     const video = document.querySelector('.videoDiv video');
 
-    // video.addEventListener('mouseenter', () => {
-    //   gsap.to('.cursor', {
-    //     width: '100px',
-    //     height: '100px',
-    //     innerHTML: "<IoVolumeMediumSharp size={32} color='black' />",
-    //     // color: 'black',
-        
-    //   })
-    // })
+    video.addEventListener('mouseenter', () => {
+      gsap.to('.cursor', {
+        width: '8vw',
+        height: '8vw',
+        innerHTML: "<h5>view project</h5>",
+        fontSize: '.9vw',
+        color: 'black',     
+      })
+    })
+
+    video.addEventListener('mouseleave', () => {
+      gsap.to('.cursor', {
+        width: '8px',
+        height: '8px',
+        innerHTML: "",    
+      })
+    })
   })
   
   return (
-    <div className='w-full mb-[5vw]'>
-      <div className='videoDiv h-[60vh] sm:h-full'>
+    <div className=' videoDiv w-full mb-[5vw]'>
+      <div className=' h-[60vh] sm:h-full'>
         <video
             autoPlay
             loop
