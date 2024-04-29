@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
-import { gsap, Power4 } from "gsap";
+import { gsap, Power3, Power4 } from "gsap";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,6 +44,18 @@ function Loader() {
             opacity: 0,
             ease: Power4.easeOut,
         })
+        tl.from('.heroText h1', {
+            y: 100,
+            opacity: 0,
+            stagger: 0.12,          
+            ease: Power3.in,
+        },'a')
+        tl.from('.heroText h4', {
+            y: 100,
+            opacity: 0,
+            stagger: 0.12, 
+            ease:  Power3.in,
+        })
    })
 
    // timer for the loader
@@ -61,10 +73,10 @@ function Loader() {
 
   return (
     <div data-scroll-section >
-        <div className='loader w-full bg-primary-loader relative'>
+        <div data-scroll className='loader w-full bg-primary-loader relative'>
             {/* video on the loader screen */}
             <div className='video-wrapper flex items-center justify-center '>
-                <div className='videoContainer w-full h-[100vh] sm:h-[50vw] '>
+                <div className='videoContainer w-full  sm:h-[50vw] '>
                     <video 
                         className='w-full h-full object-cover'
                         src="https://res.cloudinary.com/mkpill/video/upload/v1691860071/mp_intro_pill_v2_3f977a1a22.mp4"
