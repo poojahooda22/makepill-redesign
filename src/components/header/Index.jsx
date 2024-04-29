@@ -1,5 +1,4 @@
 
-
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion, AnimatePresence } from 'framer-motion';
@@ -14,7 +13,7 @@ function Header() {
     const [isActive, setIsActive] = useState(false);
 
   return (
-    <div data-scroll-section className='header sticky w-full px-[5vw] py-[4vw] sm:px-[2.5vw] z-[9] cursor-pointer 
+    <div className='header sticky w-full px-[5vw] py-[4vw] sm:px-[2.5vw] z-[9] cursor-pointer 
     sm:pt-[2vw]'>
         <div className='w-full flex items-center justify-between'>
             <div>
