@@ -6,7 +6,7 @@ import { opacity, rotate, rotate2 } from './anime';
 import { useState } from 'react';
 import Nav from './nav/Index';
 import Link from "next/link";
-// imp'
+// im'
 
 
 function Header() {
