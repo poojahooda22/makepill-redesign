@@ -26,8 +26,7 @@ function Header() {
             >
                 / Index
             </motion.div>
-            <div 
-                
+            <div       
                 className=' sm:w-[5vw] flex items-center justify-center sticky z-[99]'
             >
                 <motion.div 
