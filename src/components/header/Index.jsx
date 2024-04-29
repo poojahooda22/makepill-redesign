@@ -64,8 +64,7 @@ function Header() {
         </div>
         <AnimatePresence mode="wait">
             {isActive && <Nav/> }
-        </AnimatePresence> 
-        
+        </AnimatePresence>     
     </div>
   )
 }
