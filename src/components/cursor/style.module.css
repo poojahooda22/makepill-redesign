@@ -1,11 +1,14 @@
-.circle {
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    /* mix-blend-mode: difference; */
-}
+.cursor {
+    --circle-size: 8px;
+    position: fixed;
+    height: var(--circle-size);
+    width: var(--circle-size);
+    background-color:  white;
+    border-radius: 100%;
+    top: calc(var(--circle-size) / 2 * -1);
+    left: calc(var(--circle-size) / 2 * -1);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 9999;
+  
+  }
