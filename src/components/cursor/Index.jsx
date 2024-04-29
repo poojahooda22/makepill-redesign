@@ -5,7 +5,6 @@ import styles from './style.module.css'
 // import gsap from 'gsap'
 
 function Cursor() {
-
     
   useEffect(() => {
 
