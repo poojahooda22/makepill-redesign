@@ -76,7 +76,7 @@ function Cursor() {
   return (
     <div className=''>
       <div>
-        <div className={`cursor ${styles.cursor} hidden sm:inline-block`}></div>
+        <div className={`cursor ${styles.cursor} hidden sm:flex items-center justify-center`}></div>
       </div>
          
     </div>
