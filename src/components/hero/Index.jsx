@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Header from '../header/Index'
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
 import { gsap } from 'gsap'
 
 function LandingPage() {
@@ -20,7 +19,7 @@ function LandingPage() {
         })
     })
 
-    const { scroll } = useLocomotiveScroll()
+   
   return (
     <div className='first w-full overflow-hidden'>
         <div className='page1 relative'>
