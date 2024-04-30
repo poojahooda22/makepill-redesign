@@ -29,7 +29,7 @@ function About() {
       })
     })
     
-    // const button = docu
+    // const button = do
 
   })
 
