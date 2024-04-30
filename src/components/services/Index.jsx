@@ -45,8 +45,8 @@ function About() {
       className='aboutSec w-full py-[8vw]'
     >
 
-      <div className='py-[5vw] sm:py-0  sm:flex items-center justify-between sm:px-[2.5vw]'>
-        <div className='leftDiv sm:w-1/2 flex items-center justify-center mb-[10vw] sm:mb-0 '>
+      <div className='py-[6vw] sm:py-0  sm:flex items-center justify-between sm:px-[2.5vw]'>
+        <div className='leftDiv sm:w-1/2 flex items-center justify-center mb-[16vw] sm:mb-0 '>
           <div className='leftvideo h-[70vw] sm:h-[30vw] '>
             <video 
               autoPlay
@@ -71,14 +71,20 @@ function About() {
                 dimension to your vision.
               </h1>    
             </div>
-            <div className='flex items-center sm:items-start justify-center '>
+            <div className='flex items-center justify-center sm:items-start sm:justify-start '>
               <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
                 <p className='sm:text-[.9vw]'>Services</p>  
               </div>  
             </div>  
           </div>  
         </div>
-      </div>  
+      </div> 
+
+      <div>
+          <div>
+                
+          </div>  
+      </div> 
     </div>
   )
 }
