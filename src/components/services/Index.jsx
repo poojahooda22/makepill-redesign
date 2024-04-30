@@ -34,7 +34,7 @@ function About() {
     //   gsap.to('.cursor', {
     //       width: '8vw',
 
-    // })
+})
   })
 
   
