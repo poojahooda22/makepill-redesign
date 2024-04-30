@@ -19,12 +19,23 @@ function About() {
         backgroundColor: 'black'
       })
     })
-    // section.addEventListener('mouseleave', () => {
-    //   gsap.to('.aboutSec', {
-    //     backgroundColor: 'black',
-    //     color: 'white'
-    //   })
-    // })
+    section.addEventListener('mouseleave', () => {
+      gsap.to('.aboutSec', {
+        backgroundColor: 'black',
+        color: 'white'
+      })
+      gsap.to('.cursor', {
+        backgroundColor: 'white'
+      })
+    })
+    
+    const button = document.querySelector('.serviceBtn')
+    button.querySelector('mouseenter', () => {
+      gsap.to('.cursor', {
+          width: '8vw',
+          height: '8vw',
+      })
+    })
   })
 
   
@@ -59,7 +70,7 @@ function About() {
               dimension to your vision.
             </h1>    
           </div>
-          <div className='w-[8vw] h-[8vw] rounded-full border-[.8px] border-[#fff] flex items-center justify-center'>
+          <div className='serviceBtn w-[8vw] h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
             <p className='text-[.9vw]'>Services</p>  
           </div>  
         </div>  
