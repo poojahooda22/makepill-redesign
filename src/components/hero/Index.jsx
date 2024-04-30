@@ -23,7 +23,7 @@ function LandingPage() {
 
    
   return (
-    <div className='first w-full overflow-hidden'>
+    <div data-scroll data-scroll-section  className='first w-full overflow-hidden'>
         <div className='page1 relative'>
             <div className='relative z-[999]'>
                 <Header/>
