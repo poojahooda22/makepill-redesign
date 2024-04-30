@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import React, { useEffect } from 'react'
-
+import styles from './style.mosule.css'
 // const white = {background: 'white', color: '#0f0f0f'}
 // const black = {background: '#0f0f0f', color: 'white'}
 
@@ -42,7 +42,7 @@ function About() {
   return (
     <div
       data-scroll-section data-scroll-speed=".1" 
-      className='aboutSec w-full py-[8vw] overflow-hidden'
+      className='aboutSec w-full py-[8vw] overflow-hidden '
     >
 
       <div className='py-[6vw] sm:py-0  sm:flex items-center justify-between sm:px-[2.5vw] sm:mb-[4vw]'>
@@ -80,13 +80,21 @@ function About() {
         </div>
       </div> 
 
-      <div>
-        <div className='flex items-center'>
-          <div className='sm:text-[6vw] tracking-wide whitespace-nowrap'>
+      <div className='flex mt-[8vw]'>
+        <div className={`elem ${styles.elem} flex items-center`}>
+          <div className='sm:text-[6vw] tracking-wide whitespace-nowrap mr-[5vw]'>
             <h1>Mind the business, we build the product</h1>  
           </div>
-          <div className='w-[4vw]'>
-            <video autoPlay loop muted src="https://makepill.com/medias/videos/seal/white.webm"></video>  
+          <div className='w-[10vw] mr-[5vw]'>
+            <video autoPlay loop muted className='w-full h-full object-cover' src="https://makepill.com/medias/videos/seal/white.webm"></video>  
+          </div>   
+        </div>
+        <div className={`elem ${styles.elem} flex items-center`}>
+          <div className='sm:text-[6vw] tracking-wide whitespace-nowrap mr-[5vw]'>
+            <h1>Mind the business, we build the product</h1>  
+          </div>
+          <div className='w-[10vw] mr-[5vw]'>
+            <video autoPlay loop muted className='w-full h-full object-cover' src="https://makepill.com/medias/videos/seal/white.webm"></video>  
           </div>   
         </div> 
       </div> 
