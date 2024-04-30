@@ -8,22 +8,21 @@ function About() {
 
   // const [color, setColor] = React.useState()
 
-  // useEffect(() => {
-  //   const section = document.querySelector('.aboutSec')
-
-  //   section.addEventListener('mouseenter', () => {
-  //     gsap.to('.aboutSec', {
-  //       backgroundColor: 'white',
-  //       color: 'black'
-  //     })
-  //   })
-  //   section.addEventListener('mouseleave', () => {
-  //     gsap.to('.aboutSec', {
-  //       backgroundColor: 'black',
-  //       color: 'white'
-  //     })
-  //   })
-  // })
+  useEffect(() => {
+    const section = document.querySelector('.aboutSec')
+    section.addEventListener('mouseenter', () => {
+      gsap.to('.aboutSec', {
+        backgroundColor: 'white',
+        color: 'black'
+      })
+    })
+    section.addEventListener('mouseleave', () => {
+      gsap.to('.aboutSec', {
+        backgroundColor: 'black',
+        color: 'white'
+      })
+    })
+  })
 
   
   return (
