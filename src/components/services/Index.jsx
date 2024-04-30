@@ -45,9 +45,9 @@ function About() {
       className='aboutSec w-full py-[8vw]'
     >
 
-      <div className='flex items-center justify-between sm:px-[2.5vw]'>
-        <div className='leftDiv w-1/2 flex items-center justify-center '>
-          <div className='leftvideo h-[30vw] '>
+      <div className='py-[5vw] sm:py-0  sm:flex items-center justify-between sm:px-[2.5vw]'>
+        <div className='leftDiv sm:w-1/2 flex items-center justify-center mb-[10vw] sm:mb-0 '>
+          <div className='leftvideo h-[70vw] sm:h-[30vw] '>
             <video 
               autoPlay
               loop
@@ -56,10 +56,10 @@ function About() {
               src="https://res.cloudinary.com/mkpill/video/upload/v1691752608/launch_pill_6ae3865c71.webm"></video>
           </div>
         </div>
-        <div className='rightDiv  w-1/2 '>
-          <div className='flex flex-col gap-[3.5vw]'>
-            <h4 className=' text-[1vw] tracking-wider'>/ Give life to your ideas</h4>
-            <div className='w-3/4 text-[2.3vw] flex flex-col gap-[3.5vw] tracking-wide leading-[3vw]'>
+        <div className='rightDiv sm:w-1/2 px-[5vw] sm:px-0'>
+          <div className=' sm:space-y-[4vw] space-y-[12vw]'>
+            <h4 className='text-[5vw] sm:text-[1vw] tracking-wider'>/ Give life to your ideas</h4>
+            <div className='w- sm:w-3/4 text-[6vw] sm:text-[2.3vw] font-medium space-y-[12vw] sm:space-y-[4vw] tracking-wide sm:leading-[3vw]'>
               <h1>
                 We pool our expertise to turn your
                 wildest projects into singular
@@ -71,8 +71,8 @@ function About() {
                 dimension to your vision.
               </h1>    
             </div>
-            <div className='serviceBtn w-[8vw] h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
-              <p className='text-[.9vw]'>Services</p>  
+            <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
+              <p className='sm:text-[.9vw]'>Services</p>  
             </div>  
           </div>  
         </div>
