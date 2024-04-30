@@ -29,8 +29,7 @@ function About() {
       })
     })
     
-    // const button = document.querySelector('.servi
-
+    // const button = document.querySelector('.serv
 
   })
 
