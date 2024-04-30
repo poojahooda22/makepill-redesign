@@ -42,10 +42,10 @@ function About() {
   return (
     <div
       data-scroll-section data-scroll-speed=".1" 
-      className='aboutSec w-full py-[8vw]'
+      className='aboutSec w-full py-[8vw] overflow-hidden'
     >
 
-      <div className='py-[6vw] sm:py-0  sm:flex items-center justify-between sm:px-[2.5vw]'>
+      <div className='py-[6vw] sm:py-0  sm:flex items-center justify-between sm:px-[2.5vw] sm:mb-[4vw]'>
         <div className='leftDiv sm:w-1/2 flex items-center justify-center mb-[16vw] sm:mb-0 '>
           <div className='leftvideo h-[70vw] sm:h-[30vw] '>
             <video 
@@ -81,12 +81,12 @@ function About() {
       </div> 
 
       <div>
-        <div>
-          <div>
+        <div className='flex items-center'>
+          <div className='sm:text-[6vw] tracking-wide whitespace-nowrap'>
             <h1>Mind the business, we build the product</h1>  
           </div>
-          <div>
-            <video src="https://makepill.com/medias/videos/seal/white.webm"></video>  
+          <div className='w-[4vw]'>
+            <video autoPlay loop muted src="https://makepill.com/medias/videos/seal/white.webm"></video>  
           </div>   
         </div> 
       </div> 
