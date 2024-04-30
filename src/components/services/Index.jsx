@@ -29,7 +29,7 @@ function About() {
       })
     })
     
-    // const button = document.querySelector('.s
+    // const button = document.querySelector('.
 
   })
 
