@@ -15,13 +15,16 @@ function About() {
         backgroundColor: 'white',
         color: 'black'
       })
-    })
-    section.addEventListener('mouseleave', () => {
-      gsap.to('.aboutSec', {
-        backgroundColor: 'black',
-        color: 'white'
+      gsap.to('.cursor', {
+        backgroundColor: 'black'
       })
     })
+    // section.addEventListener('mouseleave', () => {
+    //   gsap.to('.aboutSec', {
+    //     backgroundColor: 'black',
+    //     color: 'white'
+    //   })
+    // })
   })
 
   
