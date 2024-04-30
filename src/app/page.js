@@ -6,22 +6,27 @@ import LandingPage from '@/components/hero/Index';
 import Video from '@/components/video/Index';
 import About from '@/components/services/Index';
 import Cursor from '@/components/cursor/Index';
-
+import LocomotiveScroll from 'locomotive-scroll';
 
 
 export default function Home() {
+  const scrollRef = useRef(null);
   useEffect(() => {
-    (
-      async() => {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default;
-        const locomotiveScroll = new LocomotiveScroll();
-      }
-    )()
-  }, [])
+    if (scrollRef.current) {
+      const scroll = new LocomotiveScroll({
+        el: scrollRef.current,
+        smooth: true, 
+      });
+
+      return () => {
+        scroll.destroy();
+      };
+    }
+  }, []);
 
   return (
     <main>
-      <div className=" text-white bg-primary-main ">
+      <div ref={scrollRef} className=" text-white font-[mainfont] bg-primary-main ">
         {/* Your content here */}
         <Cursor/> 
         <Loader/>
