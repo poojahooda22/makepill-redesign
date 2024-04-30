@@ -29,7 +29,7 @@ function About() {
       })
     })
     
-    // const button = document.querySelect
+    // const button = document.querySel
 
   })
 
