@@ -81,12 +81,14 @@ function About() {
       </div> 
 
       <div>
+        <div>
           <div>
-              <h1>Mind the business, we build the product</h1>  
+            <h1>Mind the business, we build the product</h1>  
           </div>
           <div>
-              <video></video>  
-          </div>  
+            <video src="https://makepill.com/medias/videos/seal/white.webm"></video>  
+          </div>   
+        </div> 
       </div> 
     </div>
   )
