@@ -32,7 +32,7 @@ function About() {
     // const button = document.querySelector('.serviceBtn')
     // button.addEventListener('mouseenter', () => {
     //   gsap.to('.cursor', {
-    //       width: 
+    //       wid
   })
 
   
