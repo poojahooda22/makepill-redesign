@@ -30,7 +30,7 @@ function About() {
     })
     
     // const button = document.querySelector('.serviceBtn')
-    // button.addEventListener('mouseente
+    // button.addEventListener('mouseen
 
   })
 
