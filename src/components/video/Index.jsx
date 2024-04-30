@@ -1,33 +1,36 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { IoVolumeMediumSharp } from "react-icons/io5";
+import { IoVolumeMedium } from "react-icons/io5";
 
 function Video() {
-
+  
   useEffect(() => {
-    const video = document.querySelector('.videoDiv video');
+    const video = document.querySelector('.videoDiv')
 
     video.addEventListener('mouseenter', () => {
-      gsap.to('.cursor', {
-        width: '8vw',
-        height: '8vw',
-        innerHTML: "<h5>view project</h5>",
-        fontSize: '.9vw',
-        color: 'black',     
+      const tl = gsap.timeline()
+      tl.to('.cursor', {
+        width: '100px',
+        height: '100px',
+        innerHTML: '<IoVolumeMedium size={32} color=black />',
+        color: 'black',
+        cursor: 'none',
       })
     })
-
     video.addEventListener('mouseleave', () => {
-      gsap.to('.cursor', {
+      const tl = gsap.timeline()
+      tl.to('.cursor', {
         width: '8px',
         height: '8px',
-        innerHTML: "",    
       })
-    })
+    }
+  )
   })
   
+  
   return (
-    <div className=' videoDiv w-full'>
+    <div data-scroll data-scroll-section    className=' videoDiv w-full'>
       <div className=' h-[60vh] sm:h-full'>
         <video
           autoPlay
