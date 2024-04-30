@@ -29,13 +29,13 @@ function About() {
       })
     })
     
-    const button = document.querySelector('.serviceBtn')
-    button.querySelector('mouseenter', () => {
-      gsap.to('.cursor', {
-          width: '8vw',
-          height: '8vw',
-      })
-    })
+    // const button = document.querySelector('.serviceBtn')
+    // button.addEventListener('mouseenter', () => {
+    //   gsap.to('.cursor', {
+    //       width: '8vw',
+    //       height: '8vw',
+    //   })
+    // })
   })
 
   
@@ -44,6 +44,7 @@ function About() {
       data-scroll-section data-scroll-speed=".1" 
       className='aboutSec w-full h-[100vh] sm:px-[2.5vw] flex items-center justify-between'
     >
+      <div>
       <div className='leftDiv w-1/2  flex items-center justify-center'>
         <div className='leftvideo h-[30vw] '>
           <video 
@@ -75,6 +76,7 @@ function About() {
           </div>  
         </div>  
       </div>  
+      </div>
     </div>
   )
 }
