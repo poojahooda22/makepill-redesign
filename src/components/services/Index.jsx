@@ -82,7 +82,10 @@ function About() {
 
       <div>
           <div>
-                
+              <h1>Mind the business, we build the product</h1>  
+          </div>
+          <div>
+              <video></video>  
           </div>  
       </div> 
     </div>
