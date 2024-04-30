@@ -35,7 +35,7 @@ function Nav() {
     textElem.forEach(link => {
       link.addEventListener("mouseenter", function() {
         const targetImageId = parseInt(this.getAttribute("data-image"));
-        let rotationValue = targetImageId > currentImageIdd ? 360 : 360;
+        let rotationValue = targetImageId < currentImageIdd ? 360 : 360;
 
         const pill = document.querySelector('.pill');
         const images = document.querySelectorAll('.pill .img');
@@ -156,13 +156,13 @@ function Nav() {
               autoPlay 
               loop 
               muted 
-              className={`${styles.img} img w-full h-full object-fit`} data-id="1"
+              className={`${styles.img} img w-full h-full object-fit `} data-id="1"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
             ></video>
             <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="2"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm"
             ></video>
-            <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="3"
+            <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit `} data-id="3"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm"
             ></video>
             <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="4"
