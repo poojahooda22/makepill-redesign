@@ -71,10 +71,10 @@ function About() {
                 dimension to your vision.
               </h1>    
             </div>
-            <div>
-            <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
-              <p className='sm:text-[.9vw]'>Services</p>  
-            </div>  
+            <div className='flex items-center sm:items-start justify-center '>
+              <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
+                <p className='sm:text-[.9vw]'>Services</p>  
+              </div>  
             </div>  
           </div>  
         </div>
