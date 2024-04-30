@@ -33,8 +33,7 @@ function About() {
     // button.addEventListener('mouseenter', () => {
     //   gsap.to('.cursor', {
     //       width: '8vw',
-    //       height: '8vw',
-  
+
     // })
   })
 
