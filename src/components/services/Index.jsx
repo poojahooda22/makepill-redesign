@@ -29,7 +29,7 @@ function About() {
       })
     })
     
-    // co 
+    // c 
 
   })
 
