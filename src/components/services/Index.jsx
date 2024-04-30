@@ -29,7 +29,7 @@ function About() {
       })
     })
     
-    // const butt
+    // const bu
 
   })
 
