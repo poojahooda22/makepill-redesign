@@ -29,7 +29,7 @@ function About() {
       })
     })
     
-    // const button = document.querySelector('.serviceB
+    // const button = document.querySelector('.servi
 
 
   })
