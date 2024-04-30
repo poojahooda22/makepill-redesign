@@ -42,11 +42,11 @@ function About() {
   return (
     <div
       data-scroll-section data-scroll-speed=".1" 
-      className='aboutSec w-full h-[100vh] sm:px-[2.5vw] flex items-center justify-between'
+      className='aboutSec w-full py-[8vw]'
     >
-      
-      <div>
-        <div className='leftDiv w-1/2  flex items-center justify-center'>
+
+      <div className='flex items-center justify-between sm:px-[2.5vw]'>
+        <div className='leftDiv w-1/2 flex items-center justify-center '>
           <div className='leftvideo h-[30vw] '>
             <video 
               autoPlay
@@ -75,10 +75,8 @@ function About() {
               <p className='text-[.9vw]'>Services</p>  
             </div>  
           </div>  
-        </div>  
-      </div>
-
-      {/* //marqueue text */}
+        </div>
+      </div>  
     </div>
   )
 }
