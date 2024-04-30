@@ -72,7 +72,7 @@ function Loader() {
     }, []);
 
   return (
-    <div>
+    <div >
         <div className='loader w-full bg-primary-loader relative'>
             {/* video on the loader screen */}
             <div className='video-wrapper flex items-center justify-center '>
