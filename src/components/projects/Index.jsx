@@ -22,7 +22,7 @@ function Projects() {
                 autoPlay
                 loop
                 muted
-                src
+                sr
          */}
         <div className='' >
             <div className='w-full flex items-center justify-center'>
