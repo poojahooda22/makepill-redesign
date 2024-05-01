@@ -22,7 +22,7 @@ function Projects() {
                 autoPlay
                 loop
                 muted
-                src="https://res.cloudina
+                src="https://res.cloudin
          */}
         <div className='' >
             <div className='w-full flex items-center justify-center'>
