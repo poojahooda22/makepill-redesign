@@ -22,7 +22,7 @@ function Projects() {
                 autoPlay
                 loop
                 muted
-                src="https://res.cloudinary.com/mkpill/video
+                src="https://res.cloudinary.com/mkpill/vi
          */}
         <div className='' >
             <div className='w-full flex items-center justify-center'>
