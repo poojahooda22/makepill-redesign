@@ -22,7 +22,7 @@ function Projects() {
                 autoPlay
                 loop
                 muted
-                src="https
+                src="http
          */}
         <div className='' >
             <div className='w-full flex items-center justify-center'>
