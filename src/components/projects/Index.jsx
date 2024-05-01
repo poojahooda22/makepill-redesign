@@ -18,12 +18,12 @@ function Projects() {
   return (
     <div className='w-full h-[100vh]'>
         {/* <>
-            <vi 
+            <v 
                 autoPlay
                 loop
                 muted
                 src="https://res.cloudinary.com/mkpill/video/upload/v1689237447/battlehack_reel_vp9_53ef201263.webm"
-            ></vi
+            ></v
          */}
         <div className='' >
             <div className='w-full flex items-center justify-center'>
