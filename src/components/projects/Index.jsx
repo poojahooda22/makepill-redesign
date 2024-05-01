@@ -23,7 +23,7 @@ function Projects() {
                 loop
                 muted
                 src="https://res.cloudinary.com/mkpill/video/upload/v1689237447/battlehack_reel_vp9_53ef201263.webm"
-            ></v
+            ><
          */}
         <div className='' >
             <div className='w-full flex items-center justify-center'>
