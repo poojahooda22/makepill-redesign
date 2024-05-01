@@ -22,7 +22,7 @@ function Projects() {
                 autoPlay
                 loop
                 muted
-                src="https://res.cloudinary.com/mkpill/video/upload/v1689237447/battlehack_reel_vp9_5m"
+                src="https://res.cloudinary.com/mkpill/video/upload/v1689237447/battlehack_reel_vp9_m"
             ><
          */}
         <div className='' >
