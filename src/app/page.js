@@ -7,6 +7,7 @@ import Video from '@/components/video/Index';
 import About from '@/components/services/Index';
 import Cursor from '@/components/cursor/Index';
 import LocomotiveScroll from 'locomotive-scroll';
+import Projects from '@/components/projects/Index';
 
 
 export default function Home() {
@@ -32,7 +33,8 @@ export default function Home() {
         <Loader/>
         <LandingPage/>
         <Video/>
-        <About/>           
+        <About/>
+        <Projects/>           
       </div>
     </main>
 
