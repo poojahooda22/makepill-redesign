@@ -52,17 +52,29 @@ function About() {
         <div className='rightDiv sm:w-1/2 px-[5vw] sm:px-0'>
           <div className=' sm:space-y-[4vw] space-y-[12vw]'>
             <h4 className='text-[5vw] sm:text-[1vw] tracking-wider'>/ Give life to your ideas</h4>
-            <div className='w- sm:w-3/4 text-[6vw] sm:text-[2.3vw] font-medium space-y-[12vw] sm:space-y-[4vw] tracking-wide sm:leading-[3vw]'>
-              <h1>
-                We pool our expertise to turn your
-                wildest projects into singular
-                experiences.
-              </h1>
-              <h1>
-                Discover our diverse expertise,
-                each one providing a unique
-                dimension to your vision.
-              </h1>    
+            <div className=' sm:w-3/4 text-[6vw] sm:text-[2.3vw] font-medium tracking-wide sm:leading-[3vw]'>
+              <div>
+                <h1>We pool our expertise to turn your</h1>
+              </div>
+              <div>
+                <h1>wildest projects into singular</h1>
+              </div>
+              <div className='mb-[12vw] sm:mb-[4vw]'>
+                <h1>
+                  experiences.
+                </h1>
+              </div>
+              <div>
+                <h1>
+                  Discover our diverse expertise,
+                </h1>
+              </div>
+              <div>
+                <h1>
+                  each one providing a unique
+                </h1>
+              </div>
+              <div><h1>dimension to your vision.</h1></div>  
             </div>
             <div className='flex items-center justify-center sm:items-start sm:justify-start '>
               <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
@@ -73,20 +85,20 @@ function About() {
         </div>
       </div> 
 
-      <div className='flex mt-[8vw]'>
+      <div className='flex my-[24vw] sm:my-[8vw]'>
         <div className={`elem ${styles.elem} flex items-center`}>
-          <div className='sm:text-[6vw] tracking-wide whitespace-nowrap mr-[5vw]'>
+          <div className='text-[12vw] sm:text-[6vw] tracking-wide whitespace-nowrap mr-[10vw] sm:mr-[5vw]'>
             <h1>Mind the business, we build the product</h1>  
           </div>
-          <div className='w-[10vw] mr-[5vw]'>
+          <div className='w-[22vw] sm:w-[10vw] mr-[10vw] sm:mr-[5vw]'>
             <video autoPlay loop muted className='w-full h-full object-cover' src="https://makepill.com/medias/videos/seal/white.webm"></video>  
           </div>   
         </div>
         <div className={`elem ${styles.elem} flex items-center`}>
-          <div className='sm:text-[6vw] tracking-wide whitespace-nowrap mr-[5vw]'>
+          <div className='text-[12vw] sm:text-[6vw] tracking-wide whitespace-nowrap mr-[10vw] sm:mr-[5vw]'>
             <h1>Mind the business, we build the product</h1>  
           </div>
-          <div className='w-[10vw] mr-[5vw]'>
+          <div className='w-[22vw] sm:w-[10vw] mr-[10vw] sm:mr-[5vw]'>
             <video autoPlay loop muted className='w-full h-full object-cover' src="https://makepill.com/medias/videos/seal/white.webm"></video>  
           </div>   
         </div> 
