@@ -11,6 +11,7 @@ import Projects from '@/components/projects/Index';
 import ReverseService from '@/components/ReverseService/Index';
 import AwardsSection from '@/components/Awards/Index';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Social from '@/components/social/Index';
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -56,6 +57,7 @@ export default function Home() {
         {/* <Projects/>            */}
         <ReverseService/>
         <AwardsSection/>
+        <Social/>
       </div>
     </main>
 
