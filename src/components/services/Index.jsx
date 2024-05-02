@@ -35,7 +35,7 @@ function About() {
   return (
     <div
       data-scroll-section data-scroll-speed=".1" 
-      className='aboutSec w-full pt-[6vw] overflow-hidden '
+      className='aboutSec section w-full pt-[6vw] overflow-hidden '
     >
 
       <div className='py-[6vw] sm:py-0  sm:flex items-center justify-between sm:px-[2.5vw] sm:mb-[4vw]'>
