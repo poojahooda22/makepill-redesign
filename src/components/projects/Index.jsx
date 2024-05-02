@@ -14,7 +14,7 @@ function Projects() {
         videoLink: 'https://res.cloudinary.com/mkpill/video/upload/v1689237447/battlehack_reel_vp9_53ef201263.webm'
         },
         {
-            name: 'BattleHack',
+            name: 'Greenbet',
             id1: 0,
             id2: 1,
             category1: 'UX Design',
@@ -22,15 +22,36 @@ function Projects() {
             category3: 'Development',
             videoLink: 'https://res.cloudinary.com/mkpill/video/upload/v1689237448/greenbet_reel_vp9_01d08c6746.webm'
         },
+        {
+            name: 'Airbus Gaming',
+            id1: 0,
+            id2: 1,
+            category1: 'UX Design',
+            category2: 'Chara Design',
+            category3: '3D',
+            category4: '+3',
+            videoLink: 'https://res.cloudinary.com/mkpill/video/upload/v1691489003/airbusgaming_entry_9439fb4bb5.mp4'
+        },
+        {
+            name: 'Caption',
+            id1: 0,
+            id2: 1,
+            category1: 'Branding',
+            category2: 'Motion',
+            category3: '3D',
+            category4: '+1',
+            videoLink: 'https://res.cloudinary.com/mkpill/video/upload/v1689237448/caption_reel_vp9_2afe219f05.webm'
+        },
     ]
 
   return (
-    <div className='w-full h-[100vh] relative'>
+    <div className='w-full min-h-[100vh] relative'>
         <div className='' >
                 {data.map((item, index) => {
                    return (
                     <div key={index} className='w-full flex flex-col items-center justify-center '>
-                        <div className='absolute top-0 left-0 w-full h-[100vh]'><video className='w-full h-full object-cover' autoPlay loop muted src={item.videoLink}></video></div>
+                        <div className='absolute top-0 left-0 w-full h-[100vh] opacity-0'>
+                            <video className='w-full h-full object-cover' autoPlay loop muted src={item.videoLink}></video></div>
                         <div key={index} className=' w-2/3 flex items-center justify-between z-[10] pt-[5vw]'>
                             <h1 className='text-[5vw]'>{item.name}</h1>
                             <div className='flex flex-col items-end gap-[1vw]'>
@@ -40,10 +61,10 @@ function Projects() {
                                     <p>{item.id2}</p>
                                 </div>
                                 <div className='flex items-center gap-2 whitespace-nowrap'>
-                                    <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]  '><h6>{item.category1}</h6></div>  
-                                    <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]  '><h6>{item.category2}</h6></div>  
-                                    <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]  '><h6>{item.category3}</h6></div>  
-                                    <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]  '><h6>{item.category4}</h6></div>    
+                                    <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category1}</h6></div>  
+                                    <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category2}</h6></div>  
+                                    <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category3}</h6></div>  
+                                    {item.category4 && <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category4}</h6></div> }   
                                 </div>
                             </div>
                         </div>
