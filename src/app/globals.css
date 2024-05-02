@@ -6,3 +6,38 @@
     font-family: 'mainFont';
     src: url(../../public/font/NeueHaasDisplay-Roman.ttf);
 }
+
+*{
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --salmon: #EF9D71;
+    --black: #0f0f0f;
+    --light: #fff;
+    --cyan:  #aedee0;  
+    --dcyan: #141b1b;
+    --dsalmon: #1e130e;
+    -dsalmon: #8fbec0;
+}
+
+
+body {
+    transition: background-color ease-out 0.5s;
+}
+
+/* *::selection {
+    background-color: var(--salmon);
+} */
+
+
+body[theme="black"] {
+    background-color: var(--black);
+    
+}
+
+body[theme="black"] .section {
+    color: var(--light);
+}
