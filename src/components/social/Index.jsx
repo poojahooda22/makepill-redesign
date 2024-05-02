@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap';
+import { Power4} from 'gsap/gsap-core';
 
 function Social() {
     const data = [
@@ -7,19 +8,29 @@ function Social() {
         {title: 'X/Twitter', link: '@makepill_agency'},
         {title: 'Dribbble', link: '@makepill_agency'},
         {title: 'YouTube', link: '@makepill_agency'},
-        {title: 'LinkedIn', link: '@makepill_agency'},
-        
+        {title: 'LinkedIn', link: '@makepill_agency'},     
     ]
 
     useEffect(() => {
-        const socialLayer = document.querySelector('.socialDiv');
+        const socialLayer = document.querySelectorAll('.socialDiv');
 
-        socialLayer.addEventListener('mousemove', () => {
-            gsap.to('.SocialContentLayer', {
-                opacity: 1,
-            })
-        
+        socialLayer.forEach((el) => {
+            el.addEventListener('mousemove', function() {
+                gsap.to(this.querySelector(".SocialContentLayer"), {
+                  height: '100%', 
+                  ease: Power4,
+                  duration: .1
+                })
+              })
+              el.addEventListener('mouseleave', function() {
+                gsap.to(this.querySelector(".SocialContentLayer"), {
+                  height: '0%',  
+                  ease: Power4, 
+                  duration: .1})
+              }) 
         })
+
+        
     })
 
 
