@@ -10,7 +10,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import Projects from '@/components/projects/Index';
 import ReverseService from '@/components/ReverseService/Index';
 import AwardsSection from '@/components/Awards/Index';
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -26,6 +26,23 @@ export default function Home() {
       };
     }
   }, []);
+
+  useEffect(() => {
+    const list = document.querySelectorAll('.section')
+    list.forEach(function(e) {
+      ScrollTrigger.create({
+        trigger: e,
+        start: "top 90%",
+        end: "bottom 90%",
+        onEnter: function(){
+          document.body.setAttribute("theme", e.dataset.color);
+        },
+        onEnterBack: function() {
+          document.body.setAttribute("theme", e.dataset.color);
+        }
+      })
+    })
+  })
 
   return (
     <main>
