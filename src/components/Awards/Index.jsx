@@ -1,8 +1,6 @@
 import gsap from 'gsap'
 import React, { useEffect } from 'react'
 import styles from './Style.module.css'
-// const white = {background: 'white', color: '#0f0f0f'}
-// const black = {background: '#0f0f0f', color: 'white'}
 
 function AwardsSection() {
 
@@ -32,8 +30,8 @@ function AwardsSection() {
   
   return (
     <div
-      data-scroll-section data-scroll-speed=".1" 
-      className='awardsSec w-full overflow-hidden '
+      data-scroll-section data-scroll-speed=".1"
+      className='awardsSec section w-full overflow-hidden py-[4vw]'
     >
         <div className='py-[6vw] sm:py-0 sm:px-[13vw]  sm:flex items-start justify-between sm:mb-[4vw] '>
             <div className='leftAwardDiv px-[5vw] sm:px-0 '>
