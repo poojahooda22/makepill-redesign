@@ -84,10 +84,10 @@ function Projects() {
                                     <div className='overflow-hidden'><p>{item.id2}</p></div>
                                 </div>
                                 <div className='projectDownDiv flex items-center gap-2 whitespace-nowrap'>
-                                    <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category1}</h6></div>  
-                                    <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category2}</h6></div>  
-                                    <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category3}</h6></div>  
-                                    {item.category4 && <div className='border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category4}</h6></div> }   
+                                    <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category1}</h6></div>  
+                                    <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category2}</h6></div>  
+                                    <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category3}</h6></div>  
+                                    {item.category4 && <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category4}</h6></div> }   
                                 </div>
                             </div>
                         </div>
