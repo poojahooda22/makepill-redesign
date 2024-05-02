@@ -54,7 +54,7 @@ export default function Home() {
         <LandingPage/>
         <Video/>
         <About/>
-        {/* <Projects/>            */}
+        {/* <Projects/>   */}
         <ReverseService/>
         <AwardsSection/>
         <Social/>
