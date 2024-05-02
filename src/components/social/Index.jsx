@@ -3,8 +3,10 @@ import React from 'react'
 function Social() {
     const data = [
         {title: 'Instagram',},
-        {title: 'Facebook',},
-
+        {title: 'X/Twitter',},
+        {title: 'Dribbble',},
+        {title: 'YouTube',},
+        {title: 'LinkedIn',},
     ]
   return (
     <div>
