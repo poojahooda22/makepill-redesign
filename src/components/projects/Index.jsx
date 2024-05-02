@@ -19,6 +19,11 @@ function Projects() {
                 stagger: .2,
                 ease: Power3            
             })
+            gsap.to('.projectVideoDiv > div', {
+                opacity: 0,
+                stagger: .2,
+                ease: Power3            
+            })
         })
     })
 
@@ -70,10 +75,9 @@ function Projects() {
                 {data.map((item, index) => {
                    return (
                     <div key={index} className='w-full flex flex-col items-center justify-center '>
-                        <div className='absolute top-0 left-0 w-full h-[100vh] opacity-1 '>
-                            
+                        <div className='projectVideoDiv absolute top-0 left-0 w-full h-[100vh] opacity-0 '>
                             <video className='w-full h-full object-cover' autoPlay loop muted src={item.videoLink}></video>
-                            <div  className='absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-t from-black-900 to-transparent'></div>
+                            <div  className='absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-t from-black-600 to-transparent'></div>
                         </div>
                         <div key={index} className='projectheadDiv w-2/3 flex items-center justify-between z-[10] pt-[5vw] hover:cursor-pointer hover:text-[#fff] '>
                             <h1 className='text-[5vw] text-[#333] '>{item.name}</h1>
