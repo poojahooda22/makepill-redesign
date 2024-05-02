@@ -1,0 +1,16 @@
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.elem {
+    animation: anime 12s infinite linear;
+}
+
+.elem2 {
+    animation: anime 12s infinite linear reverse;
+}
