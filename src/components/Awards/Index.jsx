@@ -28,15 +28,6 @@ function AwardsSection() {
                 </div>  
             </div>
             <div className='leftDiv sm:w-1/2 flex items-center justify-center mb-[16vw] sm:mb-0 '>
-                {/* <div className='leftvideo h-[70vw] sm:h-[30vw] '>
-                    <video 
-                    autoPlay
-                    loop
-                    muted
-                    className='w-full h-full object-cover'
-                    src="https://res.cloudinary.com/mkpill/video/upload/v1691752606/ai_pill_5352472919.webm"></video>
-                </div> */}
-
                 <div>
                     {data.map((item, index) => {
                         return (
