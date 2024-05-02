@@ -8,6 +8,8 @@ import About from '@/components/services/Index';
 import Cursor from '@/components/cursor/Index';
 import LocomotiveScroll from 'locomotive-scroll';
 import Projects from '@/components/projects/Index';
+import ReverseService from '@/components/ReverseService/Index';
+import AwardsSection from '@/components/Awards/Index';
 
 
 export default function Home() {
@@ -27,14 +29,16 @@ export default function Home() {
 
   return (
     <main>
-      <div ref={scrollRef} className=" text-white font-[mainfont] bg-primary-main ">
+      <div ref={scrollRef} className="section text-white font-[mainfont] bg-primary-main ">
         {/* Your content here */}
         <Cursor/> 
         <Loader/>
         <LandingPage/>
         <Video/>
         <About/>
-        <Projects/>           
+        {/* <Projects/>            */}
+        <ReverseService/>
+        <AwardsSection/>
       </div>
     </main>
 
