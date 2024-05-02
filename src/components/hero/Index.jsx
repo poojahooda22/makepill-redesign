@@ -23,13 +23,13 @@ function LandingPage() {
 
    
   return (
-    <div data-scroll data-scroll-section  className='first w-full overflow-hidden'>
+    <div data-scroll data-scroll-section  className='first w-full overflow-hidden relative'>
         <div className='page1 relative'>
             <div className='relative z-[999]'>
                 <Header/>
             </div>
             {/* Hero section video */}
-            <div className='heroVideo w-full -mt-[12vw] sm:-mt-[8vw] flex items-center justify-center'>                    
+            <div className='heroVideo w-full -mt-[12vw] sm:mt-[1vw] flex items-center justify-center'>                    
                 <video 
                         className='videomain w-full h-[100vh] object-cover'
                         src="https://res.cloudinary.com/mkpill/video/upload/v1691860071/mp_intro_robot_v2_32611febe2.mp4"
@@ -60,7 +60,7 @@ function LandingPage() {
                             <h4>We think and design unique experiences</h4>
                         </div>
                         <div className='overflow-hidden'>
-                            <h4>for tomorrow's innovative products</h4>
+                            <h4>for tomorrow&apos;s innovative products</h4>
                         </div>
                     </div>
                 </div>
