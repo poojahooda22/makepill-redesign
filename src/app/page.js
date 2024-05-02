@@ -32,7 +32,7 @@ export default function Home() {
       <div ref={scrollRef} className="section text-white font-[mainfont] bg-primary-main ">
         {/* Your content here */}
         <Cursor/> 
-        <Loader/>
+        {/* <Loader/> */}
         <LandingPage/>
         <Video/>
         <About/>
