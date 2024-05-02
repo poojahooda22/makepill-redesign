@@ -63,7 +63,7 @@ function Social() {
                                     <h2 className=' sm:text-[1.5vw] text-[#828282] inline-block '>{item.link}</h2>    
                                 </div> ter jus
                                 </div>
-                                <div className='w-full flex gap-eitem.ti 
+                                <div className='w-full flex gap
                                     <span className='text-[#deff00="http://www.w3.org/t-[#828282]  inline-bl</h2>    
                                 </div>
                                 <div className='w-full flex gap-[2vw] mr-[2vw] items-center justify-center'>
