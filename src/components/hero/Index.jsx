@@ -29,7 +29,7 @@ function LandingPage() {
                 <Header/>
             </div>
             {/* Hero section video */}
-            <div className='heroVideo w-full -mt-[12vw] sm:mt-[1vw] flex items-center justify-center'>                    
+            <div className='heroVideo w-full -mt-[0vw] sm:mt-[1vw] flex items-center justify-center'>                    
                 <video 
                         className='videomain w-full h-[100vh] object-cover'
                         src="https://res.cloudinary.com/mkpill/video/upload/v1691860071/mp_intro_robot_v2_32611febe2.mp4"
@@ -51,8 +51,9 @@ function LandingPage() {
                         <div className='pr-[1vw] overflow-hidden'>
                             <h1>creatives &</h1>
                         </div>
-                        <div className='highlightText overflow-hidden'>
-                            <h1>immersives<span className='text-[#deff00]'>*</span></h1>
+                        <div className=' highlightText overflow-hidden flex '>
+                            <h1>immersives</h1>
+                            <span className='text-[#deff00]'><svg xmlns="http://www.w3.org/2000/svg" className='w-[4vw] sm:w-[2vw]' width="23" height="23" fill="none" viewBox="0 0 23 23" data-v-9f3306fa=""><path fill="currentColor" d="M6.629 22.5 3.25 20.091l4.714-6.985L.5 10.456l1.414-3.693L9.38 9.252V.5h4.242v8.752l7.465-2.49 1.414 3.694-7.464 2.65 4.714 6.985-3.379 2.409-4.871-7.387L6.629 22.5Z"></path></svg></span>
                         </div>
                     </div>
                     <div className='text-center text-[4.6vw] sm:text-[1.2vw] mt-[8vw] sm:mt-[2vw]'>
