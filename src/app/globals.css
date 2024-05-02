@@ -14,13 +14,8 @@
 }
 
 :root {
-    --salmon: #EF9D71;
     --black: #0f0f0f;
     --light: #fff;
-    --cyan:  #aedee0;  
-    --dcyan: #141b1b;
-    --dsalmon: #1e130e;
-    -dsalmon: #8fbec0;
 }
 
 
@@ -40,4 +35,12 @@ body[theme="black"] {
 
 body[theme="black"] .section {
     color: var(--light);
+}
+
+body [theme="light"] {
+    background-color: var(--light);
+}
+
+body [theme="light"] .section {
+    color: var(--black);
 }
