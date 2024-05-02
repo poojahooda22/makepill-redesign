@@ -21,7 +21,7 @@ function Projects() {
             category2: 'UI Design',
             category3: 'Development',
             videoLink: 'https://res.cloudinary.com/mkpill/video/upload/v1689237448/greenbet_reel_vp9_01d08c6746.webm'
-            }
+        },
     ]
 
   return (
