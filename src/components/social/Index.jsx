@@ -25,7 +25,7 @@ function Social() {
                     <div key={index} className='socialDiv w-full  flex items-center justify-center relative hover:cursor-pointer]'>
                         <div className='SocialContentLayer z-[2] w-[100%] h-[100%] absolute bottom-0 left-0 border-[1px] py-[1.4vw] overflow-hidden opacity-1'>
                                {/* <div className={`bgcnt ${style.bgcnt}[100%] items-center justify-center`}>
-                                    <div className={`elem ${stw] ittr `}>
+                                    <div className={`elem ${stw] ir `}>
                                         <h2 c
                                         <span sName='4<patnlo}</h2>    
                                     </div>  
