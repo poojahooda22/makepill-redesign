@@ -26,7 +26,7 @@ function Social() {
                         <div className='SocialContentLayer z-[2] w-[100%] h-[100%] absolute bottom-0 left-0 border-[1px] py-[1.4vw] overflow-hidden opacity-1'>
                                {/* <div className={`bgcnt ${style.bgcnt}[100%] items-center justify-center`}>
                                     <div className={`elem ${st[2vw] ittr `}>
-                                        <h2 className
+                                        <h2 classN
                                         <span className='4<patne-blo}</h2>    
                                     </div>  
                                 </div>    */}
