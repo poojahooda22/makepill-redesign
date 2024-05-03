@@ -23,7 +23,7 @@ function Social() {
             {data.map((item, index) => {
                 return (
                     <div key={index} className='socialDiv w-full  flex items-center justify-center relative hover:cursor-pointer]'>
-                        <div className='SocialContentLayer z-[2] w-full h-[100%] absolute bottom-0 left-0 border-[1px] py-[1.4vw] overflow-hidden opacity-1'>
+                        <div className='SocialContentLayer z-[2] w-[100%] h-[100%] absolute bottom-0 left-0 border-[1px] py-[1.4vw] overflow-hidden opacity-1'>
                                {/* <div className={`bgcnt ${style.bgcnt} w-full flex h-[100%] items-center justify-center`}>
                                     <div className={`elem ${style.elem} w-full flex gap-[2vw] mr-[2vw] items-center justify-center `}>
                                         <h2 className=' sm:text-[1.5vw] tracking-wide block'>{item.title}</h2> 
