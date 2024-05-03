@@ -27,7 +27,7 @@ function Social() {
                                {/* <div className={`bgcnt ${style.bgcnt}[100%] items-center justify-center`}>
                                     <div className={`elem ${st[2vw] ittr `}>
                                         <h2 c
-                                        <span className='4<patne-blo}</h2>    
+                                        <span className='4<patnlo}</h2>    
                                     </div>  
                                 </div>    */}
                         </div> 
