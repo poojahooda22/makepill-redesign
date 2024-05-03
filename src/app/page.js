@@ -14,6 +14,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Social from '@/components/social/Index';
 
 export default function Home() {
+  
   const scrollRef = useRef(null);
   useEffect(() => {
     if (scrollRef.current) {
@@ -28,22 +29,7 @@ export default function Home() {
     }
   }, []);
 
-  useEffect(() => {
-    const list = document.querySelectorAll('.section')
-    list.forEach(function(e) {
-      ScrollTrigger.create({
-        trigger: e,
-        start: "top 90%",
-        end: "bottom 90%",
-        onEnter: function(){
-          document.body.setAttribute("theme", e.dataset.color);
-        },
-        onEnterBack: function() {
-          document.body.setAttribute("theme", e.dataset.color);
-        }
-      })
-    })
-  })
+
 
   return (
     <main>
