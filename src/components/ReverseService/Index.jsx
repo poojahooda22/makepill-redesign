@@ -6,30 +6,30 @@ import styles from './Style.module.css'
 
 function ReverseService() {
 
-  // const [color, setColor] = React.useState()
+//   // const [color, setColor] = React.useState()
 
-    useEffect(() => {
-    const section = document.querySelector('.serviceSec')
-    section.addEventListener('mouseenter', () => {
-      gsap.to('.serviceSec', {
-        backgroundColor: 'white',
-        color: '#0f0f0f'
-      })
-      gsap.to('.cursor', {
-        backgroundColor: '#0f0f0f'
-      })
-    })
-    section.addEventListener('mouseleave', () => {
-      gsap.to('.serviceSec', {
-        backgroundColor: '#0f0f0f',
-        color: 'white'
-      })
-      gsap.to('.cursor', {
-        backgroundColor: 'white'
-      })
-    })
+//     useEffect(() => {
+//     const section = document.querySelector('.serviceSec')
+//     section.addEventListener('mouseenter', () => {
+//       gsap.to('.serviceSec', {
+//         backgroundColor: 'white',
+//         color: '#0f0f0f'
+//       })
+//       gsap.to('.cursor', {
+//         backgroundColor: '#0f0f0f'
+//       })
+//     })
+//     section.addEventListener('mouseleave', () => {
+//       gsap.to('.serviceSec', {
+//         backgroundColor: '#0f0f0f',
+//         color: 'white'
+//       })
+//       gsap.to('.cursor', {
+//         backgroundColor: 'white'
+//       })
+//     })
     
-  })
+//   })
 
   
   return (
