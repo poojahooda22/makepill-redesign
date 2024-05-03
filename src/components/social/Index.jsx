@@ -26,7 +26,7 @@ function Social() {
                         <div className='SocialContentLayer z-[2] w-[100%] h-[100%] absolute bottom-0 left-0 border-[1px] py-[1.4vw] overflow-hidden opacity-1'>
                                {/* <div className={`bgcnt ${style.bgcnt} w-full flex h-[100%] items-center justify-center`}>
                                     <div className={`elem ${stylefull flex mr-[2vw] itr justify-center `}>
-                                        <h2 className=' sm:textk
+                                        <h2 className=' s
                                         <span className='4vwei" v 0 2""><pat.629 22.5 3.25 20.091l4.714-6.985L.5 10.456l1.414-3.693L9.38 9.252V.5h4.242v8.752l7.465-2.49 1.414 3.694-7.464 2.65 4.714 6.985-3.379 2.409-4.871-7.387L6.629 22.5Z"></path></svg></span>
                                         <h2 cl' sm:text-[ext-inline-block '>{item.link}</h2>    
                                     </div>  
