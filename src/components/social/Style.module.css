@@ -1,0 +1,15 @@
+.bgcnt > .elem {
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim1{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(100% - 20px));
+    }
+}
