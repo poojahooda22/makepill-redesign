@@ -24,7 +24,7 @@ function Social() {
                 return (
                     <div key={index} className='socialDiv w-full  flex items-center justify-center relative hover:cursor-pointer]'>
                         <div className='SocialContentLayer z-[2] w-[100%] h-[100%] absolute bottom-0 left-0 border-[1px] py-[1.4vw] overflow-hidden opacity-1'>
-                               {/* <div className={`bgcnt ${style.bgcnt}  flex h-[100%] items-center justify-center`}>
+                               {/* <div className={`bgcnt ${style.bgcnt}[100%] items-center justify-center`}>
                                     <div className={`elem ${st[2vw] ittify-center `}>
                                         <h2 className=' s
                                         <span className='4<patne-blo}</h2>    
