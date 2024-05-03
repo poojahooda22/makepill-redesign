@@ -5,28 +5,28 @@ import { IoVolumeMedium } from "react-icons/io5";
 
 function Video() {
   
-  useEffect(() => {
-    const video = document.querySelector('.videoDiv')
+  // useEffect(() => {
+  //   const video = document.querySelector('.videoDiv')
 
-    video.addEventListener('mouseenter', () => {
-      const tl = gsap.timeline()
-      tl.to('.cursor', {
-        width: '100px',
-        height: '100px',
-        innerHTML: '<IoVolumeMedium size={32} color=black />',
-        color: 'black',
-        cursor: 'none',
-      })
-    })
-    video.addEventListener('mouseleave', () => {
-      const tl = gsap.timeline()
-      tl.to('.cursor', {
-        width: '8px',
-        height: '8px',
-      })
-    }
-  )
-  })
+  //   video.addEventListener('mouseenter', () => {
+  //     const tl = gsap.timeline()
+  //     tl.to('.cursor', {
+  //       width: '100px',
+  //       height: '100px',
+  //       innerHTML: '<IoVolumeMedium size={32} color=black />',
+  //       color: 'black',
+  //       cursor: 'none',
+  //     })
+  //   })
+  //   video.addEventListener('mouseleave', () => {
+  //     const tl = gsap.timeline()
+  //     tl.to('.cursor', {
+  //       width: '8px',
+  //       height: '8px',
+  //     })
+  //   }
+  // )
+  // })
   
   
   return (
