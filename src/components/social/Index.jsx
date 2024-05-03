@@ -27,7 +27,7 @@ function Social() {
                                {/* <div className={`bgcnt ${style.bgcnt} w-full flex h-[100%] items-center justify-center`}>
                                     <div className={`elem ${style.elem} w-full flex gap-[2vw] mr-[2vw] items-center justify-center `}>
                                         <h2 className=' sm:textk
-                                        <span className='text-[ "w.w3.org/200 4vw] sm:w-[1.2vw]' width="23" height="23" fill="none" viewBox="0 0 23 23" data-v-9f3306fa=""><path fill="currentColor" d="M6.629 22.5 3.25 20.091l4.714-6.985L.5 10.456l1.414-3.693L9.38 9.252V.5h4.242v8.752l7.465-2.49 1.414 3.694-7.464 2.65 4.714 6.985-3.379 2.409-4.871-7.387L6.629 22.5Z"></path></svg></span>
+                                        <span className='text-[ "w.00 4vw] sm:w-[1.2vw]' width="23" height="23" fill="none" viewBox="0 0 23 23" data-v-9f3306fa=""><path fill="currentColor" d="M6.629 22.5 3.25 20.091l4.714-6.985L.5 10.456l1.414-3.693L9.38 9.252V.5h4.242v8.752l7.465-2.49 1.414 3.694-7.464 2.65 4.714 6.985-3.379 2.409-4.871-7.387L6.629 22.5Z"></path></svg></span>
                                         <h2 className=' sm:text-[1.5vw] text-[#828282] inline-block '>{item.link}</h2>    
                                     </div>  
                                 </div>    */}
