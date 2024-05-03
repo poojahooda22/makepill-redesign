@@ -5,11 +5,11 @@
     animation-iteration-count: infinite;
 }
 
-@keyframes anim1{
+/* @keyframes anim1{
     0%{
         transform: translateX(0%);
     }
     100%{
         transform: translateX(calc(100% - 20px));
     }
-}
+} */
