@@ -12,6 +12,7 @@ import ReverseService from '@/components/ReverseService/Index';
 import AwardsSection from '@/components/Awards/Index';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Social from '@/components/social/Index';
+import Footer from '@/components/footer/Index';
 
 export default function Home() {
   
@@ -44,6 +45,7 @@ export default function Home() {
         <ReverseService/>
         <AwardsSection/>
         <Social/>
+        <Footer/>
       </div>
     </main>
 
