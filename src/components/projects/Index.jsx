@@ -7,7 +7,7 @@ function Projects() {
     // useEffect(() => {
     //     const divProject = document.querySelector('.projectheadDiv');
     //     divProject.addEventListener('mouseenter', () => {
-    //         gsap.froojeightDiv > div', {
+    //         gsap.froojeight > div', {
     //             y: 1
     //             opac
     //             sta: .2,
