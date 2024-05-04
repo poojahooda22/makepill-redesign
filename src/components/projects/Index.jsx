@@ -21,7 +21,7 @@ function Projects() {
     //         })
     //         gsap.to', {
     //             opac: 0,
-    //             ster: .2,
+    //             st .2,
     //             ease:er3            
     //         })
     //     })
