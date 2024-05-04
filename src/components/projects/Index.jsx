@@ -19,7 +19,7 @@ function Projects() {
     //             s .2,
     //             ease: Power3            
     //         })
-    //         gsap.to('.projectVideoDiv > div', {
+    //         gsap.to('.proiv > div', {
     //             opacity: 0,
     //             stagger: .2,
     //             ease: Power3            
