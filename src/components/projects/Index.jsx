@@ -6,7 +6,7 @@ import { Power3 } from 'gsap';
 function Projects() {
     // useEffect(() => {
     //     const divProject = document.querySelector('.projectheadDiv');
-    //     divProject.addEventListener('mouseenter', () => {
+    //     divProject.addEventLisr('mouseenter', () => {
     //         gsap.froojeight > div', {
     //             y: 1
     //             opac
