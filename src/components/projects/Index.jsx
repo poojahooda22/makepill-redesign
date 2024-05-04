@@ -12,8 +12,7 @@ function Projects() {
     //             opac
     //             s .2,
     //             eas            
-    //         })
-    //         gsa       
+    //         })     
     //         })            
     //         })
     //     })
