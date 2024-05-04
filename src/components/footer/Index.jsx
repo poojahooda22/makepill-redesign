@@ -27,7 +27,7 @@ function Footer() {
           </div>
         </div>
 
-        
+        {/* Only for small screen  */}
         <div></div>
         <div className='bottom flex items-center justify-between pb-[8vw] sm:pb-[2vw] sm:text-[.9vw] font-semibold'>
           <div className='flex items-center gap-[1vw] text-[#828282] '>
