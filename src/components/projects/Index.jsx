@@ -10,7 +10,7 @@ function Projects() {
     //         gsap.from('.projectrightDiv > div', {
     //             y: 100,
     //             opac
-    //             stagger: .2,
+    //             sta: .2,
     //             ease: Power3            
     //         })
     //         gsap.from('.pcnDiv > div', {
