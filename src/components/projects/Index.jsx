@@ -4,28 +4,28 @@ import { Power3 } from 'gsap';
 
 
 function Projects() {
-    useEffect(() => {
-        const divProject = document.querySelector('.projectheadDiv');
-        divProject.addEventListener('mouseenter', () => {
-            gsap.from('.projectrightDiv > div', {
-                y: 100,
-                opacity: 0,
-                stagger: .2,
-                ease: Power3            
-            })
-            gsap.from('.projectDownDiv > div', {
-                y: 100,
-                opacity: 0,
-                stagger: .2,
-                ease: Power3            
-            })
-            gsap.to('.projectVideoDiv > div', {
-                opacity: 0,
-                stagger: .2,
-                ease: Power3            
-            })
-        })
-    })
+    // useEffect(() => {
+    //     const divProject = document.querySelector('.projectheadDiv');
+    //     divProject.addEventListener('mouseenter', () => {
+    //         gsap.from('.projectrightDiv > div', {
+    //             y: 100,
+    //             opacity: 0,
+    //             stagger: .2,
+    //             ease: Power3            
+    //         })
+    //         gsap.from('.projectDownDiv > div', {
+    //             y: 100,
+    //             opacity: 0,
+    //             stagger: .2,
+    //             ease: Power3            
+    //         })
+    //         gsap.to('.projectVideoDiv > div', {
+    //             opacity: 0,
+    //             stagger: .2,
+    //             ease: Power3            
+    //         })
+    //     })
+    // })
 
     const data = [
         {
