@@ -19,7 +19,7 @@ function Projects() {
     //             s,
     //                       
     //         })
-    //         gsa', {
+    //         gsa
     //             op 0,
     //             st .2,
     //             ease            
