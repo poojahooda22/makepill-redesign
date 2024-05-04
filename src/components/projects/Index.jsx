@@ -21,7 +21,7 @@ function Projects() {
     //         })
     //         gsa
     //             op 0,
-    //             st .2,
+    //             ,
     //             ease            
     //         })
     //     })
