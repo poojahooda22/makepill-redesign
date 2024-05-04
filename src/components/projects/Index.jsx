@@ -16,7 +16,7 @@ function Projects() {
     //         gsap.from('.pcnDiv > div', {
     //             y: 
     //             opacity: 0,
-    //             stagg .2,
+    //             s .2,
     //             ease: Power3            
     //         })
     //         gsap.to('.projectVideoDiv > div', {
