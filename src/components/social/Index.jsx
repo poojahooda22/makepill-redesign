@@ -16,7 +16,7 @@ function Social() {
 
 
   return (
-    <div className='overflow-hidden w-full'>
+    <div className='overflow-hidden w-full sm:py-[5vw]'>
         <div className='flex items-center justify-center mb-[6vw]'>
             <div><h4 className='text-[5vw] sm:text-[1.2vw]'>/ Follow us</h4></div>
         </div>
