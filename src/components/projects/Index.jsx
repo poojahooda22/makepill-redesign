@@ -13,8 +13,7 @@ function Projects() {
     //             s .2,
     //             eas            
     //         })
-    //         gsa
-    //                    
+    //         gsa       
     //         })            
     //         })
     //     })
