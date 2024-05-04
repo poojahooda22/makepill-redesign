@@ -1,15 +1,25 @@
-.bgcnt > .elem {
+.overlay .elem  {
     animation-name: anim1;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-/* @keyframes anim1{
+@keyframes anim1{
     0%{
         transform: translateX(0%);
     }
     100%{
         transform: translateX(calc(100% - 20px));
     }
-} */
+}
+
+.socialDiv .overlay {
+    top: 100%;
+    transition: all 0.5s ease;
+
+}
+
+.socialDiv:hover .overlay {
+    top: 0;
+}
