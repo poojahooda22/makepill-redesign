@@ -8,7 +8,7 @@ function Projects() {
     //     const divProject = document.querySelector('.projectheadDiv');
     //     divProject.addEventLouseenter', () => {
     //         gsap.froojeight > div', {
-    //             y: 1
+    //             
     //             opac
     //             s .2,
     //             eas            
