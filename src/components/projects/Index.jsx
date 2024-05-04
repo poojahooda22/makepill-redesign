@@ -19,7 +19,7 @@ function Projects() {
     //             s,
     //                       
     //         })
-    //         gsap.to', {
+    //         gsa', {
     //             op 0,
     //             st .2,
     //             ease            
