@@ -15,7 +15,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className='w-full footerbtm px-[5vw] sm:px-[2.5VW] space-y-[6vw] sm:space-y-[4vw] bg-green-400'>
+      <div className='w-full footerbtm px-[5vw] sm:px-[2.5VW] space-y-[6vw] sm:space-y-[4vw] '>
         <div className='hidden top sm:flex items-center justify-between font-semibold'>
           <div className='text-[5vw] sm:text-[.9vw] space-y-[.4vw]'>
             <h3 className='text-[#828282]'>/ Contact us</h3>
@@ -28,7 +28,7 @@ function Footer() {
         </div>
 
         {/* Only for small screen  */}
-        <div className='w-full bg-red-400 inline-block sm:hidden space-y-[3vw]'>
+        <div className='w-full  inline-block sm:hidden space-y-[3vw]'>
           <div className='flex items-center justify-between'>
             <h3>/ Contact us</h3>
             <h3>hello@makepill.com</h3>
