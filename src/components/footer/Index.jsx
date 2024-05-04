@@ -2,20 +2,20 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='w-full relative pt-[5vw]'>
+    <div className='w-full relative pt-[8vw] sm:pt-[5vw]'>
       <div className='w-full flex items-center justify-center relative pb-[5vw]'>
-        <div className='w-[20vw] '>
+        <div className='w-[80vw] sm:w-[20vw] rotate-[10deg] sm:rotate-0'>
           <video className='w-full h-full object-cover' autoPlay loop muted src="https://res.cloudinary.com/mkpill/video/upload/v1689376834/footer_x1_vp9_4d2ebedd3d.webm"></video>
         </div>
-        <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-          <div className='flex flex-col items-center justify-center'>
-            <h1 className='sm:text-[7.2vw]'>Brief us now</h1>
-            <h2 className='sm:text-[1.3vw]'>Let&apos;s build now together your tomorrow&apos;s project.</h2>
+        <div className='w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3'>
+          <div className='flex flex-col items-center justify-center gap-[2vw]'>
+            <h1 className='text-[10vw] sm:text-[7.2vw] border-b-[1px] sm:border-none'>Brief us now</h1>
+            <h2 className='text-[5vw] text-center sm:text-[1.3vw]'>Let&apos;s build now together your tomorrow&apos;s project.</h2>
           </div>
         </div>
       </div>
 
-      <div className='footerbtm px-[2.5VW] space-y-[4vw]'>
+      <div className='footerbtm px-[5vw] sm:px-[2.5VW] space-y-[4vw]'>
         <div className='top flex items-center justify-between font-semibold'>
           <div className='text-[5vw] sm:text-[.9vw] space-y-[.4vw]'>
             <h3 className='text-[#828282]'>/ Contact us</h3>
