@@ -10,7 +10,7 @@ function Projects() {
     //         gsap.froojeight > div', {
     //             y: 1
     //             opac
-    //             sta: .2,
+    //             s .2,
     //             eas            
     //         })
     //         gsa
