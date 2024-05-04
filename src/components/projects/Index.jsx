@@ -22,7 +22,7 @@ function Projects() {
     //         gsap.to', {
     //             opac: 0,
     //             st .2,
-    //             ease:er3            
+    //             ease            
     //         })
     //     })
     // })
