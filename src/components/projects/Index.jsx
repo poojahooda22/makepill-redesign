@@ -13,7 +13,7 @@ function Projects() {
     //             sta: .2,
     //             ease:er3            
     //         })
-    //         gsap.from('.pcnDiv > div', {
+    //         gsap.from('v > div', {
     //             y: 
     //             opacity: 0,
     //             s .2,
