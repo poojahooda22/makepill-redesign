@@ -13,7 +13,7 @@ function Projects() {
     //             sta: .2,
     //             eas            
     //         })
-    //         gsap.fro > {
+    //         gsa> {
     //             y: 
     //             o 0,
     //             s .2,
