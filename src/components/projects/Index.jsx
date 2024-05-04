@@ -8,7 +8,7 @@ function Projects() {
     //     const divProject = document.querySelector('.projectheadDiv');
     //     divProject.addEventListener('mouseenter', () => {
     //         gsap.from('.projeightDiv > div', {
-    //             y: 100,
+    //             y: 1
     //             opac
     //             sta: .2,
     //             eas            
