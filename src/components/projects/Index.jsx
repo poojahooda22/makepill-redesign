@@ -20,7 +20,7 @@ function Projects() {
     //             eas3            
     //         })
     //         gsap.to', {
-    //             opac: 0,
+    //             op 0,
     //             st .2,
     //             ease            
     //         })
