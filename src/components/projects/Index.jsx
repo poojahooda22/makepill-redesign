@@ -17,7 +17,7 @@ function Projects() {
     //             y: 
     //             o 0,
     //             s .2,
-    //             ease:r3            
+    //             eas3            
     //         })
     //         gsap.to', {
     //             opacity: 0,
