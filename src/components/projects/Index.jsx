@@ -13,7 +13,7 @@ function Projects() {
     //             stagger: .2,
     //             ease: Power3            
     //         })
-    //         gsap.from('.pctDownDiv > div', {
+    //         gsap.from('.pcnDiv > div', {
     //             y: 
     //             opacity: 0,
     //             stagger: .2,
