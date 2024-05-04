@@ -9,7 +9,7 @@ function Projects() {
     //     divProject.addEventListener('mouseenter', () => {
     //         gsap.from('.projectrightDiv > div', {
     //             y: 100,
-    //             opacity
+    //             opac
     //             stagger: .2,
     //             ease: Power3            
     //         })
