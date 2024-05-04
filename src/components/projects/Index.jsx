@@ -13,7 +13,7 @@ function Projects() {
     //             sta: .2,
     //             ease:er3            
     //         })
-    //         gsap.fro > div', {
+    //         gsap.fro > {
     //             y: 
     //             o 0,
     //             s .2,
