@@ -8,14 +8,14 @@ function Footer() {
           <video className='w-full h-full object-cover' autoPlay loop muted src="https://res.cloudinary.com/mkpill/video/upload/v1689376834/footer_x1_vp9_4d2ebedd3d.webm"></video>
         </div>
         <div className='w-full absolute top-1/2 left-1/2 -translate-x-1/2 sm:-translate-y-2/3'>
-          <div className='flex flex-col items-center justify-center gap-[2vw]'>
+          <div className='flex flex-col items-center justify-center sm:gap-0 gap-[2vw]'>
             <h1 className='text-[10vw] sm:text-[7.2vw] border-b-[1px] sm:border-none'>Brief us now</h1>
             <h2 className='text-[5vw] text-center sm:text-[1.3vw]'>Let&apos;s build now together your tomorrow&apos;s project.</h2>
           </div>
         </div>
       </div>
 
-      <div className='w-full footerbtm px-[5vw] sm:px-[2.5VW] space-y-[6vw] sm:space-y-[4vw] '>
+      <div className='w-full footerbtm px-[5vw] sm:px-[2.5VW] space-y-[12vw] sm:space-y-[4vw] '>
         <div className='hidden top sm:flex items-center justify-between font-semibold'>
           <div className='text-[5vw] sm:text-[.9vw] space-y-[.4vw]'>
             <h3 className='text-[#828282]'>/ Contact us</h3>
@@ -28,14 +28,14 @@ function Footer() {
         </div>
 
         {/* Only for small screen  */}
-        <div className='w-full  inline-block sm:hidden space-y-[3vw]'>
+        <div className='w-full  inline-block sm:hidden space-y-[6vw]'>
           <div className='flex items-center justify-between'>
-            <h3>/ Contact us</h3>
-            <h3>hello@makepill.com</h3>
+            <h3 className='text-[#828282]'>/ Contact us</h3>
+            <h3 className='border-b-[1px]'>hello@makepill.com</h3>
           </div>
           <div className='flex items-center justify-between'>
-            <h3>/ Contact us</h3>
-            <h3>hello@makepill.com</h3>
+            <h3 className='text-[#828282]'>/ Based in</h3>
+            <h3>Paris & remote</h3>
           </div>
         </div>
 
