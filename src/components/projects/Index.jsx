@@ -19,7 +19,7 @@ function Projects() {
     //             s .2,
     //             ease:r3            
     //         })
-    //         gsap.to('.proiv > div', {
+    //         gsap.to('.proiiv', {
     //             opacity: 0,
     //             stagger: .2,
     //             ease: Power3            
