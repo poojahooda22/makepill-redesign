@@ -14,7 +14,7 @@ function Projects() {
     //             ease: Power3            
     //         })
     //         gsap.from('.projectDownDiv > div', {
-    //             y: 100,
+    //             y: 
     //             opacity: 0,
     //             stagger: .2,
     //             ease: Power3            
