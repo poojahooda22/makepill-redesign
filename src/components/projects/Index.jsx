@@ -11,7 +11,7 @@ function Projects() {
     //             y: 100,
     //             opac
     //             sta: .2,
-    //             ease: Power3            
+    //             ease:er3            
     //         })
     //         gsap.from('.pcnDiv > div', {
     //             y: 
