@@ -75,7 +75,7 @@ function Projects() {
                 {data.map((item, index) => {
                    return (
                     <div key={index} className='w-full flex flex-col items-center justify-center '>
-                        <div className='projectVideoDiv absolute top-0 left-0 w-full h-[100vh] opacity-0 '>
+                        <div className='projectVideoDiv absolute top-0 left-0 w-full h-[100vh] opacity-1 '>
                             <video className='w-full h-full object-cover' autoPlay loop muted src={item.videoLink}></video>
                             <div  className='absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-t from-black-600 to-transparent'></div>
                         </div>
