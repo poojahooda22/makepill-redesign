@@ -20,7 +20,7 @@ function Projects() {
     //             eas3            
     //         })
     //         gsap.to', {
-    //             opacity: 0,
+    //             opac: 0,
     //             stagger: .2,
     //             ease: Power3            
     //         })
