@@ -11,7 +11,7 @@ function Projects() {
     //             y: 100,
     //             opac
     //             sta: .2,
-    //             ease:er3            
+    //             eas            
     //         })
     //         gsap.fro > {
     //             y: 
