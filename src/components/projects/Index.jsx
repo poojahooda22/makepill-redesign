@@ -7,7 +7,7 @@ function Projects() {
     // useEffect(() => {
     //     const divProject = document.querySelector('.projectheadDiv');
     //     divProject.add) => {
-    //         gsap.f                          
+    //         gsap                         
     // })
 
     const data = [
