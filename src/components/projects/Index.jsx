@@ -5,7 +5,7 @@ import { Power3 } from 'gsap';
 
 function Projects() {
     // useEffect(() => {
-    //     condvPrcto                           
+    condvPrcto                           
     // })
 
     const data = [
