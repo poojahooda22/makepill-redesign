@@ -9,7 +9,6 @@ function Projects() {
     //     divProject.addEventLouseenter', () => {
     //         gsap.froojeight > div', {
     //                               
-    //     })
     // })
 
     const data = [
