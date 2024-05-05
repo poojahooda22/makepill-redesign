@@ -69,7 +69,7 @@ function Projects() {
                             <video className='w-full h-full object-cover' autoPlay loop muted src={item.videoLink}></video>
                             <div  className='absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-b from-black-500 to-transparent'></div>
                         </div>
-                        <div key={index} className='projectheadDiv sm:w-2/3 flex items-center justify-between z-[10] sm:pt-[5vw] hover:cursor-pointer hover:text-[#fff] '>
+                        <div key={index} className='hidden  projectheadDiv sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[5vw] hover:cursor-pointer hover:text-[#fff] '>
                             
                                 <h1 className='text-[5vw] text-[#333] '>{item.name}</h1>
                                 <div className='flex flex-col sm:items-end gap-[1vw]'>
@@ -85,6 +85,10 @@ function Projects() {
                                         {item.category4 && <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category4}</h6></div> }   
                                     </div>
                                 </div>  
+                        </div>
+
+                        <div className='z-[1]'>
+
                         </div>
                     </div>
                    )
