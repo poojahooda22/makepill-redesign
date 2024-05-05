@@ -6,7 +6,7 @@ import { Power3 } from 'gsap';
 function Projects() {
     // useEffect(() => {
     //     const divProject = document.querySelector('.proadDiv');    
-    //         gsap                         
+    //         gs                        
     // })
 
     const data = [
