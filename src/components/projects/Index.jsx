@@ -3,8 +3,7 @@ import React, { useEffect } from 'react'
 import { Power3 } from 'gsap';
 
 
-function Projects() {
-    // us                  
+function Projects() {              
 
     const data = [
         {
