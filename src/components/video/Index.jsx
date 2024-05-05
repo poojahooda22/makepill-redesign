@@ -30,7 +30,7 @@ function Video() {
   
   
   return (
-    <div data-scroll data-scroll-section    className=' videoDiv w-full'>
+    <div data-scroll data-scroll-section  data-speed='2'   className=' videoDiv w-full'>
       <div className=' h-[60vh] sm:h-full'>
         <video
           autoPlay
