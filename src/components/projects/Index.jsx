@@ -7,7 +7,7 @@ function Projects() {
     // useEffect(() => {
     //     const divProject = document.querySelector('.projectheadDiv');
     //     divProject.addEventLouseenter', () => {
-    //         gsap.froo>                          
+    //         gsap.fro>                          
     // })
 
     const data = [
