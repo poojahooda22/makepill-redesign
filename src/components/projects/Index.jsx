@@ -4,7 +4,7 @@ import { Power3 } from 'gsap';
 
 
 function Projects() {
-    // useEf                    
+    // us                  
 
     const data = [
         {
