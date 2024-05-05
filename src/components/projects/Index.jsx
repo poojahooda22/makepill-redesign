@@ -9,7 +9,7 @@ function Projects() {
     //     divProject.addEventLouseenter', () => {
     //         gsap.froojeight > div', {
     //             
-    //             opac                      
+    //                       
     //     })
     // })
 
