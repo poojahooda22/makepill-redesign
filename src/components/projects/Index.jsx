@@ -5,7 +5,7 @@ import { Power3 } from 'gsap';
 
 function Projects() {
     // useEffect(() => {
-    //     const divProject = documeqector(roa');                            
+    //     const divProject = documeqector(r');                            
     // })
 
     const data = [
