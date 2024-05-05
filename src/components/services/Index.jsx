@@ -44,21 +44,27 @@ function About() {
         start: 'top 90%',
         end: 'top 30%',
         scrub:3,
-        markers: true,
       }, 
     });
+    
     tl.from(serviceRef2.current, {
       x: -50,
       opacity: 0,
       duration: 1,
       ease: 'power4.in'
     })
+    
     tl.from('.elemtxt h1', {
       y: 100,
       opacity: 0,
       stagger: 0.4,
       duration: 1,
     })
+    tl.from('.leftvideo video', {
+      x: -100,
+      opacity: 0,
+    })
+    
   })
 
   
