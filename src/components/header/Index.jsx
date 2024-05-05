@@ -15,7 +15,7 @@ function Header() {
     sm:pt-[2vw]'>
         <div className='w-full flex items-center justify-between'>
             <div>
-                <Link href="/"> 
+                <Link href="/en"> 
                     <h2 className='text-[6vw] font-[mainFont] tracking-wide sm:text-[1.3vw] font-semibold
                      leading-[2vw]'>makepill</h2>
                 </Link>
