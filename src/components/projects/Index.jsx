@@ -69,21 +69,22 @@ function Projects() {
                             <video className='w-full h-full object-cover' autoPlay loop muted src={item.videoLink}></video>
                             <div  className='absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-b from-black-500 to-transparent'></div>
                         </div>
-                        <div key={index} className='projectheadDiv w-2/3 flex items-center justify-between z-[10] pt-[5vw] hover:cursor-pointer hover:text-[#fff] '>
-                            <h1 className='text-[5vw] text-[#333] '>{item.name}</h1>
-                            <div className='flex flex-col items-end gap-[1vw]'>
-                                <div className='projectrightDiv flex items-center gap-[.4vw] text-[1vw]'>
-                                    <div className='overflow-hidden'><p>{item.id1}</p></div>
-                                    <div className='overflow-hidden'><svg xmlns="http://www.w3.org/2000/svg" className='w-[1vw]'  width="15" height="12" fill="none" viewBox="0 0 15 12" data-v-1c16fc4a=""><path fill="currentColor" fill-rule="evenodd" d="M14.709 6.478 15 6.122l-.283-.362L10.58.473l-.904.707 3.411 4.362H.03V6.69H13.05l-3.365 4.108.888.728 4.136-5.048Zm-1.224-.429v.11l.044-.053-.044-.057Z" clip-rule="evenodd"></path></svg></div>
-                                    <div className='overflow-hidden'><p>{item.id2}</p></div>
-                                </div>
-                                <div className='projectDownDiv flex items-center gap-2 whitespace-nowrap'>
-                                    <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category1}</h6></div>  
-                                    <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category2}</h6></div>  
-                                    <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category3}</h6></div>  
-                                    {item.category4 && <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category4}</h6></div> }   
-                                </div>
-                            </div>
+                        <div key={index} className='projectheadDiv sm:w-2/3 flex items-center justify-between z-[10] sm:pt-[5vw] hover:cursor-pointer hover:text-[#fff] '>
+                            
+                                <h1 className='text-[5vw] text-[#333] '>{item.name}</h1>
+                                <div className='flex flex-col sm:items-end gap-[1vw]'>
+                                    <div className='projectrightDiv flex items-center gap-[.4vw] text-[1vw]'>
+                                        <div className='overflow-hidden'><p>{item.id1}</p></div>
+                                        <div className='overflow-hidden'><svg xmlns="http://www.w3.org/2000/svg" className='w-[1vw]'  width="15" height="12" fill="none" viewBox="0 0 15 12" data-v-1c16fc4a=""><path fill="currentColor" fill-rule="evenodd" d="M14.709 6.478 15 6.122l-.283-.362L10.58.473l-.904.707 3.411 4.362H.03V6.69H13.05l-3.365 4.108.888.728 4.136-5.048Zm-1.224-.429v.11l.044-.053-.044-.057Z" clip-rule="evenodd"></path></svg></div>
+                                        <div className='overflow-hidden'><p>{item.id2}</p></div>
+                                    </div>
+                                    <div className='projectDownDiv hidden sm:flex items-center gap-2 whitespace-nowrap'>
+                                        <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category1}</h6></div>  
+                                        <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category2}</h6></div>  
+                                        <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category3}</h6></div>  
+                                        {item.category4 && <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category4}</h6></div> }   
+                                    </div>
+                                </div>  
                         </div>
                     </div>
                    )
