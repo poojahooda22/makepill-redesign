@@ -5,7 +5,7 @@ import { Power3 } from 'gsap';
 
 function Projects() {
     // useEffect(() => {
-    //     const divPrctqeor(r                            
+    //     const divPrctor(r                            
     // })
 
     const data = [
