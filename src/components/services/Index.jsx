@@ -59,11 +59,11 @@ function About() {
       opacity: 0,
       stagger: 0.4,
       duration: 1,
-    })
+    },'a')
     tl.from('.leftvideo video', {
       x: -100,
       opacity: 0,
-    })
+    },'a')
     
   })
 
