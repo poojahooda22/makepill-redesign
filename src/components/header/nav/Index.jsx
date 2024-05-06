@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion';
 import { height } from '../anime';
 import styles from './Style.module.css'
@@ -18,8 +20,8 @@ function Nav() {
     const ease = 0.1;
 
     document.addEventListener('mousemove', (e) => {
-      const extraHeight = linksContainer.offsetHeight - window.innerWidth;
-      targetScroll = (e.clientY / window.innerHeight);
+      const extraHeight = linksContainer.offsetHeight - global.window.innerWidth;
+      targetScroll = (e.clientY / global.window.innerHeight);
     });
 
     function animate() {
