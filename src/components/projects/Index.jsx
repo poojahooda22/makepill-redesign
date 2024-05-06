@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import React, { useEffect } from 'react'
 import { Power3 } from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 
 function Projects() {              
@@ -47,15 +48,16 @@ function Projects() {
         },
     ]
 
+
   return (
-    <div className='w-full min-h-[100vh] relative'>
+    <div className='projectSec w-full min-h-[100vh] relative'>
         <div className='' >
                 {data.map((item, index) => {
                    return (
                     <div key={index} className='w-full flex flex-col items-center justify-center '>
                         <div className='projectVideoDiv absolute top-0 left-0 w-full h-[100vh] opacity-1 '>
                             <video className='w-full h-full object-cover' autoPlay loop muted src={item.videoLink}></video>
-                            <div  className='absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-b from-black-500 to-transparent'></div>
+                            <div  className='absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-t from-black-700 to-transparent'></div>
                         </div>
                         <div key={index} className='hidden  projectheadDiv sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[5vw] hover:cursor-pointer hover:text-[#fff] '>
                             
