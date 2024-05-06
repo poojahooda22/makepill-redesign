@@ -16,36 +16,36 @@ import Footer from '@/components/footer/Index';
 
 export default function Home() {
   
-  // const scrollRef = useRef(null);
-  // useEffect(() => {
-  //   if (scrollRef.current) {
-  //     const scroll = new LocomotiveScroll({
-  //       el: scrollRef.current,
-  //       smooth: true, 
-  //     });
+  const scrollRef = useRef(null);
+  useEffect(() => {
+    if (scrollRef.current) {
+      const scroll = new LocomotiveScroll({
+        el: scrollRef.current,
+        smooth: true, 
+      });
 
-  //     return () => {
-  //       scroll.destroy();
-  //     };
-  //   }
-  // }, []);
+      return () => {
+        scroll.destroy();
+      };
+    }
+  }, []);
 
 
 
   return (
     <main>
-      <div className="section text-white font-[mainfont] bg-primary-main ">
+      <div ref={scrollRef} className="section text-white font-[mainfont] bg-primary-main ">
         {/* Your content here */}
-        {/* <Cursor/>  */}
+        <Cursor/> 
         <Loader/>
         <LandingPage/>
         <Video/>
-        {/* <About/>
+        <About/>
         <Projects/>  
         <ReverseService/>
         <AwardsSection/>
         <Social/>
-        <Footer/> */}
+        <Footer/>
       </div>
     </main>
 
