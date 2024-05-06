@@ -16,7 +16,7 @@ function Video() {
   //     tl.to('.cursor', {
   //       width: '100px',
   //       height: '100px',
-  //       innerHTML: '<IoVolumeMedium size={32} color=black />',
+  //       innerHTML: '<IoVolumeMedium size={32} color=b',
   //       color: 'black',
   //       cursor: 'none',
   //     })
