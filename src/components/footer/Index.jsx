@@ -52,7 +52,7 @@ function Footer() {
               <span>o</span>
               <span>w</span>
             </h1>
-            <h2 className='footerSecondBtmtxt text-[5vw] text-center sm:text-[1.3vw]'>Let&apos;s build now together your tomorrow&apos;s project.</h2>
+            <div className='overflow-hidden'><h2 className='footerSecondBtmtxt text-[5vw] text-center sm:text-[1.3vw]'>Let&apos;s build now together your tomorrow&apos;s project.</h2></div>
           </div>
         </div>
       </div>
