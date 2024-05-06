@@ -12,7 +12,7 @@ function Video() {
   //   const video = document.querySelector('.videoDiv')
 
   //   video.addEventListener('mouseenter', () => {
-  //     const tl = gsap.timeline()
+  //     const tl = gse()
   //     tl.to('.cursor', {
   //       height: 
   //       inner: '<e
