@@ -15,7 +15,7 @@ function Video() {
   //     const tl = gse()
   //     tl.to('.cursor', {
   //       height: 
-  //       inner: '<e
+  //       inner
   //       color: 
   //     })
   //   })
