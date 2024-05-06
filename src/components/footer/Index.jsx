@@ -11,17 +11,16 @@ function Footer() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.footerSec',
-        start: 'top bottom',
-        end: 'top top',
-        markers: true,
+        start: 'top 80%',
+        end: 'top 20%',
         scrub: 1,
       }
     })
     tl.from('.footerTxt h1 span', {
       y: 100,
       opacity: 0,
-      duration: 0.5,
-      stagger: 0.1
+      duration: 0.6,
+      stagger: 0.2
     })
     tl.from('.footerSecondBtmtxt', {
       y: 100,
