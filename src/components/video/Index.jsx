@@ -23,7 +23,6 @@ function Video() {
   //     const tl = gsap.timeline()
   //     tl.to('.cu   
 
-  // )
   // })
 
   
