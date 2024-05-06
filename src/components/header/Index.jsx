@@ -1,4 +1,4 @@
-
+'use client'
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion, AnimatePresence } from 'framer-motion';
