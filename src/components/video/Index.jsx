@@ -17,7 +17,6 @@ function Video() {
   //       height: 
   //       inner
   //     
-  //     })
   //   })
   //   video.addEv
   //     const tl
