@@ -76,7 +76,6 @@ function Projects() {
                                     </div>
                                 </div>  
                         </div>
-
                         <div className='z-[1]'>
 
                         </div>
