@@ -22,7 +22,7 @@ function Video() {
   //   video.addEve'mousele
   //     const tl = gsap.timeline()
   //     tl.to('.cu
-  //       width: '8px',
+  //     
   //       
 
   // )
