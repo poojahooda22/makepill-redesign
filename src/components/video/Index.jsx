@@ -23,7 +23,7 @@ function Video() {
   //     const tl = gsap.timeline()
   //     tl.to('.cursor', {
   //       width: '8px',
-  //       height: '8px',
+  //       
 
   // )
   // })
