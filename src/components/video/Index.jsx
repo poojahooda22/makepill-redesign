@@ -10,7 +10,7 @@ function Video() {
   
   // useEffect(() => {
   //   const video = document.querySelector('.videoDiv')
-  //     const tl
+  //     
 
   // })
 
