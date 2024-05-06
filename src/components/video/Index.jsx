@@ -15,7 +15,6 @@ function Video() {
   //     const tl = gse()
   //     tl.to('.cursor', {
   //       height: 
-  //       inner
 
   //   video.addEv
   //     const tl
