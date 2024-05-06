@@ -11,7 +11,7 @@ function Video() {
   // useEffect(() => {
   //   const video = document.querySelector('.videoDiv')
 
-  //   video.a
+
   //     const tl
 
   // })
