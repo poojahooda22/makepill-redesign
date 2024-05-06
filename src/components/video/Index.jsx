@@ -24,8 +24,7 @@ function Video() {
   //     tl.to('.cursor', {
   //       width: '8px',
   //       height: '8px',
-  //     })
-  //   }
+
   // )
   // })
 
