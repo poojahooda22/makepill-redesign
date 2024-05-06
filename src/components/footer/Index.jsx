@@ -1,15 +1,53 @@
-import React from 'react'
+import { useGSAP } from '@gsap/react';
+import React, { useRef } from 'react'
+import gsap from 'gsap';
+import styles from './Style.module.css'
 
 function Footer() {
+  const footerStyle = useRef();
+
+
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.footerSec',
+        start: 'top bottom',
+        end: 'top top',
+        markers: true,
+        scrub: 1,
+      }
+    })
+    tl.from('.footerTxt h1 span', {
+      y: 100,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.1
+    })
+    tl.from('')
+
+  })
   return (
-    <div className='w-full relative pt-[8vw] sm:pt-[5vw]'>
+    <div className='footerSec w-full relative pt-[8vw] sm:pt-[5vw]'>
       <div className='w-full flex items-center justify-center relative pb-[8vw] sm:pb-[5vw]'>
         <div className='w-[80vw] sm:w-[20vw] sm:rotate-0'>
           <video className='w-full h-full object-cover' autoPlay loop muted src="https://res.cloudinary.com/mkpill/video/upload/v1689376834/footer_x1_vp9_4d2ebedd3d.webm"></video>
         </div>
         <div className='w-full absolute top-1/2 left-1/2 -translate-x-1/2 sm:-translate-y-2/3'>
-          <div className='flex flex-col items-center justify-center sm:gap-0 gap-[2vw]'>
-            <h1 className='text-[10vw] sm:text-[7.2vw] border-b-[1px] sm:border-none'>Brief us now</h1>
+          <div className={`footerTxt ${styles.footerTxt} flex flex-col items-center justify-center sm:gap-0 gap-[2vw] `}>
+            <h1 className='text-[10vw] sm:text-[7.2vw] border-b-[1px] sm:border-none overflow-hidden'>
+              <span>B</span>
+              <span>r</span>
+              <span>i</span>
+              <span>e</span>
+              <span>f&nbsp;</span>
+
+              <span>u</span>
+              <span>s&nbsp;</span>
+
+              <span>n</span>
+              <span>o</span>
+              <span>w</span>
+            </h1>
             <h2 className='text-[5vw] text-center sm:text-[1.3vw]'>Let&apos;s build now together your tomorrow&apos;s project.</h2>
           </div>
         </div>
