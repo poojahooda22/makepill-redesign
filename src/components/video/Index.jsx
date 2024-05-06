@@ -20,7 +20,7 @@ function Video() {
   //       cursor: 'none',
   //     })
   //   })
-  //   video.addEventListener('mouseleave', () => {
+  //   video.addEventLir('mouseleave', () => {
   //     const tl = gsap.timeline()
   //     tl.to('.cursor', {
   //       width: '8px',
