@@ -14,7 +14,7 @@ function Video() {
   //   video.addEventListener('mouseenter', () => {
   //     const tl = gsap.timeline()
   //     tl.to('.cursor', {
-  //       height: '100px
+  //       height: 
   //       inner: '<e
   //       color: 'black
   //     })
