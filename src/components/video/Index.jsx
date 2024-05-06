@@ -12,7 +12,6 @@ function Video() {
   //   const video = document.querySelector('.videoDiv')
 
   //   video.addEventListener('mouseenter', () => {
-   video.addEv
   //     const tl
 
   // })
