@@ -1,3 +1,5 @@
+'use client'
+
 import gsap from 'gsap';
 import React, { useEffect } from 'react'
 import { Power3 } from 'gsap';
