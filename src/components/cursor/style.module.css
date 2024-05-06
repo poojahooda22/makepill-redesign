@@ -1,5 +1,5 @@
 .cursor {
-    --circle-size: 8px;
+    --circle-size: 16px;
     position: fixed;
     height: var(--circle-size);
     width: var(--circle-size);
