@@ -16,8 +16,7 @@ function Video() {
   //     tl.to('.cursor', {
   //       height: 
   //       inner
-  //     
-  //   })
+
   //   video.addEv
   //     const tl
 
