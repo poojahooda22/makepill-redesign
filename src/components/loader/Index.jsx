@@ -44,18 +44,17 @@ function Loader() {
             opacity: 0,
             ease: Power4.easeOut,
         })
-        tl.from('.heroText h1, span', {
+        tl.from('.heroText h1, .specialTxt', {
             y: 100,
             opacity: 0,
             stagger: 0.12,          
             ease: Power3.in,
-        },'-=1')
-        tl.from('.heroText h4', {
-            y: 100,
+        })
+        tl.from('.herobelowText h4', {
+            y: 40,
             opacity: 0,
             stagger: 0.12, 
-            ease:  Power3.in,
-        }, '-=1')
+        })
    })
 
    // timer for the loader
