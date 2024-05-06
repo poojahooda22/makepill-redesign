@@ -40,12 +40,12 @@ export default function Home() {
         <Loader/>
         <LandingPage/>
         <Video/>
-        <About/>
+        {/* <About/>
         <Projects/>  
         <ReverseService/>
         <AwardsSection/>
         <Social/>
-        <Footer/>
+        <Footer/> */}
       </div>
     </main>
 
