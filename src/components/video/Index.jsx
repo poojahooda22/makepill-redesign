@@ -16,7 +16,7 @@ function Video() {
   //     tl.to('.cursor', {
   //       height: 
   //       inner
-  //       color: 
+  //     
   //     })
   //   })
   //   video.addEventLir('mouseleave', () => {
