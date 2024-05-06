@@ -23,7 +23,11 @@ function Footer() {
       duration: 0.5,
       stagger: 0.1
     })
-    tl.from('')
+    tl.from('.footerSecondBtmtxt', {
+      y: 100,
+      opacity: 0,
+      duration: 0.5,
+    })
 
   })
   return (
@@ -48,7 +52,7 @@ function Footer() {
               <span>o</span>
               <span>w</span>
             </h1>
-            <h2 className='text-[5vw] text-center sm:text-[1.3vw]'>Let&apos;s build now together your tomorrow&apos;s project.</h2>
+            <h2 className='footerSecondBtmtxt text-[5vw] text-center sm:text-[1.3vw]'>Let&apos;s build now together your tomorrow&apos;s project.</h2>
           </div>
         </div>
       </div>
