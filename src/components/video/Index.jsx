@@ -21,7 +21,6 @@ function Video() {
   //   })
   //   video.addEve'mousele
   //     const tl = gsap.timeline()
-  //     tl.to 
 
   // })
 
