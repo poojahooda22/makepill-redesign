@@ -15,7 +15,7 @@ function Video() {
   //     const tl = gsap.timeline()
   //     tl.to('.cursor', {
   //       height: '100px
-  //       innerHTML: '<eMesize={32} color=b',
+  //       innerHTML: '<eMesize color=b',
   //       color: 'black
   //     })
   //   })
