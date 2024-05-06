@@ -19,7 +19,7 @@ function Video() {
   //     
   //     })
   //   })
-  //   video.addEve'mouseleave', () => {
+  //   video.addEve'mousele
   //     const tl = gsap.timeline()
   //     tl.to('.cursor', {
   //       width: '8px',
