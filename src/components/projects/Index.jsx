@@ -71,7 +71,7 @@ function Projects() {
 
 
   return (
-    <div className='projectSec w-full min-h-[100vh] relative'>
+    <div className='projectSec w-full relative'>
         <div className='' >
                 {data.map((item, index) => {
                    return (
