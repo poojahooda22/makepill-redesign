@@ -2,8 +2,8 @@ import React from 'react'
 
 function AboutPage() {
   return (
-    <div className='text-white font-[mainfont] bg-primary-main '>
-        <h1>Work section is coming</h1>
+    <div className='w-full h-[100vh] text-white font-[mainfont] bg-primary-main flex items-center justify-center '>
+        <div className='sm:text-[4vw]'><h1>Coming Soon...</h1></div>
     </div>
   )
 }
