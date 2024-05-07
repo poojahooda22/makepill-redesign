@@ -40,7 +40,6 @@ function AwardsSection() {
                 start: 'top 80%',
                 end: 'top 50%',
                 scrub: 1,
-                markers: true,
             }
         })
         tl.from(awardsRef.current, {
