@@ -54,7 +54,7 @@ function Projects() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.projectSec',
-                start: 'top 50%',
+                start: 'top 30%',
                 end: 'top 50%',
                 scrub: 1,
                 markers: true
@@ -76,7 +76,7 @@ function Projects() {
                 {data.map((item, index) => {
                    return (
                     <div key={index} className='w-full flex flex-col items-center justify-center '>
-                        <div className='projectVideoDiv absolute top-0 left-0 w-full h-[100vh] opacity-0 '>
+                        <div className='projectVideoDiv absolute top-0 left-0 w-full h-[100vh] '>
                             <video className='w-full h-full object-cover' autoPlay loop muted src={item.videoLink}></video>
                             <div  className='absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-t from-black-700 to-transparent'></div>
                         </div>
