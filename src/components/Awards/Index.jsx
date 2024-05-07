@@ -31,8 +31,6 @@ function AwardsSection() {
 
     const awardsRef = useRef()
 
-
-
     useGSAP(() => {
         const tl = gsap.timeline({
             scrollTrigger: {
