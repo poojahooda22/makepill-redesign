@@ -48,6 +48,7 @@ function Nav() {
           onComplete: function () {
             gsap.set(pill, {
               rotation: 0,
+              opacity: 1,
             });
           },
         });
@@ -108,9 +109,9 @@ function Nav() {
               </p>
             </div>
             <div className='link'>
-              <Link href="/aboutPage" data-image="2" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
+              <p  data-image="2" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
               Works
-              </Link>
+              </p>
             </div>
             <div className='link'>
               <p data-image="3" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
@@ -127,31 +128,6 @@ function Nav() {
                 Vision
               </p>
             </div>
-            {/* <div className='link'>
-              <p data-image="6" className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
-                Home
-              </p>
-            </div>
-            <div className='link'>
-              <p data-image="7" className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
-              Works
-              </p>
-            </div>
-            <div className='link'>
-              <p data-image="8" className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
-                Services
-              </p>
-            </div>
-            <div className='link'>
-              <p data-image="9" className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
-                Contact
-              </p>
-            </div>
-            <div className='link'>
-              <p data-image="10" className={`${styles.textmain} textmain sm:text-[2.5vw] text-[#333]`}>
-                Vision
-              </p>
-            </div> */}
           </div>
           <div  className={`pill ${styles.pill} w-[50vw] sm:w-[22vw] h-[100%] absolute top-[50%] right-[-16%] sm:right-[10%] -translate-y-1/2 `}>
             <video
@@ -173,21 +149,6 @@ function Nav() {
             <video  autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="5"
               src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm"
             ></video>
-            {/* <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="6"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
-            ></video>
-            <video  autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="7"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm"
-            ></video>
-            <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="8"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm"
-            ></video>
-            <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="9"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm"
-            ></video>
-            <video autoPlay loop muted className={`${styles.img} img w-full h-full object-fit`} data-id="10"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm"
-            ></video> */}
           </div>        
         </div> 
       </div>
