@@ -45,19 +45,19 @@ function Header() {
                     border-r-[1px] rounded-r-full flex items-center justify-center hover:bg-white hover:text-black
                     sm:px-[1.1vw] `}
                 >
-                    <motion.p 
+                    <motion.h3 
                         variants={opacity} 
                         animate={isActive ? "closed" : "open"}
                     >
                         <HiOutlineMenuAlt4 className='text-[3.8vw] sm:text-[1.2vw]' />
-                    </motion.p>
-                    <motion.p 
+                    </motion.h3>
+                    <motion.h3 
                         variants={opacity} 
                         animate={!isActive ? "closed" : "open"} 
                         className='absolute' 
                     >
                         <IoCloseOutline className='text-[3.8vw] sm:text-[1.2vw]' />
-                    </motion.p>
+                    </motion.h3>
                 </motion.div>
             </div>
         </div>
