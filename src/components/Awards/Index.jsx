@@ -76,12 +76,12 @@ function AwardsSection() {
                                     <div className='overflow-hidden'><h4 ref={awardsRef2}  className='text-[4.5vw] sm:text-[1.4vw]'>{item.title}</h4></div>
                                     <p className='text-[4.5vw] sm:text-[1.2vw] text-[#deff00] '>{item.count}</p>
                                 </div>
-                                <div  ref={awardsRef2} className='flex items-end justify-between leading-none overflow-hidden'>
+                                <div className='flex items-end justify-between leading-none overflow-hidden'>
                                     <h6 className='text-[4.2vw] sm:text-[1.2vw] '>{item.award}</h6>
                                     <p className='text-[4.2vw] sm:text-[1.2vw] '>{item.date}</p>
                                 </div>
                                 {item.award1 && (
-                                    <div  ref={awardsRef2} className='flex  items-end  justify-between mb-[12vw] overflow-hidden sm:mb-[2.5vw] space-y-[6vw] sm:space-y-[1.2vw]'>
+                                    <div  className='flex  items-end  justify-between mb-[12vw] overflow-hidden sm:mb-[2.5vw] space-y-[6vw] sm:space-y-[1.2vw]'>
                                         <h6 className='text-[4.2vw] sm:text-[1.2vw]'>{item.award1}</h6>
                                         <p className='text-[4.2vw] sm:text-[1.2vw]'>{item.date1}</p>
                                     </div>
