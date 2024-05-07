@@ -100,7 +100,7 @@ function About() {
             </div>
             <div className='flex items-center justify-center sm:items-start sm:justify-start '>
               <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
-                <p className='sm:text-[.9vw]'>Services</p>  
+                <h3 className='sm:text-[.9vw]'>Services</h3>  
               </div>  
             </div>  
           </div>  
