@@ -54,7 +54,7 @@ function Projects() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.projectSec',
-                start: 'top 30%',
+                start: 'top 50%',
                 end: 'top 50%',
                 scrub: 1,
                 markers: true
