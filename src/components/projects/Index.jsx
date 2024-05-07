@@ -51,13 +51,15 @@ function Projects() {
     ]
 
 
+
+
   return (
     <div className='projectSec w-full min-h-[100vh] relative'>
         <div className='' >
                 {data.map((item, index) => {
                    return (
                     <div key={index} className='w-full flex flex-col items-center justify-center '>
-                        <div className='projectVideoDiv absolute top-0 left-0 w-full h-[100vh] opacity-1 '>
+                        <div className='projectVideoDiv absolute top-0 left-0 w-full h-[100vh] opacity-0 '>
                             <video className='w-full h-full object-cover' autoPlay loop muted src={item.videoLink}></video>
                             <div  className='absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-t from-black-700 to-transparent'></div>
                         </div>
@@ -66,15 +68,15 @@ function Projects() {
                                 <h1 className='text-[5vw] text-[#333] '>{item.name}</h1>
                                 <div className='flex flex-col sm:items-end gap-[1vw]'>
                                     <div className='projectrightDiv flex items-center gap-[.4vw] text-[1vw]'>
-                                        <div className='overflow-hidden'><p>{item.id1}</p></div>
+                                        <div className='overflow-hidden'><h3>{item.id1}</h3></div>
                                         <div className='overflow-hidden'><svg xmlns="http://www.w3.org/2000/svg" className='w-[1vw]'  width="15" height="12" fill="none" viewBox="0 0 15 12" data-v-1c16fc4a=""><path fill="currentColor" fill-rule="evenodd" d="M14.709 6.478 15 6.122l-.283-.362L10.58.473l-.904.707 3.411 4.362H.03V6.69H13.05l-3.365 4.108.888.728 4.136-5.048Zm-1.224-.429v.11l.044-.053-.044-.057Z" clip-rule="evenodd"></path></svg></div>
-                                        <div className='overflow-hidden'><p>{item.id2}</p></div>
+                                        <div className='overflow-hidden'><h3>{item.id2}</h3></div>
                                     </div>
                                     <div className='projectDownDiv hidden sm:flex items-center gap-2 whitespace-nowrap'>
-                                        <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category1}</h6></div>  
-                                        <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category2}</h6></div>  
-                                        <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category3}</h6></div>  
-                                        {item.category4 && <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h6>{item.category4}</h6></div> }   
+                                        <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h3>{item.category1}</h3></div>  
+                                        <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h3>{item.category2}</h3></div>  
+                                        <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h3>{item.category3}</h3></div>  
+                                        {item.category4 && <div className='overflow-hidden border-[1px] rounded-full text-[1vw] px-[1vw] py-[.2vw]'><h3>{item.category4}</h3></div> }   
                                     </div>
                                 </div>  
                         </div>
