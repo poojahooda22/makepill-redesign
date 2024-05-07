@@ -46,10 +46,15 @@ function AwardsSection() {
         tl.from(awardsRef.current, {
             x: -100,
             opacity: 0,
-            
+            duration: 1,
             ease: 'power4.in'
         })
         tl.from(awardsRef2.current, {
+            y: 100,
+            opacity: 0,
+            ease: 'power4.in'
+        })
+        tl.from(awardsRef3.current, {
             y: 100,
             opacity: 0,
             ease: 'power4.in'
