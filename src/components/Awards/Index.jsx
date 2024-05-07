@@ -36,7 +36,7 @@ function AwardsSection() {
             scrollTrigger: {
                 trigger: '.awardsSec',
                 start: 'top 80%',
-                end: 'bottom center',
+                end: 'top 10%',
                 scrub: 1,
                 markers: true,
             }
