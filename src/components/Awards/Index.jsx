@@ -49,7 +49,7 @@ function AwardsSection() {
             duration: 1,
             ease: 'power4.in'
         })
-        tl.from('.rightAwardSecondDiv h4, p', {
+        tl.from('.rightAwardSecondDiv h4', {
             y: 100,
             opacity: 0,
             ease: 'power4.in'
