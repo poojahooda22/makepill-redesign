@@ -52,7 +52,7 @@ function AwardsSection() {
         tl.from('.rightAwardSecondDiv h4, p, h6, h7', {
             y: 100,
             opacity: 0,
-            duration: 1,
+            stagger: .4,
             ease: 'power4.in'
         })
     })
