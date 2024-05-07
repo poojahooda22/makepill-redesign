@@ -127,7 +127,7 @@ useGSAP(() => {
                 </div>
             </div>
         </div> 
-        <div className='overflow-hidden' ><p className='reverseServicep mt-[10vw] px-[5vw] sm:pl-[12.5vw] text-[5vw] sm:text-[1.1vw] tracking-wider'>/ Our clients</p></div>
+        <div className='overflow-hidden' ><h3 className='reverseServicep mt-[10vw] px-[5vw] sm:pl-[12.5vw] text-[5vw] sm:text-[1.1vw] tracking-wider'>/ Our clients</h3></div>
         <div className='my-[24vw] sm:my-[4vw] space-y-[1vw]'>    
             <div className={`elem ${styles.elem} flex items-center`}>
                 {['Seela', 'Airbus', 'Sportfunding', 'LVMH', 'Flexyroom', 'Push&Sell', 'Seela', 'Airbus', 'Sportfunding', 'LVMH', 'Flexyroom', 'Push&Sell'].map((item, index) => {
