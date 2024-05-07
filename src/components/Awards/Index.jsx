@@ -1,6 +1,6 @@
 'use client'
 import gsap from 'gsap'
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import styles from './Style.module.css'
 import { useGSAP } from '@gsap/react'
 
@@ -29,6 +29,8 @@ function AwardsSection() {
         },
     ]
 
+    const awardsRef = useRef()
+
     useGSAP(() => {
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -39,6 +41,12 @@ function AwardsSection() {
                 markers: true,
             }
         })
+        tl.from(awardsRef.current, {
+            x: -100,
+            opacity: 0,
+            duration: 1,
+            ease: 'power4.in'
+        })
     })
 
   
@@ -48,8 +56,8 @@ function AwardsSection() {
       className='awardsSec section w-full overflow-hidden py-[6vw]'
     >
         <div className='py-[6vw] sm:py-0 px-[5vw] sm:px-[13vw]  sm:flex items-start justify-between sm:mb-[4vw] '>
-            <div className='leftAwardDiv  '>
-                <div className=' sm:space-y-[4vw] pb-[14vw] sm:pb-0'>
+            <div ref={awardsRef} className='leftAwardDiv  '>
+                <div className=' sm:space-y-[4vw] pb-[14vw] sm:pb-0 overflow-hidden'>
                     <h4 className='text-[5vw] sm:text-[1.1vw] tracking-wider'>/ Awards & Recognitions</h4>
                 </div>  
             </div>
