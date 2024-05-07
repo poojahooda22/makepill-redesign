@@ -54,14 +54,13 @@ function Projects() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.projectSec',
-                start: 'top 80%',
+                start: 'top 50%',
                 end: 'top 50%',
                 scrub: 1,
                 markers: true
             }
         })
-        tl.from('.projectheadDiv', {
-            y: -100,
+        tl.from('.projectVideoDiv', {
             opacity: 0,
             duration: 1,
             ease: Power3.easeOut
