@@ -1,6 +1,6 @@
 .overlay .elem  {
     animation-name: anim1;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
