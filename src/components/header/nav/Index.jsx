@@ -108,9 +108,9 @@ function Nav() {
               </p>
             </div>
             <div className='link'>
-              <p data-image="2" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
+              <Link href="/aboutPage" data-image="2" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
               Works
-              </p>
+              </Link>
             </div>
             <div className='link'>
               <p data-image="3" className={`${styles.textmain} textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
