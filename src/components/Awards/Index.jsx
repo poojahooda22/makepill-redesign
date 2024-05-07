@@ -76,7 +76,7 @@ function AwardsSection() {
                             <div key={index} className='sm:mb-[2vw] mb-[12vw]'>
                                 <div className='rightAwardSecondDiv flex sm:items-end sm:justify-between  sm:mb-[2vw] mb-[12vw] leading-none'>
                                     <div className='overflow-hidden'><h4 className='text-[4.5vw] sm:text-[1.4vw]'>{item.title}</h4></div>
-                                    <div className='overflow-hidden'><p className='text-[4.5vw] sm:text-[1.2vw] text-[#deff00] '>{item.count}</p></div>
+                                    <div className='overflow-hidden'><h5 className='text-[4.5vw] sm:text-[1.2vw] text-[#deff00] '>{item.count}</h5></div>
                                 </div>
                                 <div className='flex items-end justify-between leading-none'>
                                     <div className='overflow-hidden'><h6 className='text-[4.2vw] sm:text-[1.2vw] '>{item.award}</h6></div>
@@ -85,7 +85,7 @@ function AwardsSection() {
                                 {item.award1 && (
                                     <div  className='flex  items-end  justify-between mb-[12vw] sm:mb-[2.5vw] space-y-[6vw] sm:space-y-[1.2vw]'>
                                         <div className='overflow-hidden'><h6 className='text-[4.2vw] sm:text-[1.2vw]'>{item.award1}</h6></div>
-                                        <div className='overflow-hidden'><p className='text-[4.2vw] sm:text-[1.2vw]'>{item.date1}</p></div>
+                                        <div className='overflow-hidden'><h7 className='text-[4.2vw] sm:text-[1.2vw]'>{item.date1}</h7></div>
                                     </div>
                                 )}
                             </div>
