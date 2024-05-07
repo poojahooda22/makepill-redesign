@@ -30,7 +30,7 @@ function AwardsSection() {
     ]
 
     const awardsRef = useRef()
-    const awardsRef2 = useRef()
+
 
 
     useGSAP(() => {
