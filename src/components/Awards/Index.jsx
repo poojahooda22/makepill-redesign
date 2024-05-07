@@ -52,11 +52,7 @@ function AwardsSection() {
         tl.from('.rightAwardSecondDiv h4', {
             y: 100,
             opacity: 0,
-            ease: 'power4.in'
-        })
-        tl.from(awardsRef3.current, {
-            y: 100,
-            opacity: 0,
+            duration: 1,
             ease: 'power4.in'
         })
     })
@@ -83,13 +79,13 @@ function AwardsSection() {
                                     <div className='overflow-hidden'><p ref={awardsRef3} className='text-[4.5vw] sm:text-[1.2vw] text-[#deff00] '>{item.count}</p></div>
                                 </div>
                                 <div className='flex items-end justify-between leading-none'>
-                                    <h6 className='text-[4.2vw] sm:text-[1.2vw] '>{item.award}</h6>
-                                    <p className='text-[4.2vw] sm:text-[1.2vw] '>{item.date}</p>
+                                    <div className='overflow-hidden'><h6 className='text-[4.2vw] sm:text-[1.2vw] '>{item.award}</h6></div>
+                                    <div className='overflow-hidden'><p className='text-[4.2vw] sm:text-[1.2vw] '>{item.date}</p></div>
                                 </div>
                                 {item.award1 && (
                                     <div  className='flex  items-end  justify-between mb-[12vw] sm:mb-[2.5vw] space-y-[6vw] sm:space-y-[1.2vw]'>
-                                        <h6 className='text-[4.2vw] sm:text-[1.2vw]'>{item.award1}</h6>
-                                        <p className='text-[4.2vw] sm:text-[1.2vw]'>{item.date1}</p>
+                                        <div className='overflow-hidden'><h6 className='text-[4.2vw] sm:text-[1.2vw]'>{item.award1}</h6></div>
+                                        <div className='overflow-hidden'><p className='text-[4.2vw] sm:text-[1.2vw]'>{item.date1}</p></div>
                                     </div>
                                 )}
                             </div>
