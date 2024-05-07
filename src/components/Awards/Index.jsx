@@ -37,7 +37,7 @@ function AwardsSection() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.awardsSec',
-                start: 'top bottom',
+                start: 'top 80%',
                 end: 'top 50%',
                 scrub: 1,
                 markers: true,
