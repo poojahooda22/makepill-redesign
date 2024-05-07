@@ -31,6 +31,7 @@ function AwardsSection() {
 
     const awardsRef = useRef()
     const awardsRef2 = useRef()
+    const awardsRef3 = useRef()
 
     useGSAP(() => {
         const tl = gsap.timeline({
@@ -74,7 +75,7 @@ function AwardsSection() {
                             <div key={index} className='sm:mb-[2vw] mb-[12vw]'>
                                 <div   className='flex sm:items-end sm:justify-between  sm:mb-[2vw] mb-[12vw] leading-none'>
                                     <div className='overflow-hidden'><h4 ref={awardsRef2}  className='text-[4.5vw] sm:text-[1.4vw]'>{item.title}</h4></div>
-                                    <p className='text-[4.5vw] sm:text-[1.2vw] text-[#deff00] '>{item.count}</p>
+                                    <p ref={awardsRef3} className='text-[4.5vw] sm:text-[1.2vw] text-[#deff00] '>{item.count}</p>
                                 </div>
                                 <div className='flex items-end justify-between leading-none overflow-hidden'>
                                     <h6 className='text-[4.2vw] sm:text-[1.2vw] '>{item.award}</h6>
