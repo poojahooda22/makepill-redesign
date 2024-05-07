@@ -9,7 +9,7 @@ import { useGSAP } from '@gsap/react'
 
 function ReverseService() {
 
-//   // const [color, setColor] =
+//   // const [color, setColo
 
 //     useEffect(() => {
 //     const section = document.querySelector('.serviceSec')
