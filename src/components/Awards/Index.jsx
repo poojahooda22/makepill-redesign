@@ -31,7 +31,7 @@ function AwardsSection() {
 
     const awardsRef = useRef()
     const awardsRef2 = useRef()
-    const awardsRef3 = useRef()
+
 
     useGSAP(() => {
         const tl = gsap.timeline({
