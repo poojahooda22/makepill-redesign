@@ -49,7 +49,7 @@ function AwardsSection() {
             duration: 1,
             ease: 'power4.in'
         })
-        tl.from(awardsRef2.current, {
+        tl.from('.rightAwardSecondDiv h4, p', {
             y: 100,
             opacity: 0,
             ease: 'power4.in'
@@ -78,7 +78,7 @@ function AwardsSection() {
                     {data.map((item, index) => {
                         return (
                             <div key={index} className='sm:mb-[2vw] mb-[12vw]'>
-                                <div   className='flex sm:items-end sm:justify-between  sm:mb-[2vw] mb-[12vw] leading-none'>
+                                <div className='rightAwardSecondDiv flex sm:items-end sm:justify-between  sm:mb-[2vw] mb-[12vw] leading-none'>
                                     <div className='overflow-hidden'><h4 ref={awardsRef2}  className='text-[4.5vw] sm:text-[1.4vw]'>{item.title}</h4></div>
                                     <div className='overflow-hidden'><p ref={awardsRef3} className='text-[4.5vw] sm:text-[1.2vw] text-[#deff00] '>{item.count}</p></div>
                                 </div>
