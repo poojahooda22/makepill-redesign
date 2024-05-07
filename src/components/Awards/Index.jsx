@@ -2,6 +2,7 @@
 import gsap from 'gsap'
 import React, { useEffect } from 'react'
 import styles from './Style.module.css'
+import { useGSAP } from '@gsap/react'
 
 function AwardsSection() {
 
@@ -27,6 +28,18 @@ function AwardsSection() {
             date: '04-10-2023',
         },
     ]
+
+    useGSAP(() => {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.awardsSec',
+                start: 'top center',
+                end: 'bottom center',
+                scrub: 1,
+                markers: true,
+            }
+        })
+    })
 
   
   return (
