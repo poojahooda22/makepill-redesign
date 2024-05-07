@@ -111,7 +111,7 @@ useGSAP(() => {
                     </div>
                     <div className='flex items-center justify-center sm:items-start sm:justify-start '>
                         <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
-                            <p className='sm:text-[.9vw]'>Our values</p>  
+                            <h3 className='sm:text-[.9vw]'>Our values</h3>  
                         </div>  
                     </div>  
                 </div>  
