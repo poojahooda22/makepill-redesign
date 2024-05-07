@@ -50,6 +50,23 @@ function Projects() {
         },
     ]
 
+    useGSAP(() => {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.projectSec',
+                start: 'top 80%',
+                end: 'top 50%',
+                scrub: 1,
+            }
+        })
+        tl.from('.projectheadDiv', {
+            y: -100,
+            opacity: 0,
+            duration: 1,
+            ease: Power3.easeOut
+        })
+    
+    })
 
 
 
