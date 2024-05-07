@@ -30,13 +30,14 @@ function AwardsSection() {
     ]
 
     const awardsRef = useRef()
+    const awardsRef2 = useRef()
 
     useGSAP(() => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.awardsSec',
-                start: 'top 80%',
-                end: 'top 10%',
+                start: 'top bottom',
+                end: 'top 50%',
                 scrub: 1,
                 markers: true,
             }
@@ -44,7 +45,12 @@ function AwardsSection() {
         tl.from(awardsRef.current, {
             x: -100,
             opacity: 0,
-            duration: 1,
+            
+            ease: 'power4.in'
+        })
+        tl.from(awardsRef2.current, {
+            y: 100,
+            opacity: 0,
             ease: 'power4.in'
         })
     })
@@ -56,9 +62,9 @@ function AwardsSection() {
       className='awardsSec section w-full overflow-hidden py-[6vw]'
     >
         <div className='py-[6vw] sm:py-0 px-[5vw] sm:px-[13vw]  sm:flex items-start justify-between sm:mb-[4vw] '>
-            <div ref={awardsRef} className='leftAwardDiv  '>
+            <div  className='leftAwardDiv  '>
                 <div className=' sm:space-y-[4vw] pb-[14vw] sm:pb-0 overflow-hidden'>
-                    <h4 className='text-[5vw] sm:text-[1.1vw] tracking-wider'>/ Awards & Recognitions</h4>
+                    <h4 ref={awardsRef} className='text-[5vw] sm:text-[1.1vw] tracking-wider'>/ Awards & Recognitions</h4>
                 </div>  
             </div>
             <div className='rightAwardDiv w-full sm:w-1/2 mb-[16vw] sm:mb-0 '>
@@ -66,7 +72,7 @@ function AwardsSection() {
                     {data.map((item, index) => {
                         return (
                             <div key={index} className='sm:mb-[2vw] mb-[12vw]'>
-                                <div className='flex sm:items-end sm:justify-between sm:mb-[2vw] mb-[12vw] leading-none'>
+                                <div ref={awardsRef2} className='flex sm:items-end sm:justify-between sm:mb-[2vw] mb-[12vw] leading-none'>
                                     <h4 className='text-[4.5vw] sm:text-[1.4vw]'>{item.title}</h4>
                                     <p className='text-[4.5vw] sm:text-[1.2vw] text-[#deff00] '>{item.count}</p>
                                 </div>
