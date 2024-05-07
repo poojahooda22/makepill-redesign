@@ -9,8 +9,6 @@ import { useGSAP } from '@gsap/react'
 
 function ReverseService() {
 
-
-
 //     useEffect(() => {
 //     const section = document.querySelector('.serviceSec')
 //     section.addEventListener('mouseenter', () => {
