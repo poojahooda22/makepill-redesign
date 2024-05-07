@@ -57,7 +57,6 @@ function Projects() {
                 start: 'top 50%',
                 end: 'top 50%',
                 scrub: 1,
-                markers: true
             }
         })
         tl.from('.projectVideoDiv', {
