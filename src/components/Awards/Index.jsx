@@ -75,8 +75,8 @@ function AwardsSection() {
                         return (
                             <div key={index} className='sm:mb-[2vw] mb-[12vw]'>
                                 <div className='rightAwardSecondDiv flex sm:items-end sm:justify-between  sm:mb-[2vw] mb-[12vw] leading-none'>
-                                    <div className='overflow-hidden'><h4 ref={awardsRef2}  className='text-[4.5vw] sm:text-[1.4vw]'>{item.title}</h4></div>
-                                    <div className='overflow-hidden'><p ref={awardsRef3} className='text-[4.5vw] sm:text-[1.2vw] text-[#deff00] '>{item.count}</p></div>
+                                    <div className='overflow-hidden'><h4 className='text-[4.5vw] sm:text-[1.4vw]'>{item.title}</h4></div>
+                                    <div className='overflow-hidden'><p className='text-[4.5vw] sm:text-[1.2vw] text-[#deff00] '>{item.count}</p></div>
                                 </div>
                                 <div className='flex items-end justify-between leading-none'>
                                     <div className='overflow-hidden'><h6 className='text-[4.2vw] sm:text-[1.2vw] '>{item.award}</h6></div>
