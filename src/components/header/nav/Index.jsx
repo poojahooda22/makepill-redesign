@@ -20,8 +20,8 @@ function Nav() {
     const ease = 0.1;
 
     document.addEventListener('mousemove', (e) => {
-      const extraHeight = linksContainer.offsetHeight - global.window.innerWidth;
-      targetScroll = (e.clientY / global.window.innerHeight);
+      const extraHeight = linksContainer.offsetHeight - window.innerWidth;
+      targetScroll = (e.clientY / window.innerHeight);
     });
 
     function animate() {
@@ -37,7 +37,8 @@ function Nav() {
     textElem.forEach(link => {
       link.addEventListener("mouseenter", function() {
         const targetImageId = parseInt(this.getAttribute("data-image"));
-        let rotationValue = targetImageId < currentImageIdd ? 360 : 360;
+        
+        let rotationValue = targetImageId < currentImageIdd ? 180 : 180;
 
         const pill = document.querySelector('.pill');
         const images = document.querySelectorAll('.pill .img');
@@ -48,7 +49,6 @@ function Nav() {
           onComplete: function () {
             gsap.set(pill, {
               rotation: 0,
-              opacity: 1,
             });
           },
         });
@@ -56,12 +56,12 @@ function Nav() {
         gsap.set(images, {
           zIndex: 0,
           opacity: 0,
-          delay: 0.25,
         });
 
         gsap.set(`.pill .img[data-id='${targetImageId}']`, {
           zIndex: 10,
           opacity: 1,
+          rotation: 0,
           delay: 0.25,
           ease: "power4.inOut",
         })
