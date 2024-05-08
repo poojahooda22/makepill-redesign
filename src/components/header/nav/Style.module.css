@@ -13,7 +13,7 @@
     position: absolute;
     left: 0; /* Start from the left */
     background-color: #fff;
-    transition: width 0.5s ease; /* Smooth transition for the width */
+    transition: width 0.5s ease; /* Smooth transition for the wit
 }
 
 .ptag:hover .underline::after {
