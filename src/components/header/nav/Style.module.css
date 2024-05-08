@@ -28,7 +28,6 @@
     left: 0;
     transition: z-index 0.5s;
     opacity: 0;
-    
 }
 
 
@@ -36,6 +35,7 @@
 .pill video[data-id="1"] {
     z-index: 10;
     opacity: 1;
+    
 }
 .textmain {
     transition: all 0.3d ease-in-out;
