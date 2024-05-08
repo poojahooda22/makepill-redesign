@@ -11,7 +11,7 @@
     width: 0%; /* Start wid 
     height: 100%; /* Fu
     position: absolute;
-    left: 0; /* Start from the l */
+    left: 0; /* Start frthe l */
     background-color: #fff;
     transition: width 0.5s ease; /* Smooth transition for the width */
 }
