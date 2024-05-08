@@ -56,6 +56,7 @@ function Nav() {
         gsap.set(images, {
           zIndex: 0,
           opacity: 0,
+          rotation: 180,
         });
 
         gsap.set(`.pill .img[data-id='${targetImageId}']`, {
