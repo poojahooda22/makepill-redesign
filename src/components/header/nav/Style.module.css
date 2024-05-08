@@ -13,7 +13,7 @@
     po ;
     left: 0; /* Start frt l */
     background-color: #fff;
-    transition: width 0.5s ease; /* Smooth transit ftwidth */
+    transition: width 0.5s ease; /* Smooth transt ftwidth */
 }
 
 .ptag:hover .underline::after {
