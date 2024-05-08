@@ -9,7 +9,7 @@
 .underline::after {
     content: "";
     width: 0%; /* Start wid 
-    height: 100%; /* Fu
+    height: 100%; /* F
     position: absolute;
     left: 0; /* Start frt l */
     background-color: #fff;
