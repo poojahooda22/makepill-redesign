@@ -10,30 +10,16 @@ import { opacity } from '../header/anime';
 
 function About() {
 
-  // const [color, setColor] = React.useState()
+  const [color, setColor] = React.useState('#0f0f0f');
 
-  // useEffect(() => {
-  //   const section = document.querySelector('.aboutSec')
-  //   section.addEventListener('mouseenter', () => {
-  //     gsap.to('.aboutSec', {
-  //       backgroundColor: 'white',
-  //       color: '#0f0f0f'
-  //     })
-  //     gsap.to('.cursor', {
-  //       backgroundColor: '#0f0f0f'
-  //     })
-  //   })
-  //   section.addEventListener('mouseleave', () => {
-  //     gsap.to('.aboutSec', {
-  //       backgroundColor: '#0f0f0f',
-  //       color: 'white'
-  //     })
-  //     gsap.to('.cursor', {
-  //       backgroundColor: 'white'
-  //     })
-  //   })
-    
-  // })
+  const handleBackgroundChange = () => {
+    setColor("#fff");
+  };
+
+  const removeBackgroundChange = () => {
+    setColor("#0f0f0f");
+  }
+
 
   const serviceRef = useRef();
   const serviceRef2 = useRef();
@@ -72,6 +58,9 @@ function About() {
   
   return (
     <div ref= {serviceRef}
+      style={{background: color}}
+      onMouseEnter={handleBackgroundChange}
+      onMouseLeave={removeBackgroundChange}
       data-scroll-section data-scroll-speed=".1" 
       className='aboutSec section w-full pt-[6vw] overflow-hidden '
     >
