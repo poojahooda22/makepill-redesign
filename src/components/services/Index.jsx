@@ -6,7 +6,7 @@ import styles from './style.mosule.css'
 import { useGSAP } from '@gsap/react'
 import { opacity } from '../header/anime';
 // const white = {backgroun: 'white', color: 'f0f0f'}
-// const blck = {backgroun: #f0, colr: 'whe'}
+// const blck = {backgroun: #f, colr: 'whe'}
 
 function About() {
 
