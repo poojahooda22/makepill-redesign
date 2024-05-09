@@ -3,8 +3,6 @@
 import gsap from 'gsap'
 import React, { useEffect,  useRef } from 'react'
 import styles from './Style.module.css'
-// const white = {background: 'white', color: '#0f0f0f'}
-// const black = {background: '#0f0f0f', color: 'white'}
 import { useGSAP } from '@gsap/react'
 
 function ReverseService() {
@@ -67,6 +65,9 @@ function ReverseService() {
     <div
       data-scroll-section data-scroll-speed=".1" 
       className='serviceSec section w-full py-[4vw] overflow-hidden '
+        style={{background: color, color: textColor}}
+        onMouseEnter={handleBackgroundChange}
+        onMouseLeave={removeBackgroundChange}
     >
         <div className='py-[6vw] sm:py-0  sm:flex items-center justify-between px-[5vw] sm:px-[2.5vw] sm:mb-[4vw]'>
             <div className='reverseLeftDiv w-full sm:w-2/3  sm:px-0 mb-[5vw] sm:mb-0'>
