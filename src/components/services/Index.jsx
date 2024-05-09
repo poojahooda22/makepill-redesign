@@ -5,7 +5,7 @@ import React, { useEffect, useRef } from 'react'
 import styles from './style.mosule.css'
 import { useGSAP } from '@gsap/react'
 import { opacity } from '../header/anime';
-// const white = {backgrou: 'hte', co: 'f0f0f'}
+// const white = {backgrou 'hte', co: 'f0f0f'}
 // const blck = {bckgr: f colr: 'whe'}
 
 function About() {
