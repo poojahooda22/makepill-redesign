@@ -89,7 +89,8 @@
 
 
 import React, { useEffect } from 'react'
-import styles from './style.module.css'
+import styles from './style.module.css';
+import {motion} from 'framer-motion';
 
 
 function Cursor() {
@@ -98,12 +99,25 @@ function Cursor() {
 
   useEffect(() => {
 
+    const mouseMove = (e) => {
+      setmousePosition({
+        x: e.clientX,
+        y: e.clientY
+      })
+    }
 
+    window.addEventListener('mousemove', mouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', mouseMove);
+    }
   }, [])
 
   return (
     <div>
-      <div className={`cursor ${styles.cursor} hidden sm:flex items-center justify-center relative`}></div>
+      <motion.div 
+        className={`cursor ${styles.cursor} hidden sm:flex items-center justify-center relative`}
+      ></motion.div>
     </div>
   )
 }
