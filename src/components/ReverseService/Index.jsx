@@ -9,28 +9,7 @@ import { useGSAP } from '@gsap/react'
 
 function ReverseService() {
 
-//     useEffect(() => {
-//     const section = document.querySelector('.serviceSec')
-//     section.addEventListener('mouseenter', () => {
-//       gsap.to('.serviceSec', {
-//         backgroundColor: 'white',
-//         color: '#0f0f0f'
-//       })
-//       gsap.to('.cursor', {
-//         backgroundColor: '#0f0f0f'
-//       })
-//     })
-//     section.addEventListener('mouseleave', () => {
-//       gsap.to('.serviceSec', {
-//         backgroundColor: '#0f0f0f',
-//         color: 'white'
-//       })
-//       gsap.to('.cursor', {
-//         backgroundColor: 'white'
-//       })
-//     })
-    
-//   })
+
 
 const serviceRef = useRef();
 const serviceRef2 = useRef();
