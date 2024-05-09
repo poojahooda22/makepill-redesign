@@ -9,46 +9,58 @@ import { useGSAP } from '@gsap/react'
 
 function ReverseService() {
 
+    const [color, setColor] = React.useState('#0f0f0f');
+    const [textColor, setTextColor] = React.useState('#fff');
+  
+    const handleBackgroundChange = () => {
+      setColor("#fff");
+      setTextColor('black')
+    };
+  
+    const removeBackgroundChange = () => {
+      setColor("#0f0f0f");
+      setTextColor('white')
+    }
+  
 
+    const serviceRef = useRef();
+    const serviceRef2 = useRef();
 
-const serviceRef = useRef();
-const serviceRef2 = useRef();
-
-useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.serviceSec .reverseLeftDiv',
-        start: 'top 90%',
-        end: 'top 30%',
-        scrub:3,
-      }, 
-    });
-    
-    tl.from(serviceRef2.current, {
-      x: -50,
-      opacity: 0,
-      duration: 1,
-      ease: 'power4.in'
-    })
-    
-    tl.from('.serviceReversetxt h1', {
-      y: 100,
-      opacity: 0,
-      stagger: 0.4,
-      duration: 1,
-    }, 'a')
-    tl.from('.rightDivvideo video', {
-      x: 100,
-      opacity: 0,
-        duration: 1,
-    }, 'a')
-    tl.from('.reverseServicep', {
+    useGSAP(() => {
+        const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.serviceSec .reverseLeftDiv',
+            start: 'top 90%',
+            end: 'top 30%',
+            scrub:3,
+        }, 
+        });
+        
+        tl.from(serviceRef2.current, {
         x: -50,
-      opacity: 0,
-      duration: 1,
-      ease: 'power4.in'
-    })  
-  })
+        opacity: 0,
+        duration: 1,
+        ease: 'power4.in'
+        })
+        
+        tl.from('.serviceReversetxt h1', {
+        y: 100,
+        opacity: 0,
+        stagger: 0.4,
+        duration: 1,
+        }, 'a')
+        tl.from('.rightDivvideo video', {
+        x: 100,
+        opacity: 0,
+            duration: 1,
+        }, 'a')
+        tl.from('.reverseServicep', {
+            x: -50,
+        opacity: 0,
+        duration: 1,
+        ease: 'power4.in'
+        })  
+    })
 
   
   return (
