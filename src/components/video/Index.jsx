@@ -11,11 +11,11 @@ function Video() {
   const [cursorChange, setCursorChange] = useState(false);
 
   useEffect(() => {
-    const handleMouseEnter = () => {
-      
-    }
+    
 
     const cur = document.querySelector('.cursor');
+
+    
    
   })
   
