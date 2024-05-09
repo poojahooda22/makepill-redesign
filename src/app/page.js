@@ -13,8 +13,11 @@ import AwardsSection from '@/components/Awards/Index';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Social from '@/components/social/Index';
 import Footer from '@/components/footer/Index';
+import { createContext } from 'react';
 
 export default function Home() {
+
+  const ThemeContext = createContext('light');
 
   const [theme, setTheme] = useState('dark'); 
   
@@ -36,7 +39,7 @@ export default function Home() {
 
   return (
     <main>
-      <div ref={scrollRef} className="section text-white font-[mainfont] bg-primary-main ">
+      <div ref={scrollRef} value={theme} className="section text-white font-[mainfont] bg-primary-main ">
         {/* Your content here */}
         <Cursor/> 
         {/* <Loader/> */}
