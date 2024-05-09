@@ -1,6 +1,6 @@
 
 .underline {
-    width: 5vw;
+    width: 4vw;
     height: 0.1vh;
     position: relative;
     overflow: hidden;
@@ -8,10 +8,11 @@
 
 .underline::after {
     content: "";
-    width: 0%; /* S 
-    height: 100%; /* 
-    po ;
-    left: 0; /* Start frt l */
+    width: 0%;
+    height: 0.1vh;
+    position: absolute;
+    left: 0%;
+
     background-color: #fff;
     transition: width 0.5s ease; /* Smoot trans ftdh */
 }
