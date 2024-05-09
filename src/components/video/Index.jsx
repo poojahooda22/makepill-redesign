@@ -10,18 +10,17 @@ function Video() {
   
   const [cursorChange, setCursorChange] = useState(false);
 
-  const handleCursorChange = () => {
-    useGSAP(() => {
-      const tl = gsap.timeline();
-      tl.to('.cursor', {
-        scale: 1.1,
-        duration: 0.1,
-      })
-    })
-  };
+  useEffect(() => {
+    const handleMouseEnter = () => {
+      
+    }
+
+    const cur = document.querySelector('.cursor');
+   
+  })
   
   return (
-    <div onMouseEnter={handleCursorChange} data-scroll data-scroll-section  data-scroll-speed="0.1"   className=' videoDiv w-full'>
+    <div  data-scroll data-scroll-section  data-scroll-speed="0.1"   className=' videoDiv w-full'>
       <div className=' videoDiv h-[60vh] sm:h-full '>
         <video
           autoPlay
