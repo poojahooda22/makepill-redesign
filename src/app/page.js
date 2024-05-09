@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Loader from '@/components/loader/Index';
 import LandingPage from '@/components/hero/Index';
 import Video from '@/components/video/Index';
@@ -15,6 +15,8 @@ import Social from '@/components/social/Index';
 import Footer from '@/components/footer/Index';
 
 export default function Home() {
+
+  const [theme, setTheme] = useState('dark'); 
   
   const scrollRef = useRef(null);
   useEffect(() => {
