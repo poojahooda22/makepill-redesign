@@ -111,12 +111,14 @@ function Cursor() {
     return () => {
       window.removeEventListener('mousemove', mouseMove);
     }
-  }, [])
+  }, []);
+  
 
   return (
     <div>
       <motion.div 
         className={`cursor ${styles.cursor} hidden sm:flex items-center justify-center relative`}
+        variants={variants}
       ></motion.div>
     </div>
   )
