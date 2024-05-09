@@ -112,7 +112,13 @@ function Cursor() {
       window.removeEventListener('mousemove', mouseMove);
     }
   }, []);
-  
+
+  const variants = {
+    default : {
+      x: mousePosition.x,
+      y: mousePosition.y
+    }
+  }
 
   return (
     <div>
