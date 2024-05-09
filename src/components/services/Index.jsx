@@ -11,13 +11,16 @@ import { opacity } from '../header/anime';
 function About() {
 
   const [color, setColor] = React.useState('#0f0f0f');
+  const [textColor, setTextColor] = React.useState('#fff');
 
   const handleBackgroundChange = () => {
     setColor("#fff");
+    setTextColor('black')
   };
 
   const removeBackgroundChange = () => {
     setColor("#0f0f0f");
+    setTextColor('white')
   }
 
 
@@ -58,7 +61,7 @@ function About() {
   
   return (
     <div ref= {serviceRef}
-      style={{background: color}}
+      style={{background: color, color: textColor}}
       onMouseEnter={handleBackgroundChange}
       onMouseLeave={removeBackgroundChange}
       data-scroll-section data-scroll-speed=".1" 
