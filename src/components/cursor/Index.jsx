@@ -60,7 +60,7 @@ function Cursor() {
         // 2. Check for a threshold to reduce shakiness at low mouse velocity
         if (mouseVelocity > 20) {
         currentAngle = angle;
-      }
+        }
       // 3. Create a transformation string for rotation
       const rotateTransform = `rotate(${currentAngle}deg)`;
 
