@@ -67,7 +67,7 @@ function Cursor() {
       circleElement.style.transform = `${translateTransform} ${scaleTransform}`;
 
       // Request the next frame to continue the animation
-      window.requestAnimationFrame(tick);
+      global.window.requestAnimationFrame(tick);
     }
     tick();
   })
