@@ -11,63 +11,67 @@ import Link from "next/link";
 function Nav() {
 
   useEffect(() => {
-    function lerp(start, end, t) {
-      return start * (1-t) + end * t;
-    }
-    const linksContainer = document.querySelector('.links');
-    let currentScroll = 0;
-    let targetScroll = 0;
-    const ease = 0.1;
 
-    // document.addEventListener('mousemove', (e) => {
-    //   const extraHeight = linksContainer.offsetHeight - window.innerWidth;
-    //   targetScroll = (e.clientY / window.innerHeight);
-    // });
 
-    // function animate() {
-    //   currentScroll = lerp(currentScroll, targetScroll, ease);
-    //   linksContainer.style.transform = `translateY(${currentScroll}px)`;
-    //   requestAnimationFrame(animate);
-    // }
-    // animate();
-
-    let currentImageIdd = 1;
-    const textElem =  document.querySelectorAll('.link p');
-
-    textElem.forEach(link => {
-      link.addEventListener("mouseenter", function() {
-        const targetImageId = parseInt(this.getAttribute("data-image"));
-        
-        let rotationValue = targetImageId < currentImageIdd ? 180 : 180;
-
-        const pill = document.querySelector('.pill');
-        const images = document.querySelectorAll('.pill .img');
-
-        gsap.to(pill, {
-          rotation: rotationValue,
-          duration: 0.4,
-          onComplete: function () {
-            gsap.set(pill, {
-              rotation: 0,
-            });
-          },
-        });
-
-        gsap.set(images, {
-          zIndex: 0,
-          opacity: 0,
-          rotation: 180,
-        });
-
-        gsap.set(`.pill .img[data-id='${targetImageId}']`, {
-          zIndex: 10,
-          opacity: 1,
-          rotation: 0,
-          ease: "power4.inOut",
+    if(typeof window !== 'undefined') {
+      function lerp(start, end, t) {
+        return start * (1-t) + end * t;
+      }
+      const linksContainer = document.querySelector('.links');
+      let currentScroll = 0;
+      let targetScroll = 0;
+      const ease = 0.1;
+  
+      document.addEventListener('mousemove', (e) => {
+        const extraHeight = linksContainer.offsetHeight - window.innerWidth;
+        targetScroll = (e.clientY / window.innerHeight);
+      });
+  
+      function animate() {
+        currentScroll = lerp(currentScroll, targetScroll, ease);
+        linksContainer.style.transform = `translateY(${currentScroll}px)`;
+        requestAnimationFrame(animate);
+      }
+      animate();
+  
+      let currentImageIdd = 1;
+      const textElem =  document.querySelectorAll('.link p');
+  
+      textElem.forEach(link => {
+        link.addEventListener("mouseenter", function() {
+          const targetImageId = parseInt(this.getAttribute("data-image"));
+          
+          let rotationValue = targetImageId < currentImageIdd ? 180 : 180;
+  
+          const pill = document.querySelector('.pill');
+          const images = document.querySelectorAll('.pill .img');
+  
+          gsap.to(pill, {
+            rotation: rotationValue,
+            duration: 0.4,
+            onComplete: function () {
+              gsap.set(pill, {
+                rotation: 0,
+              });
+            },
+          });
+  
+          gsap.set(images, {
+            zIndex: 0,
+            opacity: 0,
+            rotation: 180,
+          });
+  
+          gsap.set(`.pill .img[data-id='${targetImageId}']`, {
+            zIndex: 10,
+            opacity: 1,
+            rotation: 0,
+            ease: "power4.inOut",
+          })
+          currentImageIdd = targetImageId;
         })
-        currentImageIdd = targetImageId;
       })
-    })
+    }
 
   })
 
