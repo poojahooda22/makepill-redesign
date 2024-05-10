@@ -11,20 +11,20 @@ function Cursor() {
     if( typeof window !== 'undefined') {
       const circleElement = document.querySelector('.cursor');
 
-    // Create objects to track mouse position and custom cursor position
-    const mouse = { x: 0, y: 0 }; // Track current mouse position
-    const previousMouse = { x: 0, y: 0 } // Store the previous mouse position
-    const circle = { x: 0, y: 0 }; // Track the circle position
+      // Create objects to track mouse position and custom cursor position
+      const mouse = { x: 0, y: 0 }; // Track current mouse position
+      const previousMouse = { x: 0, y: 0 } // Store the previous mouse position
+      const circle = { x: 0, y: 0 }; // Track the circle position
 
-    // Initialize variables to track scaling and rotation
-    let currentScale = 0; // Track current scale value
-    let currentAngle = 0; // Track current angle value
+      // Initialize variables to track scaling and rotation
+      let currentScale = 0; // Track current scale value
+      let currentAngle = 0; // Track current angle value
 
-    // Update mouse position on the 'mousemove' event
-    window.addEventListener('mousemove', (e) => {
-      mouse.x = e.x ;
-      mouse.y = e.y ;
-    });
+      // Update mouse position on the 'mousemove' event
+      window.addEventListener('mousemove', (e) => {
+        mouse.x = e.x ;
+        mouse.y = e.y ;
+      });
 
     // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
     const speed = 0.15;
