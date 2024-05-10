@@ -49,7 +49,7 @@ function Cursor() {
         const mouseVelocity = Math.min(Math.sqrt(deltaMouseX**2 + deltaMouseY**2) * 4, 150); 
         // 3. Convert mouse velocity to a value in the range [0, 0.5]
         const scaleValue = (mouseVelocity / 150) * 0.5;
-      // 4. Smoothly update the current scale
+        // 4. Smoothly update the current scale
       currentScale += (scaleValue - currentScale) * speed;
       // 5. Create a transformation string for scaling
       const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
