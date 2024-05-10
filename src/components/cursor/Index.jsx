@@ -61,7 +61,7 @@ function Cursor() {
         if (mouseVelocity > 20) {
           currentAngle = angle;
         }
-      // 3. Create a transformation string for rotation
+        // 3. Create a transformation string for rotation
       const rotateTransform = `rotate(${currentAngle}deg)`;
 
       // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
