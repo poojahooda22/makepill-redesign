@@ -42,7 +42,7 @@ function Cursor() {
         // 1. Calculate the change in mouse position (deltaMouse)
         const deltaMouseX = mouse.x - previousMouse.x;
         const deltaMouseY = mouse.y - previousMouse.y;
-      // Update previous mouse position for the next frame
+        // Update previous mouse position for the next frame
       previousMouse.x = mouse.x;
       previousMouse.y = mouse.y;
       // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
