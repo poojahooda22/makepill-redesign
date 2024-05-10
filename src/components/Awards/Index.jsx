@@ -60,7 +60,8 @@ function AwardsSection() {
       data-scroll-section data-scroll-speed=".1"
       className='awardsSec section w-full overflow-hidden py-[6vw]'
     >
-        <div className='py-[6vw] sm:py-0 px-[5vw] sm:px-[13vw]  sm:flex items-start justify-between sm:mb-[4vw] '>
+        <div className='py-[6vw] sm:py-0 px-[5vw] sm:px-[13vw]  
+        sm:flex items-start justify-between sm:mb-[4vw] '>
             <div  className='leftAwardDiv  '>
                 <div className=' sm:space-y-[4vw] pb-[14vw] sm:pb-0 overflow-hidden'>
                     <h4 ref={awardsRef} className='text-[5vw] sm:text-[1.1vw] tracking-wider'>/ Awards & Recognitions</h4>
