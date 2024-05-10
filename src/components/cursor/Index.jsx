@@ -35,7 +35,7 @@ function Cursor() {
         // Calculate circle movement based on mouse position and smoothing
         circle.x += (mouse.x - circle.x) * speed;
         circle.y += (mouse.y - circle.y) * speed;
-      // Create a transformation string for cursor translation
+        // Create a transformation string for cursor translation
       const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
 
       // SQUEEZE
