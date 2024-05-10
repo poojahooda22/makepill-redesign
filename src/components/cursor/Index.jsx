@@ -20,7 +20,7 @@ function Cursor() {
     let currentAngle = 0; // Track current angle value
 
     // Update mouse position on the 'mousemove' event
-    global.window.addEventListener('mousemove', (e) => {
+    global.window?.addEventListener('mousemove', (e) => {
       mouse.x = e.x ;
       mouse.y = e.y ;
     });
@@ -67,7 +67,7 @@ function Cursor() {
       circleElement.style.transform = `${translateTransform} ${scaleTransform}`;
 
       // Request the next frame to continue the animation
-      global.window.requestAnimationFrame(tick);
+      global.window?.requestAnimationFrame(tick);
     }
     tick();
   })
