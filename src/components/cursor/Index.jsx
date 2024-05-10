@@ -30,7 +30,7 @@ function Cursor() {
       const speed = 0.15;
 
       // Start animation
-    const tick = () => {
+      const tick = () => {
       // MOVE
       // Calculate circle movement based on mouse position and smoothing
       circle.x += (mouse.x - circle.x) * speed;
