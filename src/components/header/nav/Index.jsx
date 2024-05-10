@@ -19,17 +19,17 @@ function Nav() {
     let targetScroll = 0;
     const ease = 0.1;
 
-    document.addEventListener('mousemove', (e) => {
-      const extraHeight = linksContainer.offsetHeight - window.innerWidth;
-      targetScroll = (e.clientY / window.innerHeight);
-    });
+    // document.addEventListener('mousemove', (e) => {
+    //   const extraHeight = linksContainer.offsetHeight - window.innerWidth;
+    //   targetScroll = (e.clientY / window.innerHeight);
+    // });
 
-    function animate() {
-      currentScroll = lerp(currentScroll, targetScroll, ease);
-      linksContainer.style.transform = `translateY(${currentScroll}px)`;
-      requestAnimationFrame(animate);
-    }
-    animate();
+    // function animate() {
+    //   currentScroll = lerp(currentScroll, targetScroll, ease);
+    //   linksContainer.style.transform = `translateY(${currentScroll}px)`;
+    //   requestAnimationFrame(animate);
+    // }
+    // animate();
 
     let currentImageIdd = 1;
     const textElem =  document.querySelectorAll('.link p');
