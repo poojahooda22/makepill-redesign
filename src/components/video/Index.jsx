@@ -3,25 +3,38 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { IoVolumeMediumSharp } from "react-icons/io5";
-import { IoVolumeMedium } from "react-icons/io5";
+import { MdVolumeUp } from "react-icons/md";
 import { useGSAP } from '@gsap/react';
 
 function Video() {
   
   const [cursorChange, setCursorChange] = useState(false);
 
-  useEffect(() => {
-    
+  const handleCursor = () => {
+    gsap.to('.cursor', {
+      height: '100px',
+      width: '100px',
+      duration: 0.5,
+      ease: 'power3.inOut',
+    })
+  }
 
-    const cur = document.querySelector('.cursor');
-
-    
-   
-  })
+  const handleCursorLeave = () => {
+    gsap.to('.cursor', {
+      height: '16px',
+      width: '16px',
+      duration: 0.5,
+      ease: 'power3.inOut',
+      innerHTML: '',
+    })
+  }
   
   return (
-    <div  data-scroll data-scroll-section  data-scroll-speed="0.1"   className=' videoDiv w-full'>
-      <div className=' videoDiv h-[60vh] sm:h-full '>
+    <div  data-scroll data-scroll-section  data-scroll-speed="0."   className=' videoDiv w-full'>
+      <div className=' videoDiv h-[60vh] sm:h-full '
+        onMouseEnter={handleCursor}
+        onMouseLeave={handleCursorLeave}
+      >
         <video
           autoPlay
           loop
