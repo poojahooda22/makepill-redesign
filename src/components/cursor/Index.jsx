@@ -58,7 +58,7 @@ function Cursor() {
         // 1. Calculate the angle using the atan2 function
         const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
         // 2. Check for a threshold to reduce shakiness at low mouse velocity
-      if (mouseVelocity > 20) {
+        if (mouseVelocity > 20) {
         currentAngle = angle;
       }
       // 3. Create a transformation string for rotation
