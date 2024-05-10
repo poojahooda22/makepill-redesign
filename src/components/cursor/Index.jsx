@@ -51,7 +51,7 @@ function Cursor() {
         const scaleValue = (mouseVelocity / 150) * 0.5;
         // 4. Smoothly update the current scale
         currentScale += (scaleValue - currentScale) * speed;
-      // 5. Create a transformation string for scaling
+        // 5. Create a transformation string for scaling
       const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
 
       // ROTATE
