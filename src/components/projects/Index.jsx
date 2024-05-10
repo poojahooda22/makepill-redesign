@@ -77,16 +77,16 @@ function Projects() {
             ease: Power3.easeOut
         })
 
-        gsap.to('.projectVideoDiv', {
-            scrollTrigger: {
-                trigger: '.projectSec',
-                start: 'top 20%',
-                end: 'bottom -50%',
-                scrub: 1,
+        // gsap.to('.projectVideoDiv', {
+        //     scrollTrigger: {
+        //         trigger: '.projectSec',
+        //         start: 'top 20%',
+        //         end: 'bottom -50%',
+        //         scrub: 1,
                 
-            },
-            opacity: 0,
-        })
+        //     },
+        //     opacity: 0,
+        // })
     })
 
     // useEffect(() => {
@@ -117,8 +117,6 @@ function Projects() {
     // })
 
     useEffect(() => {
-
-        
         videosRef.current.forEach((video, index) => {
             gsap.to(video, {
                 zIndex: index === activeId ? 10 : 0,
