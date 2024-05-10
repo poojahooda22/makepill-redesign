@@ -6,9 +6,6 @@ import { gsap } from 'gsap'
 
 function LandingPage() {
 
-    
-
-   
   return (
     <div data-scroll data-scroll-section  className='first section w-full overflow-hidden relative'>
         <div className='page1 relative'>
