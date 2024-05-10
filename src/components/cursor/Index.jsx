@@ -36,7 +36,7 @@ function Cursor() {
         circle.x += (mouse.x - circle.x) * speed;
         circle.y += (mouse.y - circle.y) * speed;
         // Create a transformation string for cursor translation
-      const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
+        const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
 
       // SQUEEZE
       // 1. Calculate the change in mouse position (deltaMouse)
