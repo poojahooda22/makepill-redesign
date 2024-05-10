@@ -1,16 +1,21 @@
 'use client'
 
 import gsap from 'gsap';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Power3 } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import style from './style.module.css'
 
 function Projects() {   
     
+    
     const [active, setActive] = React.useState()
 
-        
+    const [activeVideoId, setActiveVideoId] = useState();
+
+    const handleMouseVideoLeave = () => {
+        setActiveVideoId(null);  // Optionally reset the active video when mouse leaves
+    };     
     
 
     const data = [
@@ -63,7 +68,7 @@ function Projects() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.projectSec',
-                start: 'top 50%',
+                start: 'top top',
                 end: 'bottom -50%',
                 scrub: 1,
                 markers: true
@@ -81,28 +86,52 @@ function Projects() {
         })
     })
 
-    const handleMouseEnter = (index) => {
-        const ids = index.currentTarget.getAttribute('data-id');
-        const bgEl = document.querySelector(`.id-${ids}`); // Make sure this ID selector is correct
-        console.log(bgEl);
-    };
+    useEffect(() => {
+        let currentImageIdd = 1;
+        const clip = document.querySelectorAll('.pjtFull h1');
+
+        clip.forEach(elem => {
+            elem.addEventListener('mouseenter', () => {
+                const targetImageId = document.querySelector("data-image");
+                const videoDiv = document.querySelector('.projectVideoDiv');
+                const mainVideo = document.querySelectorAll('.projectVideoDiv video');
+
+
+                gsap.set(mainVideo, {
+                zIndex: 0,
+                opacity: 0,
+                });
+
+                gsap.set(`.projectVideoDiv video[data-id='${targetImageId}']`, {
+                zIndex: 10,
+                opacity: 1,
+                ease: "power4.inOut",
+                })
+                currentImageIdd = targetImageId;
+            })
+        })
+        
+    })
     
 
 
   return (
-    <div className='projectSec w-full relative mb-[8vw]'>
+    <div data-scroll data-scroll-section className='projectSec w-full relative mb-[8vw]'>
         <div className='' >
                 {data.map((item, index) => {
                    return (
                     <div key={index} className='w-full flex flex-col items-center justify-center '>
-                        <div className={`projectVideoDiv ${style.projectVideoDiv} absolute top-0 left-0 w-full h-[120vh] `}>
-                            <video  className={`w-full h-full object-cover relative ${item.id}`} autoPlay loop muted src={item.videoLink}></video>  
+                        <div  className={`projectVideoDiv ${style.projectVideoDiv} absolute top-0 left-0 w-full h-[120vh] `}>
+                            <video  className={`w-full h-full object-cover relative`} 
+                             autoPlay
+                             data-id={item.index}
+                            loop muted src={item.videoLink}></video>  
                         </div>
-                        <div className={`hidden projectheadDiv sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[5vw]`}>
-                            <div data-id={item.id} onMouseEnter={() => setActive(item.id)}
+                        <div className={`hidden projectheadDiv sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[5vw] `}>
+                            <div onMouseEnter={() => setActive(item.id)}
                                 className={`pjtFull ${style.pjtFull}  w-full h-full ${active === item.id ? 'text-[#fff]' : 'text-[#333]'} flex items-center justify-between `}
                             >
-                                <h1 className='text-[5vw] '>{item.name}</h1>
+                                <h1 data-image={item.id} className='text-[5vw] '>{item.name}</h1>
                                 <div className=' flex flex-col sm:items-end gap-[1vw] '>
                                     <div className='projectrightDiv flex items-center gap-[.4vw] text-[1vw]'>
                                         <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}><h3>{item.id1}</h3></div>
