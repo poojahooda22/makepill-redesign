@@ -117,6 +117,8 @@ function Projects() {
     // })
 
     useEffect(() => {
+
+        
         videosRef.current.forEach((video, index) => {
             gsap.to(video, {
                 zIndex: index === activeId ? 10 : 0,
