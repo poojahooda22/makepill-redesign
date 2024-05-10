@@ -70,7 +70,7 @@ function Cursor() {
       // Request the next frame to continue the animation
       window.requestAnimationFrame(tick);
       }
-    tick();
+      tick();
     }
   })
 
