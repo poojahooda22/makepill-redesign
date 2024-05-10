@@ -52,7 +52,7 @@ function Cursor() {
         // 4. Smoothly update the current scale
         currentScale += (scaleValue - currentScale) * speed;
         // 5. Create a transformation string for scaling
-      const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
+        const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
 
       // ROTATE
       // 1. Calculate the angle using the atan2 function
