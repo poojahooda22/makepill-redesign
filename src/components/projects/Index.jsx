@@ -139,7 +139,7 @@ function Projects() {
 
   return (
     <div 
-    data-scroll data-scroll-section className='projectSec w-full relative mb-[8vw]'>
+        data-scroll data-scroll-section className='projectSec w-full relative mb-[8vw]'>
         <div className='' >
                 {data.map((item, index) => {
                    return (
