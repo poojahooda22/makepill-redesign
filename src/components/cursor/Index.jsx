@@ -54,7 +54,7 @@ function Cursor() {
         // 5. Create a transformation string for scaling
         const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
 
-      // ROTATE
+        // ROTATE
       // 1. Calculate the angle using the atan2 function
       const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
       // 2. Check for a threshold to reduce shakiness at low mouse velocity
