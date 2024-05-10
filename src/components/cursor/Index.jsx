@@ -26,7 +26,7 @@ function Cursor() {
         mouse.y = e.y ;
       });
 
-    // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
+      // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
     const speed = 0.15;
 
     // Start animation
