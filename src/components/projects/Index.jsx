@@ -68,7 +68,7 @@ function Projects() {
                 start: 'top 20%',
                 end: 'bottom -50%',
                 scrub: 1,
-                markers: true
+                
             }
         })
         tl.from('.projectVideoDiv', {
@@ -83,7 +83,7 @@ function Projects() {
                 start: 'top 20%',
                 end: 'bottom -50%',
                 scrub: 1,
-                markers: true
+                
             },
             opacity: 0,
         })
