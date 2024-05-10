@@ -64,7 +64,7 @@ function About() {
       style={{background: color, color: textColor}}
       onMouseEnter={handleBackgroundChange}
       onMouseLeave={removeBackgroundChange}
-      data-scroll-section data-scroll-speed=".1" 
+      data-scroll data-scroll-section  data-scroll-speed="0.3"
       className='aboutSec section w-full pt-[6vw] overflow-hidden '
     >
 
