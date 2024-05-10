@@ -8,7 +8,8 @@ function Cursor() {
     
   useEffect(() => {
 
-    const circleElement = document.querySelector('.cursor');
+    if( typeof window !== 'undefined') {
+      const circleElement = document.querySelector('.cursor');
 
     // Create objects to track mouse position and custom cursor position
     const mouse = { x: 0, y: 0 }; // Track current mouse position
@@ -20,7 +21,7 @@ function Cursor() {
     let currentAngle = 0; // Track current angle value
 
     // Update mouse position on the 'mousemove' event
-    global.window?.addEventListener('mousemove', (e) => {
+    window.addEventListener('mousemove', (e) => {
       mouse.x = e.x ;
       mouse.y = e.y ;
     });
@@ -67,9 +68,10 @@ function Cursor() {
       circleElement.style.transform = `${translateTransform} ${scaleTransform}`;
 
       // Request the next frame to continue the animation
-      global.window?.requestAnimationFrame(tick);
+      window.requestAnimationFrame(tick);
     }
     tick();
+    }
   })
 
   return (
