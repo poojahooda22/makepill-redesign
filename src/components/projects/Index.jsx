@@ -152,7 +152,6 @@ function Projects() {
                              autoPlay
                              ref={el => videosRef.current[index] = el}
                              data-id={item.index}
-                            
                             loop muted src={item.videoLink}></video>  
                         </div>
                         <div className={`hidden projectheadDiv sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[3vw] `}>
