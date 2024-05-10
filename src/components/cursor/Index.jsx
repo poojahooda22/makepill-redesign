@@ -29,7 +29,7 @@ function Cursor() {
       // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
       const speed = 0.15;
 
-    // Start animation
+      // Start animation
     const tick = () => {
       // MOVE
       // Calculate circle movement based on mouse position and smoothing
