@@ -7,13 +7,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: '#0f0f0f';
+    background-color: '#0f0f0f5e';
     z-index: 1;
 }
 
 
 .pjtFull {
     transition: all .1s ease;
+    cursor: pointer;
 }
 
 
