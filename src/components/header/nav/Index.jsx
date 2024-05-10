@@ -56,13 +56,13 @@ function Nav() {
         gsap.set(images, {
           zIndex: 0,
           opacity: 0,
-          rotation: 0,
+          rotation: 180,
         });
 
         gsap.set(`.pill .img[data-id='${targetImageId}']`, {
           zIndex: 10,
           opacity: 1,
-          rotation: 180,
+          rotation: 0,
           ease: "power4.inOut",
         })
         currentImageIdd = targetImageId;
