@@ -1,7 +1,7 @@
 'use client'
 
 import gsap from 'gsap';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Power3 } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import style from './style.module.css'
@@ -11,12 +11,9 @@ function Projects() {
     
     const [active, setActive] = React.useState()
 
-    const [activeVideoId, setActiveVideoId] = useState();
+    const [activeId, setActiveId] = useState(null);
+    const videosRef = useRef([]);
 
-    const handleMouseVideoLeave = () => {
-        setActiveVideoId(null);  // Optionally reset the active video when mouse leaves
-    };     
-    
 
     const data = [
         {
@@ -68,7 +65,7 @@ function Projects() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.projectSec',
-                start: 'top top',
+                start: 'top 20%',
                 end: 'bottom -50%',
                 scrub: 1,
                 markers: true
@@ -79,39 +76,64 @@ function Projects() {
             duration: 1,
             ease: Power3.easeOut
         })
-        tl.to('.projectVideoDiv', {
+
+        gsap.to('.projectVideoDiv', {
+            scrollTrigger: {
+                trigger: '.projectSec',
+                start: 'top 20%',
+                end: 'bottom -50%',
+                scrub: 1,
+                markers: true
+            },
             opacity: 0,
-            duration: 1,
-            ease: Power3.easeOut
         })
     })
+
+    // useEffect(() => {
+    //     let currentImageIdd = 1;
+    //     const clip = document.querySelectorAll('.pjtFull h1');
+
+    //     clip.forEach(elem => {
+    //         elem.addEventListener('mouseenter', () => {
+    //             const targetImageId = document.querySelector("data-image");
+    //             const videoDiv = document.querySelector('.projectVideoDiv');
+    //             const mainVideo = document.querySelectorAll('.projectVideoDiv video');
+
+
+    //             gsap.set(mainVideo, {
+    //             zIndex: 0,
+    //             opacity: 0,
+    //             });
+
+    //             gsap.set(`.projectVideoDiv video[data-id='${targetImageId}']`, {
+    //             zIndex: 10,
+    //             opacity: 1,
+    //             ease: "power4.inOut",
+    //             })
+    //             currentImageIdd = targetImageId;
+    //         })
+    //     })
+        
+    // })
 
     useEffect(() => {
-        let currentImageIdd = 1;
-        const clip = document.querySelectorAll('.pjtFull h1');
-
-        clip.forEach(elem => {
-            elem.addEventListener('mouseenter', () => {
-                const targetImageId = document.querySelector("data-image");
-                const videoDiv = document.querySelector('.projectVideoDiv');
-                const mainVideo = document.querySelectorAll('.projectVideoDiv video');
-
-
-                gsap.set(mainVideo, {
-                zIndex: 0,
-                opacity: 0,
-                });
-
-                gsap.set(`.projectVideoDiv video[data-id='${targetImageId}']`, {
-                zIndex: 10,
-                opacity: 1,
+        videosRef.current.forEach((video, index) => {
+            gsap.to(video, {
+                zIndex: index === activeId ? 10 : 0,
+                opacity: index === activeId ? 1 : 0,
                 ease: "power4.inOut",
-                })
-                currentImageIdd = targetImageId;
-            })
-        })
-        
-    })
+            });
+            
+        });
+    }, [activeId]);
+
+    const handleMouseEnter = (id) => {
+        setActiveId(id);
+    };
+
+    const handleMouseLeave = () => {
+        setActiveId(null);
+    };
     
 
 
@@ -124,14 +146,19 @@ function Projects() {
                         <div  className={`projectVideoDiv ${style.projectVideoDiv} absolute top-0 left-0 w-full h-[120vh] `}>
                             <video  className={`w-full h-full object-cover relative`} 
                              autoPlay
+                             ref={el => videosRef.current[index] = el}
                              data-id={item.index}
+                            
                             loop muted src={item.videoLink}></video>  
                         </div>
-                        <div className={`hidden projectheadDiv sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[5vw] `}>
-                            <div onMouseEnter={() => setActive(item.id)}
-                                className={`pjtFull ${style.pjtFull}  w-full h-full ${active === item.id ? 'text-[#fff]' : 'text-[#333]'} flex items-center justify-between `}
+                        <div className={`hidden projectheadDiv sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[3vw] `}>
+                            <div    
+                                onMouseEnter={() => setActive(item.id)} 
+                                onMouseOver={() => handleMouseEnter(index)}
+                                onMouseLeave={handleMouseLeave}
+                                className={`pjtFull ${style.pjtFull}  ${active === item.id ? 'text-[#fff]' : 'text-[#333]'} w-full h-full  flex items-center justify-between py-[1vw] `}
                             >
-                                <h1 data-image={item.id} className='text-[5vw] '>{item.name}</h1>
+                                <h1 data-image={item.id} className={`text-[5vw]  `}>{item.name}</h1>
                                 <div className=' flex flex-col sm:items-end gap-[1vw] '>
                                     <div className='projectrightDiv flex items-center gap-[.4vw] text-[1vw]'>
                                         <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}><h3>{item.id1}</h3></div>
