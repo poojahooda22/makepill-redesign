@@ -110,10 +110,7 @@ export default Cursor
 
 //     window.addEven('', mouseMove);
 
-//     return () => {
-//       window.(', e);
 
-//       <motion.div 
 //         className={`cursor ${styles.cursor} hidden sm:flex items-center justify-center relative`}
 //         variants={variants}
 //         animate="default"
