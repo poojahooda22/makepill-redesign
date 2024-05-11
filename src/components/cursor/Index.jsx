@@ -115,8 +115,6 @@ export default Cursor
 //     }
 //   }, []);
 
-//   const variants = {
-//     default : {
 //      
 //
 //     }
