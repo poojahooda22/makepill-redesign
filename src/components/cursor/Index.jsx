@@ -113,9 +113,6 @@ export default Cursor
 //     return () => {
 //       window.(', e);
 
-
-//   return (
-//     <div>
 //       <motion.div 
 //         className={`cursor ${styles.cursor} hidden sm:flex items-center justify-center relative`}
 //         variants={variants}
