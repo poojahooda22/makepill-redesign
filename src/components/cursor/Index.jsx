@@ -98,5 +98,3 @@ export default Cursor
 // function Cursor() {
 
 //   const [mousePosition, setmousePosition] = React.useState({ x: 0, y: 0 });
-
-//
