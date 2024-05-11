@@ -42,7 +42,7 @@ export default function Home() {
         ref={scrollRef} 
         value={theme} 
         className="section text-white font-[mainfont] bg-primary-main "
-        >
+      >
         {/* Your content here */}
         <Cursor/> 
         {/* <Loader/> */}
