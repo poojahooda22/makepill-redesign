@@ -64,7 +64,7 @@ function Cursor() {
         // 3. Create a transformation string for rotation
         const rotateTransform = `rotate(${currentAngle}deg)`;
 
-      // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
+        // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
       circleElement.style.transform = `${translateTransform} ${scaleTransform}`;
 
       // Request the next frame to continue the animation
