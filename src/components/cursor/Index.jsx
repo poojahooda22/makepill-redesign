@@ -104,7 +104,7 @@ export default Cursor
 //     const mouseMove = e => {
 //       setmousePosition({
 //         x: e.cl,
-//         y: e.clientY
+//         y: e.clY
 //       })
 //     }
 
