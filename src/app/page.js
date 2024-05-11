@@ -20,7 +20,7 @@ export default function Home() {
   const ThemeContext = createContext('light');
   const [theme, setTheme] = useState('dark'); 
   const scrollRef = useRef(null);
-  
+
   useEffect(() => {
     if (scrollRef.current) {
       const scroll = new LocomotiveScroll({
@@ -38,7 +38,8 @@ export default function Home() {
 
   return (
     <main>
-      <div ref={scrollRef} value={theme} className="section text-white font-[mainfont] bg-primary-main ">
+      <div 
+      ref={scrollRef} value={theme} className="section text-white font-[mainfont] bg-primary-main ">
         {/* Your content here */}
         <Cursor/> 
         {/* <Loader/> */}
