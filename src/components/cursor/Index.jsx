@@ -117,7 +117,7 @@ export default Cursor
 
 //   const variants = {
 //     default : {
-//       x: mousePosition.x,
+//      
 //       y: mousePosition.y
 //     }
 //   }
