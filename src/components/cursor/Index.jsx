@@ -102,5 +102,3 @@ export default Cursor
 //
 
 //     const mouseMove = e => {
-//       setmousePosition({
-
