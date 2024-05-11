@@ -66,7 +66,8 @@ function AwardsSection() {
             <div  className='leftAwardDiv'>
                 <div className=' sm:space-y-[4vw] pb-[14vw] sm:pb-0 overflow-hidden'>
                     <h4 
-                        ref={awardsRef} className='text-[5vw] sm:text-[1.1vw] tracking-wider'>/ Awards & Recognitions</h4>
+                        ref={awardsRef} 
+                        className='text-[5vw] sm:text-[1.1vw] tracking-wider'>/ Awards & Recognitions</h4>
                 </div>  
             </div>
             <div  className='rightAwardDiv w-full sm:w-1/2 mb-[16vw] sm:mb-0'>
