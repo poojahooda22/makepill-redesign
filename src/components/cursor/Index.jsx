@@ -112,10 +112,7 @@ export default Cursor
 
 //     return () => {
 //       window.(', e);
-//     }
-//   }, []);
 
-//   }
 
 //   return (
 //     <div>
