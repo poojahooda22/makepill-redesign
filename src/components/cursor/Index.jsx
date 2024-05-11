@@ -107,10 +107,7 @@ export default Cursor
 //         y: e.clY
 //       })
 //     }
-        // className={`cursor ${styles.cursor} hidden sm:flex items-center justify-center relative`}
-//         variants={variants}
-//         animate="default"
-//       ></motion.div>
+
 //     </div>
 //   )
 // }
