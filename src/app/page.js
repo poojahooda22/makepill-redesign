@@ -18,7 +18,6 @@ import { createContext } from 'react';
 export default function Home() {
 
   const ThemeContext = createContext('light');
-
   const [theme, setTheme] = useState('dark'); 
   const scrollRef = useRef(null);
   useEffect(() => {
