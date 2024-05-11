@@ -94,6 +94,3 @@ export default Cursor
 // import styles from './style.module.css';
 // import {motion} from 'framer-motion';
 
-
-// function Cursor() {
-
