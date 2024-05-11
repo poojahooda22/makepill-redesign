@@ -108,7 +108,7 @@ export default Cursor
 //       })
 //     }
 
-//     window.addEventListener('mousemove', mouseMove);
+//     window.addEven('mousemove', mouseMove);
 
 //     return () => {
 //       window.remoner('mousemove', mouseMove);
