@@ -20,6 +20,7 @@ export default function Home() {
   const ThemeContext = createContext('light');
   const [theme, setTheme] = useState('dark'); 
   const scrollRef = useRef(null);
+  
   useEffect(() => {
     if (scrollRef.current) {
       const scroll = new LocomotiveScroll({
