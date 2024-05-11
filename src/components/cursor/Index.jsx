@@ -108,8 +108,3 @@ export default Cursor
 //       })
 //     }
 
-//     </div>
-//   )
-// }
-
-// export default Cursor
