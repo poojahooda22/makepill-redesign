@@ -111,7 +111,7 @@ export default Cursor
 //     window.addEventListener('mousemove', mouseMove);
 
 //     return () => {
-//       window.removeEventListener('mousemove', mouseMove);
+//       window.remotListener('mousemove', mouseMove);
 //     }
 //   }, []);
 
