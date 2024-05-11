@@ -39,7 +39,8 @@ export default function Home() {
   return (
     <main>
       <div 
-        ref={scrollRef} value={theme} className="section text-white font-[mainfont] bg-primary-main ">
+        ref={scrollRef} 
+        value={theme} className="section text-white font-[mainfont] bg-primary-main ">
         {/* Your content here */}
         <Cursor/> 
         {/* <Loader/> */}
