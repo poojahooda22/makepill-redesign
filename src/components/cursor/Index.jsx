@@ -111,7 +111,7 @@ export default Cursor
 //     window.addEven('', mouseMove);
 
 //     return () => {
-//       window.remoner('mousemove', mouseMove);
+//       window.('mousemove', mouseMove);
 //     }
 //   }, []);
 
