@@ -68,7 +68,8 @@ function AwardsSection() {
                     <h4 
                         ref={awardsRef} 
                         className='text-[5vw] sm:text-[1.1vw] tracking-wider'
-                    >/ Awards & Recognitions
+                    >
+                        / Awards & Recognitions
                     </h4>
                 </div>  
             </div>
