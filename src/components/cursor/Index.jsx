@@ -105,6 +105,5 @@ export default Cursor
 //       setmousePosition({
 //         x: e.cl,
 //         y: e.clY
-//       })
-//     }
+//  
 
