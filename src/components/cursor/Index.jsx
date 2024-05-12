@@ -73,9 +73,11 @@ function Cursor() {
   //     tick();
   //   }
   // })
-
+  let cursor = (data) => {
+    console.log(data);
+  }
   return (
-    <div className=''>
+    <div className='' onMouseMove={(e) => cursor(e)}>
       <div>
         <div className={`cursor ${styles.cursor} hidden sm:flex items-center justify-center relative`}>
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[1vw]'></div>
