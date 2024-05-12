@@ -156,7 +156,7 @@ function Nav() {
             {data.map((item, index) => (
               <div key={index}>
                 <div className='link flex flex-col gap-10'>
-                  <a href={`#${index}`} id={`${index}`} onMouseEnter={(data)=> imgs(data.target)} className={` textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
+                  <a href={`#${index}`} id={`${index}`} onMouseEnter={(item)=> imgs(item._targetInst.memoizedProps.id)} className={` textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
                     {item.title}
                   </a>
                 </div>
