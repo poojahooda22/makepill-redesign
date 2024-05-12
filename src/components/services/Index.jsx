@@ -10,18 +10,18 @@ import { opacity } from '../header/anime';
 
 function About() {
 
-  const [color, setColor] = React.useState('#0f0f0f');
-  const [textColor, setTextColor] = React.useState('#fff');
+  // const [color, setColor] = React.useState('#0f0f0f');
+  // const [textColor, setTextColor] = React.useState('#fff');
 
-  const handleBackgroundChange = () => {
-    setColor("#fff");
-    setTextColor('black')
-  };
+  // const handleBackgroundChange = () => {
+  //   setColor("#fff");
+  //   setTextColor('black')
+  // };
 
-  const removeBackgroundChange = () => {
-    setColor("#0f0f0f");
-    setTextColor('white')
-  }
+  // const removeBackgroundChange = () => {
+  //   setColor("#0f0f0f");
+  //   setTextColor('white')
+  // }
 
 
   const serviceRef = useRef();
@@ -55,15 +55,38 @@ function About() {
       x: -100,
       opacity: 0,
     },'a')
-    
+    gsap.to(serviceRef.current,{
+      background: "#fff",
+      color: "#000",
+      scrollTrigger:{
+        trigger: '.aboutSec .rightDiv',
+        start: 'top 30%',
+        markers: true,
+        end: 'top 30%',
+        scrub:3,
+      }
+    },[serviceRef.current])
+
+    gsap.to(serviceRef.current,{
+      background: "#0f0f0f",
+      color: "#fff",
+      scrollTrigger:{
+        trigger: '.aboutSec .rightDiv',
+        start: 'top -10%',
+        markers: true,
+        end: 'top -10%',
+        scrub:3,
+      }
+    },[serviceRef.current])
+
   })
 
   
   return (
-    <div ref= {serviceRef}
-      style={{background: color, color: textColor}}
-      onMouseEnter={handleBackgroundChange}
-      onMouseLeave={removeBackgroundChange}
+    <div ref= {serviceRef} id='serviceRef'
+      // style={{background: color, color: textColor}}
+      // onMouseEnter={handleBackgroundChange}
+      // onMouseLeave={removeBackgroundChange}
       data-scroll data-scroll-section  data-scroll-speed="0.3"
       className='aboutSec section w-full pt-[6vw] overflow-hidden '
     >
