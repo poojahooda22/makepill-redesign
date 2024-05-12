@@ -1,4 +1,4 @@
-.overlay .elem  {
+/* .overlay .elem  {
     animation-name: anim1;
     animation-duration: 8s;
     animation-timing-function: linear;
@@ -12,7 +12,7 @@
     100%{
         transform: translateX(calc(100% - 20px));
     }
-}
+} */
 
 .socialDiv .overlay {
     top: 100%;
