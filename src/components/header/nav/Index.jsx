@@ -109,9 +109,9 @@ function Nav() {
   // let currentImageIdd = 1;
   // setCurrentImageId(textElem)
 
-  console.log(currentImageId);
+  // console.log(currentImageId);
   const imgs = (data)=>{
-    let img = 
+
     console.log(data);
   }
   useGSAP(()=>{
