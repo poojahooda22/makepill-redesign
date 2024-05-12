@@ -1,92 +1,149 @@
 'use client'
 
-import { useEffect } from 'react'
-import styles from './style.module.css'
-// import gsap from 'gsap'
+import { useEffect, useRef } from 'react';
+import styles from './style.module.css';
 
-function Cursor() {
-    
-  // useEffect(() => {
 
-  //   if( typeof window !== 'undefined') {
-  //     const circleElement = document.querySelector('.cursor');
+const Cursor = () => {
+  const canvasRef = useRef(null);
+  const particles = [];
+  const mouseTrail = [];
 
-  //     // Create objects to track mouse position and custom cursor position
-  //     const mouse = { x: 0, y: 0 }; // Track current mouse position
-  //     const previousMouse = { x: 0, y: 0 } // Store the previous mouse position
-  //     const circle = { x: 0, y: 0 }; // Track the circle position
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
 
-  //     // Initialize variables to track scaling and rotation
-  //     let currentScale = 0; // Track current scale value
-  //     let currentAngle = 0; // Track current angle value
+    const handleMouseMove = (event) => {
+      const mouseX = event.clientX;
+      const mouseY = event.clientY;
 
-  //     // Update mouse position on the 'mousemove' event
-  //     window.addEventListener('mousemove', (e) => {
-  //       mouse.x = e.x ;
-  //       mouse.y = e.y ;
-  //     });
+      const particleCount = Math.random() * 2 + 1;
 
-  //     // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-  //     const speed = 0.15;
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: mouseX,
+          y: mouseY,
+          radius: Math.random() * 2 + 3,
+          color: getRandomColor(), // Use getRandomColor function here
+          speedX: (Math.random() - 0.5) * 3,
+          speedY: (Math.random() - 0.5) * 3,
+        });
+      }
 
-  //     // Start animation
-  //     const tick = () => {
-  //       // MOVE
-  //       // Calculate circle movement based on mouse position and smoothing
-  //       circle.x += (mouse.x - circle.x) * speed;
-  //       circle.y += (mouse.y - circle.y) * speed;
-  //       // Create a transformation string for cursor translation
-  //       const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
+      mouseTrail.push({
+        x: mouseX,
+        y: mouseY,
+        radius: Math.random() * 6 + 4,
+        color: getRandomColor(), // Use getRandomColor function here
+        opacity: Math.random() * 0.5,
+      });
 
-  //       // SQUEEZE
-  //       // 1. Calculate the change in mouse position (deltaMouse)
-  //       const deltaMouseX = mouse.x - previousMouse.x;
-  //       const deltaMouseY = mouse.y - previousMouse.y;
-  //       // Update previous mouse position for the next frame
-  //       previousMouse.x = mouse.x;
-  //       previousMouse.y = mouse.y;
-  //       // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
-  //       const mouseVelocity = Math.min(Math.sqrt(deltaMouseX**2 + deltaMouseY**2) * 4, 150); 
-  //       // 3. Convert mouse velocity to a value in the range [0, 0.5]
-  //       const scaleValue = (mouseVelocity / 150) * 0.5;
-  //       // 4. Smoothly update the current scale
-  //       currentScale += (scaleValue - currentScale) * speed;
-  //       // 5. Create a transformation string for scaling
-  //       const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
+      if (mouseTrail.length > 10) {
+        mouseTrail.shift();
+      }
+    };
 
-  //       // ROTATE
-  //       // 1. Calculate the angle using the atan2 function
-  //       const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
-  //       // 2. Check for a threshold to reduce shakiness at low mouse velocity
-  //       if (mouseVelocity > 20) {
-  //         currentAngle = angle;
-  //       }
-  //       // 3. Create a transformation string for rotation
-  //       const rotateTransform = `rotate(${currentAngle}deg)`;
+    const handleTouchMove = (event) => {
+      const touch = event.touches[0];
+      handleMouseMove({ clientX: touch.clientX, clientY: touch.clientY });
+    };
 
-  //       // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
-  //     circleElement.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
+    const animateParticles = () => {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-  //     // Request the next frame to continue the animation
-  //     window.requestAnimationFrame(tick);
-  //     }
-  //     tick();
-  //   }
-  // })
-  let cursor = (data) => {
-    console.log(data);
-  }
+      particles.forEach((particle, index) => {
+        ctx.beginPath();
+        ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
+        ctx.fillStyle = particle.color;
+        ctx.shadowBlur = particle.radius * 5;
+        ctx.shadowColor = particle.color;
+        ctx.fill();
+
+        particle.x += particle.speedX;
+        particle.y += particle.speedY;
+        particle.radius -= 0.001;
+
+        if (particle.radius <= 0) {
+          particles.splice(index, 1);
+        }
+      });
+
+      mouseTrail.forEach((pos) => {
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, pos.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 255, 255, ${pos.opacity})`;
+        ctx.fill();
+      });
+
+      requestAnimationFrame(animateParticles);
+    };
+
+    const handleMouseOut = () => {
+      particles.length = 0;
+      mouseTrail.length = 0;
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    };
+
+    const getRandomColor = () => { // Define getRandomColor function
+      const randomR = Math.floor(Math.random() * 255);
+      const randomG = Math.floor(Math.random() * 255);
+      const randomB = Math.floor(Math.random() * 255);
+      return `rgba(${randomR}, ${randomG}, ${randomB}, 1)`;
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('touchmove', handleTouchMove);
+    window.addEventListener('mouseout', handleMouseOut);
+
+    animateParticles();
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('mouseout', handleMouseOut);
+    };
+  }, []);
+
+  useEffect(() => {
+    const resizeCanvas = () => {
+      const canvas = canvasRef.current;
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    resizeCanvas();
+
+    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener('orientationchange', resizeCanvas);
+
+    return () => {
+      window.removeEventListener('resize', resizeCanvas);
+      window.removeEventListener('orientationchange', resizeCanvas);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.body.style.cursor = 'none';
+    return () => {
+      document.body.style.cursor = 'auto';
+    };
+  }, []);
+
   return (
-    <div className='' onMouseMove={(e) => cursor(e)}>
-      <div>
-        <div className={`cursor ${styles.cursor} hidden sm:flex items-center justify-center relative`}>
-          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[1vw]'></div>
-        </div>
-      </div>
-         
-    </div>
-  )
-}
+    <canvas
+      ref={canvasRef}
+      width={window.innerWidth}
+      height={window.innerHeight}
+      style={{
+        border: '1px solid #000',
+        position: 'fixed',
+        pointerEvents: 'none',
+        top: 0,
+        left: 0,
+        zIndex: 9,
+      }}
+    ></canvas>
+  );
+};
 
-export default Cursor
-
+export default Cursor;
