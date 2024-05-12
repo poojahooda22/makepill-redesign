@@ -61,7 +61,7 @@ function About() {
       scrollTrigger:{
         trigger: '.aboutSec .rightDiv',
         start: 'top 30%',
-        markers: true,
+        
         end: 'top 30%',
         scrub:3,
       }
@@ -72,7 +72,7 @@ function About() {
       color: "#fff",
       scrollTrigger:{
         trigger: '.aboutSec .rightDiv',
-        start: 'top -10%',
+        start: 'top -70%',
         markers: true,
         end: 'top -10%',
         scrub:3,
