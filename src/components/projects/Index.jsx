@@ -5,6 +5,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import { Power3 } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import style from './style.module.css'
+import Image from 'next/image';
 
 function Projects() {   
     
@@ -46,7 +47,7 @@ function Projects() {
             category2: 'Chara Design',
             category3: '3D',
             category4: '+3',
-            videoLink: 'https://res.cloudinary.com/mkpill/video/upload/v1691489003/airbusgaming_entry_9439fb4bb5.mp4'
+            videoLink: 'https://res.cloudinary.com/mkpill/video/upload/v1689237449/airbusgaming_reel_vp9_80796a359f.webm'
         },
         {
             name: 'Caption',
@@ -165,7 +166,7 @@ function Projects() {
                                 <div className=' flex flex-col sm:items-end gap-[1vw] '>
                                     <div className='projectrightDiv flex items-center gap-[.4vw] text-[1vw]'>
                                         <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}><h3>{item.id1}</h3></div>
-                                        <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}><svg xmlns="http://www.w3.org/2000/svg" className='w-[1vw]'  width="15" height="12" fill="none" viewBox="0 0 15 12" data-v-1c16fc4a=""><path fill="currentColor" fill-rule="evenodd" d="M14.709 6.478 15 6.122l-.283-.362L10.58.473l-.904.707 3.411 4.362H.03V6.69H13.05l-3.365 4.108.888.728 4.136-5.048Zm-1.224-.429v.11l.044-.053-.044-.057Z" clip-rule="evenodd"></path></svg></div>
+                                        <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}> <Image src="/public/image/svg.svg" width={32} height={32} alt="imageSvg" /> </div>
                                         <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}><h3>{item.id2}</h3></div>
                                     </div>
                                     <div className='projectDownDiv hidden sm:flex items-center gap-2 whitespace-nowrap'>
