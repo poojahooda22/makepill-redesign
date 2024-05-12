@@ -8,7 +8,7 @@ import Image from 'next/image';
 function LandingPage() {
 
   return (
-    <div data-scroll data-scroll-section  className='first section w-full overflow-hidden relative'>
+    <div data-layout-theme="dark" data-scroll data-scroll-section  className='first section w-full overflow-hidden relative'>
         <div className='page1 relative'>
             <div className='relative z-[999]'>
                 <Header/>
@@ -38,7 +38,7 @@ function LandingPage() {
                         </div>
                         <div className=' highlightText overflow-hidden flex '>
                             <h1>immersives</h1>
-                            <span className='specialTxt text-[#deff00]'><Image src="/public/image/svg1.svg" width={32} height={32} alt="imageSvg" /></span>
+                            <span className='specialTxt text-[#deff00]'><img src="/public/image/svg.svg" /></span>
                         </div>
                     </div>
                     <div className='herobelowText text-center text-[4.6vw] sm:text-[1.2vw] mt-[8vw] sm:mt-[2vw]'>
