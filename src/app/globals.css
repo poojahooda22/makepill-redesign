@@ -13,15 +13,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --black: #0f0f0f;
-    --light: #fff;
-}
-
-
-body {
-    transition: background-color ease-out 0.5s;
-}
 
 /* *::selection {
     background-color: var(--salmon);
