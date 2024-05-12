@@ -42,7 +42,7 @@ function Nav() {
     },
   ]
 
-  //   useEffect(() => {
+    // useEffect(() => {
   //     function lerp(start, end, t) {
   //       return start * (1-t) + end * t;
   //     }
@@ -64,62 +64,49 @@ function Nav() {
   //     // animate();
   
   //     let currentImageIdd = 1;
-  //     const textElem =  document.querySelectorAll('.link p');
+  //     const textElem =  document.querySelectorAll('.link a');
   //     setCurrentImageId(textElem)
   //     console.log(currentImageId);
-  //     // textElem.forEach((link) => {
-  //     //   link.addEventListener("mouseenter", function() {
-  //     //     const targetImageId = parseInt(this.getAttribute("data-image"));
+  //     textElem.forEach((link) => {
+  //       link.addEventListener("mouseenter", function() {
+  //         const targetImageId = parseInt(this.getAttribute("data-image"));
           
-  //     //     let rotationValue = targetImageId < currentImageIdd ? true : false;
+  //         let rotationValue = targetImageId < currentImageIdd ? 180 : 180;
          
-  //     //     setCurrentImageId(targetImageId);
-  //     //     console.log(currentImageId)
+  //         // setCurrentImageId(targetImageId);
+  //         // console.log(currentImageId)
   
-  //     //     const pill = document.querySelector('.pill');
-  //     //     const images = document.querySelectorAll('.pill .img');
+  //         const pill = document.querySelector('.pill');
+  //         const images = document.querySelectorAll('.pill .img');
   
-  //     //     gsap.to(pill, {
-  //     //       rotation: rotationValue,
-  //     //       duration: 0.4,
-  //     //       onComplete: function () {
-  //     //         gsap.set(pill, {
-  //     //           rotation: 0,
-  //     //         });
-  //     //       },
-  //     //     });
+  //         gsap.to(pill, {
+  //           rotation: rotationValue,
+  //           duration: 0.4,
+  //           onComplete: function () {
+  //             gsap.set(pill, {
+  //               rotation: 0,
+  //             });
+  //           },
+  //         });
   
-  //     //     gsap.set(images, {
-  //     //       zIndex: 0,
-  //     //       opacity: 0,
-  //     //       rotation: 0,
-  //     //     });
+  //         gsap.set(images, {
+  //           zIndex: 0,
+  //           opacity: 0,
+  //           rotation: 0,
+  //         });
   
-  //     //     gsap.from(`.pill .img[data-id='${targetImageId}']`, {
-  //     //       zIndex: 10,
-  //     //       opacity: 1,
-  //     //       rotation: 0,
-  //     //       ease: "power4.inOut",
-  //     //     })
-  //     //     currentImageIdd = targetImageId;
-  //     //   })
-  //     // })
+  //         gsap.set(`.pill .img[data-id='${targetImageId}']`, {
+  //           zIndex: 10,
+  //           opacity: 1,
+  //           rotation: 0,
+  //           ease: "power4.inOut",
+  //         })
+  //         currentImageIdd = targetImageId;
+  //       })
+  //     })
 
   // })
-  // let currentImageIdd = 1;
-  // setCurrentImageId(textElem)
 
-  // console.log(currentImageId);
-  const imgs = (data)=>{
-
-    console.log(data);
-  }
-  useGSAP(()=>{
-    
-    gsap.from(".pill .img",{
-      rotate: '180deg'
-    })
-  },[])
   
   return (
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" 
@@ -156,7 +143,7 @@ function Nav() {
             {data.map((item, index) => (
               <div key={index}>
                 <div className='link flex flex-col gap-10'>
-                  <a href={`#${index}`} id={`${index}`} onMouseEnter={(item)=> imgs(item._targetInst.memoizedProps.id)} className={` textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
+                  <a href={`#${index}`} id={`${index}`}  className={` textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
                     {item.title}
                   </a>
                 </div>
