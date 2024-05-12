@@ -30,7 +30,7 @@ function Video() {
   }
   
   return (
-    <div  data-scroll data-scroll-section  data-scroll-speed="0."   className=' videoDiv w-full'>
+    <div  data-scroll data-scroll-section  data-scroll-speed="0.1"   className=' videoDiv w-full'>
       <div className=' videoDiv h-[60vh] sm:h-full '
         onMouseEnter={handleCursor}
         onMouseLeave={handleCursorLeave}
