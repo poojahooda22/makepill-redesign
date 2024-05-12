@@ -11,8 +11,6 @@ import { useGSAP } from '@gsap/react';
 
 function Nav() {
 
-  const [currentImageId, setCurrentImageId] = useState();
-
 
   const data = [
     {
@@ -42,71 +40,26 @@ function Nav() {
     },
   ]
 
-    // useEffect(() => {
-  //     function lerp(start, end, t) {
-  //       return start * (1-t) + end * t;
-  //     }
-  //     const linksContainer = document.querySelector('.links');
-  //     let currentScroll = 0;
-  //     let targetScroll = 0;
-  //     const ease = 0.1;
-  
-  //     // document.addEventListener('mousemove', (e) => {
-  //     //   const extraHeight = linksContainer.offsetHeight - window.innerWidth;
-  //     //   targetScroll = (e.clientY / window.innerHeight);
-  //     // });
-  
-  //     // function animate() {
-  //     //   currentScroll = lerp(currentScroll, targetScroll, ease);
-  //     //   linksContainer.style.transform = `translateY(${currentScroll}px)`;
-  //     //   requestAnimationFrame(animate);
-  //     // }
-  //     // animate();
-  
-  //     let currentImageIdd = 1;
-  //     const textElem =  document.querySelectorAll('.link a');
-  //     setCurrentImageId(textElem)
-  //     console.log(currentImageId);
-  //     textElem.forEach((link) => {
-  //       link.addEventListener("mouseenter", function() {
-  //         const targetImageId = parseInt(this.getAttribute("data-image"));
-          
-  //         let rotationValue = targetImageId < currentImageIdd ? 180 : 180;
-         
-  //         // setCurrentImageId(targetImageId);
-  //         // console.log(currentImageId)
-  
-  //         const pill = document.querySelector('.pill');
-  //         const images = document.querySelectorAll('.pill .img');
-  
-  //         gsap.to(pill, {
-  //           rotation: rotationValue,
-  //           duration: 0.4,
-  //           onComplete: function () {
-  //             gsap.set(pill, {
-  //               rotation: 0,
-  //             });
-  //           },
-  //         });
-  
-  //         gsap.set(images, {
-  //           zIndex: 0,
-  //           opacity: 0,
-  //           rotation: 0,
-  //         });
-  
-  //         gsap.set(`.pill .img[data-id='${targetImageId}']`, {
-  //           zIndex: 10,
-  //           opacity: 1,
-  //           rotation: 0,
-  //           ease: "power4.inOut",
-  //         })
-  //         currentImageIdd = targetImageId;
-  //       })
-  //     })
 
-  // })
+  useEffect(() => {
+    const links = document.querySelectorAll('.link a');
+    const videos = document.querySelectorAll('.pill .img');
 
+    links.forEach((link, idx) => {
+      link.addEventListener('mouseenter', () => {
+
+        gsap.set(videos, { opacity: 0 })
+        gsap.fromTo(videos[idx], {
+          rotate: -180,
+          opacity: 0
+        }, {
+          rotate: 0,
+          opacity: 1,
+        })
+      })
+    })
+
+  }, [])
   
   return (
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" 
@@ -143,7 +96,7 @@ function Nav() {
             {data.map((item, index) => (
               <div key={index}>
                 <div className='link flex flex-col gap-10'>
-                  <a href={`#${index}`} id={`${index}`}  className={` textmain text-[10vw] sm:text-[4.5vw] text-[#333]`}>
+                  <a href={`#${index}`} id={`${index}`}  className={` textmain ${styles.textmain} text-[10vw] sm:text-[4.5vw] text-[#333]`}>
                     {item.title}
                   </a>
                 </div>
@@ -161,29 +114,6 @@ function Nav() {
             ))} 
            </div> 
           </div>  
-
-          {/* <div  className={`pill ${styles.pill} w-[50vw] sm:w-[22vw] h-[100%] absolute top-[50%] right-[-16%] sm:right-[10%] -translate-y-1/2 `}>
-            <video
-              autoPlay 
-              loop 
-              muted 
-              className={`${styles.img} img w-full h-full rotate-0 object-fit `} data-id="1"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm"
-            ></video>
-            <video autoPlay loop muted className={`${styles.img} img w-full h-full rotate-0 object-fit`} data-id="2"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm"
-            ></video>
-            <video autoPlay loop muted className={`${styles.img} img w-full h-full  rotate-0 object-fit `} data-id="3"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm"
-            ></video>
-            <video autoPlay loop muted className={`${styles.img} img w-full h-full rotate-0 object-fit`} data-id="4"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm"
-            ></video>
-            <video  autoPlay loop muted className={`${styles.img} img w-full h-full rotate-0 object-fit`} data-id="5"
-              src="https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm"
-            ></video>
-          </div>         */}
-        
       </div>
     </motion.div>
   )
