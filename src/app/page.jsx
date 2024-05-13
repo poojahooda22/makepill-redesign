@@ -52,7 +52,7 @@ export default function Home() {
       scrollTrigger:{
         trigger: '.aboutSec .rightDiv',
         start: 'top -30%',
-        end: 'top -30%',
+        end: 'bottom -30%',
         scrub:3,
       }
     })
