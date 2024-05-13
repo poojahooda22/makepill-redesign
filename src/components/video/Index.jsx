@@ -17,7 +17,7 @@ function Video() {
   //   gsap.to('.cursor', {
   //     height: '100px',
   //     
-  //     ease: '',
+
   //   })
   // }
 
