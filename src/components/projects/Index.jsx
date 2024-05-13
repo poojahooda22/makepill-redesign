@@ -143,12 +143,12 @@ function Projects() {
     <div 
         data-scroll 
         data-scroll-section 
-        className='projectSec w-full relative mb-[8vw]'
+        className='projectSec w-full relative sm:mb-[8vw] mb-[20vw]'
     >
         <div className='' >
                 {data.map((item, index) => {
                    return (
-                    <div key={index} className='w-full flex flex-col items-center justify-center '>
+                    <div key={index} className='w-full sm:flex sm:flex-col items-center justify-center '>
                         <div  className={`projectVideoDiv ${style.projectVideoDiv} absolute top-0 left-0 w-full h-[120vh] `}>
                             <video  className={`w-full h-full object-cover relative`} 
                              autoPlay
@@ -156,7 +156,7 @@ function Projects() {
                              data-id={item.index}
                             loop muted src={item.videoLink}></video>  
                         </div>
-                        <div className={`projectheadDiv w-full sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[3vw] pt-[10vw] px-[5vw] `}>
+                        <div className={`projectheadDiv w-full sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[3vw] pt-[16vw] px-[5vw] `}>
                             <div
                                  data-cursor-text="Explore"    
                                 onMouseEnter={() => setActive(item.id)} 
@@ -183,9 +183,9 @@ function Projects() {
                     </div>
                    )
                 })}
-                <div className='flex items-center justify-center sm:hidden '>
-                        <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
-                            <h3 className='sm:text-[.9vw]'>Our values</h3>  
+                <div className='flex items-center justify-center sm:hidden my-[10vw] pb-[20vw] '>
+                        <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#838282] flex items-center justify-center'>
+                            <h3 className='sm:text-[.9vw]'>See all</h3>  
                         </div>  
                     </div> 
         </div>    
