@@ -16,7 +16,6 @@ function Video() {
   // const handleCursor = () => {
   //   gsap.to('.cursor', {
   //     height: '100px',
-  //     
 
   //   })
   // }
