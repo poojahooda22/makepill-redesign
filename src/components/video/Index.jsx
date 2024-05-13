@@ -20,7 +20,7 @@ function Video() {
   //   gsap.to(' {
   //     height: '16px',
   //     width: '16px',
-  //     duration: 0.5,
+  //     duration: 
   //     ease: 'power3.inOut',
   //     innerHTML: '',
   //   })
