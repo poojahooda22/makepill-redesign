@@ -14,7 +14,7 @@ function Video() {
   //   gsap.to('.cursor', {
   //     height: '100px',
   //     width: '100px',
-  //     duration: 0.5,
+  //     duration
   //     ease: 'power3.inOut',
   //   })
   // }
