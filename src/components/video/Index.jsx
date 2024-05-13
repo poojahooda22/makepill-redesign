@@ -15,7 +15,6 @@ function Video() {
 
   // const handleCursor = () => {
 
-  // }
 
   // const handleCursorLeave = () => {
   //   gsap.to(' {
