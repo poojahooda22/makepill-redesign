@@ -156,15 +156,15 @@ function Projects() {
                              data-id={item.index}
                             loop muted src={item.videoLink}></video>  
                         </div>
-                        <div className={`hidden projectheadDiv sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[3vw] `}>
+                        <div className={`projectheadDiv w-full sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[3vw] pt-[10vw] px-[5vw] `}>
                             <div
                                  data-cursor-text="Explore"    
                                 onMouseEnter={() => setActive(item.id)} 
                                 onMouseOver={() => handleMouseEnter(index)}
                                 onMouseLeave={handleMouseLeave}
-                                className={`pjtFull ${style.pjtFull}  ${active === item.id ? 'text-[#fff]' : 'text-[#333]'} w-full h-full  flex items-center justify-between py-[1vw] `}
+                                className={`pjtFull ${style.pjtFull}  ${active === item.id ? 'text-[#fff]' : 'text-[#333]'} w-full h-full  flex items-center justify-between sm:py-[1vw] `}
                             >
-                                <h1 data-image={item.id} className={`text-[5vw]  `}>{item.name}</h1>
+                                <h1 data-image={item.id} className={`text-[10vw] sm:text-[5vw]  `}>{item.name}</h1>
                                 <div className=' flex flex-col sm:items-end gap-[1vw] '>
                                     <div className='projectrightDiv flex items-center gap-[.4vw] text-[1vw]'>
                                         <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}><h3>{item.id1}</h3></div>
@@ -183,6 +183,11 @@ function Projects() {
                     </div>
                    )
                 })}
+                <div className='flex items-center justify-center sm:hidden '>
+                        <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#d9d9d9] flex items-center justify-center'>
+                            <h3 className='sm:text-[.9vw]'>Our values</h3>  
+                        </div>  
+                    </div> 
         </div>    
         
     </div>
