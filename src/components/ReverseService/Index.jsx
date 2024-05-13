@@ -91,7 +91,7 @@ function ReverseService() {
         // onMouseEnter={handleBackgroundChange}
         // onMouseLeave={removeBackgroundChange}
     >
-        <div className='py-[6vw] sm:py-0 flex flex-col-reverse  sm:flex items-center justify-between px-[5vw] sm:px-[2.5vw] sm:mb-[4vw]'>
+        <div className='py-[6vw] sm:py-0 flex flex-col-reverse sm:flex-row items-center justify-between px-[5vw] sm:px-[2.5vw] sm:mb-[4vw]'>
             <div className='reverseLeftDiv w-full sm:w-2/3  sm:px-0 mb-[5vw] sm:mb-0'>
                 <div className=' sm:space-y-[4vw] space-y-[12vw] pl-0 sm:pl-[10vw] px-[5vw] '>
                     <div ref={serviceRef2} className='overflow-hidden'><h4   className='text-[5vw] sm:text-[1.1vw] tracking-wider'>/ Our culture</h4></div>
