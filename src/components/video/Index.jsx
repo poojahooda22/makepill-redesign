@@ -13,8 +13,6 @@ function Video() {
   
   // const [cursorChange, setCursorChange] = useState(false);
 
-
-
   // const handleCursorLeave = () => {
   // 
   // }
