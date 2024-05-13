@@ -43,8 +43,16 @@ export default function Home() {
       scrollTrigger:{
         trigger: '.aboutSec .rightDiv',
         start: 'top 30%',
-        markers: true,
         end: 'top 30%',
+        scrub:3,
+      }
+    })
+    gsap.to(".header",{
+      color: "#fff",
+      scrollTrigger:{
+        trigger: '.aboutSec .rightDiv',
+        start: 'top -30%',
+        end: 'top -30%',
         scrub:3,
       }
     })
