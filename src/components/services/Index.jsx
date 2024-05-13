@@ -73,7 +73,7 @@ function About() {
       scrollTrigger:{
         trigger: '.aboutSec .rightDiv',
         start: 'top -70%',
-        markers: true,
+
         end: 'top -10%',
         scrub:3,
       }
