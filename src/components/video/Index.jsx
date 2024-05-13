@@ -22,7 +22,7 @@ function Video() {
   // }
 
   // const handleCursorLeave = () => {
-  //   gsap.to('.cursor', {
+  //   gsap.to(' {
   //     height: '16px',
   //     width: '16px',
   //     duration: 0.5,
