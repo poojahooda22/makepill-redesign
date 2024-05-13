@@ -18,7 +18,6 @@ function Video() {
 
   // const handleCursorLeave = () => {
   //   gsap.to(' {
-  //   })
   // }
   
   return (
