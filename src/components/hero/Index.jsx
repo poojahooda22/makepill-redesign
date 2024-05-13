@@ -4,6 +4,7 @@ import React, { useEffect } from 'react'
 import Header from '../header/Index'
 import { gsap } from 'gsap'
 import Image from 'next/image';
+import img from '../../../public/image/svg1.svg'
 
 function LandingPage() {
 
@@ -38,7 +39,7 @@ function LandingPage() {
                         </div>
                         <div className=' highlightText overflow-hidden flex '>
                             <h1>immersives</h1>
-                            <span className='specialTxt text-[#deff00]'><img src="/public/image/svg.svg" /></span>
+                            <span className='specialTxt'><Image src={img} width={32} height={32} alt="image"/></span>
                         </div>
                     </div>
                     <div className='herobelowText text-center text-[4.6vw] sm:text-[1.2vw] mt-[8vw] sm:mt-[2vw]'>
