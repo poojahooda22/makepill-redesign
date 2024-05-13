@@ -21,7 +21,7 @@ function Video() {
   //     height: '16px',
   //     width: '16px',
  
-  //     ease: 'power3
+  //     ease: 
   //     innerHTML: '',
   //   })
   // }
