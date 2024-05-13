@@ -14,7 +14,7 @@ function Video() {
   // const [cursorChange, setCursorChange] = useState(false);
 
   // const handleCursor = () => {
-  //   gsap.to('.cursor', {
+  //   gsap.t
 
   // }
 
