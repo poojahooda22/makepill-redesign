@@ -8,6 +8,7 @@ import style from './style.module.css'
 import Image from 'next/image';
 import img from '../../../public/image/svg.svg'
 
+
 function Projects() {   
     
     
@@ -16,6 +17,9 @@ function Projects() {
     const [activeId, setActiveId] = useState(null);
     const videosRef = useRef([]);
 
+
+    
+    
 
     const data = [
         {
@@ -156,7 +160,7 @@ function Projects() {
                              data-id={item.index}
                             loop muted src={item.videoLink}></video>  
                         </div>
-                        <div className={`projectheadDiv w-full sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[3vw] pt-[16vw] px-[5vw] `}>
+                        <div className={`projectheadDiv w-full sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[3vw] pt-[16vw] px-[5vw]`}>
                             <div
                                  data-cursor-text="Explore"    
                                 onMouseEnter={() => setActive(item.id)} 
