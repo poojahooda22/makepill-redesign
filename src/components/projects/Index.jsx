@@ -6,6 +6,7 @@ import { Power3 } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import style from './style.module.css'
 import Image from 'next/image';
+import img from '../../../public/image/svg.svg'
 
 function Projects() {   
     
@@ -156,7 +157,8 @@ function Projects() {
                             loop muted src={item.videoLink}></video>  
                         </div>
                         <div className={`hidden projectheadDiv sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[3vw] `}>
-                            <div    
+                            <div
+                                 data-cursor-text="Explore"    
                                 onMouseEnter={() => setActive(item.id)} 
                                 onMouseOver={() => handleMouseEnter(index)}
                                 onMouseLeave={handleMouseLeave}
@@ -166,7 +168,7 @@ function Projects() {
                                 <div className=' flex flex-col sm:items-end gap-[1vw] '>
                                     <div className='projectrightDiv flex items-center gap-[.4vw] text-[1vw]'>
                                         <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}><h3>{item.id1}</h3></div>
-                                        <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}> <Image src="/public/image/svg.svg" width={32} height={32} alt="imageSvg" /> </div>
+                                        <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}> <Image src={img} width={16} height={32} alt="image" className={`spcArr ${style.spcArr}`}/> </div>
                                         <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}><h3>{item.id2}</h3></div>
                                     </div>
                                     <div className='projectDownDiv hidden sm:flex items-center gap-2 whitespace-nowrap'>
