@@ -1,12 +1,15 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'
-import { gsap } from 'gsap'
+import  gsap  from 'gsap'
 import { IoVolumeMediumSharp } from "react-icons/io5";
 import { MdVolumeUp } from "react-icons/md";
 import { useGSAP } from '@gsap/react';
+import MouseFollower from "mouse-follower";
+
 
 function Video() {
+  const cursor = new MouseFollower();
   
   // const [cursorChange, setCursorChange] = useState(false);
 
@@ -15,7 +18,7 @@ function Video() {
   //     height: '100px',
   //     width: '100px',
   //     
-  //     ease: 'power3.inOut',
+  //     ease: 'power3.',
   //   })
   // }
 
