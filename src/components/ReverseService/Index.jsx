@@ -7,18 +7,18 @@ import { useGSAP } from '@gsap/react'
 
 function ReverseService() {
 
-    const [color, setColor] = React.useState('#0f0f0f');
-    const [textColor, setTextColor] = React.useState('#fff');
+    // const [color, setColor] = React.useState('#0f0f0f');
+    // const [textColor, setTextColor] = React.useState('#fff');
   
-    const handleBackgroundChange = () => {
-      setColor("#fff");
-      setTextColor('black')
-    };
+    // const handleBackgroundChange = () => {
+    //   setColor("#fff");
+    //   setTextColor('black')
+    // };
   
-    const removeBackgroundChange = () => {
-      setColor("#0f0f0f");
-      setTextColor('white')
-    }
+    // const removeBackgroundChange = () => {
+    //   setColor("#0f0f0f");
+    //   setTextColor('white')
+    // }
   
 
     const serviceRef = useRef();
@@ -58,16 +58,38 @@ function ReverseService() {
         duration: 1,
         ease: 'power4.in'
         })  
+        gsap.to(serviceRef.current,{
+            background: "#fff",
+            color: "#000",
+            scrollTrigger:{
+              trigger: '.serviceSec',
+              start: 'top 30%',
+              
+              end: 'top 30%',
+              scrub:3,
+            }
+          },[serviceRef.current])
+      
+          gsap.to(serviceRef.current,{
+            background: "#0f0f0f",
+            color: "#fff",
+            scrollTrigger:{
+              trigger: '.serviceSec',
+              start: 'top -70%',
+              end: 'top -10%',
+              scrub:3,
+            }
+          },[serviceRef.current])
     })
 
   
   return (
-    <div
+    <div  ref= {serviceRef} id='serviceRef'  data-layout-theme="light"
       data-scroll-section data-scroll-speed=".1" 
       className='serviceSec section w-full py-[4vw] overflow-hidden '
-        style={{background: color, color: textColor}}
-        onMouseEnter={handleBackgroundChange}
-        onMouseLeave={removeBackgroundChange}
+        // style={{background: color, color: textColor}}
+        // onMouseEnter={handleBackgroundChange}
+        // onMouseLeave={removeBackgroundChange}
     >
         <div className='py-[6vw] sm:py-0  sm:flex items-center justify-between px-[5vw] sm:px-[2.5vw] sm:mb-[4vw]'>
             <div className='reverseLeftDiv w-full sm:w-2/3  sm:px-0 mb-[5vw] sm:mb-0'>
