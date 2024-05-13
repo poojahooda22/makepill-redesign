@@ -18,13 +18,13 @@
 }
 
 
-.pjtRttxt h3, .pjtRttxt svg{
+.pjtRttxt h3, .pjtRttxt .spcArr{
     opacity: 0;
     transform: translateY(20px);
     transition: all .5s ease;
 }
 
-.pjtFull:hover .pjtRttxt h3, .pjtFull:hover .pjtRttxt svg{
+.pjtFull:hover .pjtRttxt h3, .pjtFull:hover .pjtRttxt .spcArr{
     opacity: 1;
     transform: translateY(0);
 }
