@@ -1,12 +1,12 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './Style.module.css'
 // import gsap from 'gsap'
+import { MdVolumeUp } from "react-icons/md";
 
-function Cursor1() {
-
+function Cursor1({}) {
+ 
     
   useEffect(() => {
-
     const circleElement = document.querySelector('.cursor');
 
     // Create objects to track mouse position and custom cursor position
@@ -74,7 +74,9 @@ function Cursor1() {
   return (
     <div className=''>
       <div>
-        <div className={`cursor ${styles.cursor} hidden sm:inline-block`}></div>
+        <div className={`cursor ${styles.cursor} hidden sm:inline-block`}>
+        
+        </div>
       </div>
          
     </div>
