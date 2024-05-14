@@ -18,7 +18,7 @@ import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap/gsap-core';
 import dynamic from 'next/dynamic';
 
-const DynamicCursor = dynamic(() => import("../components/cursor1"), {
+const DynamicCursor = dynamic(() => import("../components/Cursor1"), {
   ssr: false,
 });
 
