@@ -26,7 +26,6 @@ function Video() {
     const video = document.querySelector('.videoDiv video');
 
     videoDiv.addEventListener('mouseenter', function () {
-     
       cursor.innerHTML = "play"
       gsap.to(cursor, {
         width: '140px',
