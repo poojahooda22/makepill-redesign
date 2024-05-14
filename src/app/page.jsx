@@ -66,7 +66,7 @@ export default function Home() {
         className="section text-white font-[mainfont] bg-primary-main "
       >
         {/* Your content here */}
-        <Cursor1/>
+        <Cursor/>
         {/* <Loader/> */}
         <LandingPage/>
         <Video/>
