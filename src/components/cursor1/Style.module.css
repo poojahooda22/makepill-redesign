@@ -8,8 +8,14 @@
     top: calc(var(--circle-size) / 2 * -1);
     left: calc(var(--circle-size) / 2 * -1);
     pointer-events: none;
-    mix-blend-mode: difference;
-    z-index: 9999;
+    /* mix-blend-mode: difference; */
+    z-index: 10;
+    transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
   
   }
   
