@@ -59,7 +59,30 @@ function Nav() {
       })
     })
 
+    const cursor = document.querySelector('.cursor');
+    
+    
+    links.forEach((link) => {
+      link.addEventListener('mouseenter', function () {
+        cursor.innerHTML = "Open"
+        gsap.to(cursor, {
+          width: '140px',
+          height: '140px',
+          duration: 0.5,
+        })
+      })
+      link.addEventListener('mouseleave', function () { 
+        cursor.innerHTML = ""
+        gsap.to(cursor, {
+          width: '16px',
+          height: '16px',
+          duration: 0.5,
+        })
+      })
+    })
   }, [])
+
+
   
   return (
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" 
@@ -77,10 +100,10 @@ function Nav() {
           <div className='hidden sm:inline-block'>
             {['Instagram', 'Twitter', 'Facebook', 'LinkedIn', 'Dribbble'].map((item,index) => {
               return (
-                <div key={index} className={`ptag pb-[1.5vw]`}>
+                <div key={index} className={`ptag ${styles.ptag} pb-[1.5vw]`}>
                   <p className='leading-none sm:text-[1.1vw] ' >
                     {item}
-                    <div className={`underline `}></div>
+                    <div className={`underline ${styles.underline} `}></div>
                   </p>              
                 </div>
               )
@@ -96,9 +119,11 @@ function Nav() {
             {data.map((item, index) => (
               <div key={index}>
                 <div className='link flex flex-col gap-10'>
-                  <a href={`#${index}`} id={`${index}`}  className={` textmain ${styles.textmain} text-[10vw] sm:text-[4.5vw] text-[#333]`}>
-                    {item.title}
-                  </a>
+                  <Link href="/">
+                    <h4 id={`${index}`}  className={` textmain ${styles.textmain} text-[10vw] sm:text-[4.5vw] text-[#333]`}>
+                      {item.title}
+                    </h4>
+                  </Link>
                 </div>
 
                 <div  className={`pill  w-[50vw] sm:w-[22vw] h-[100%] absolute top-[50%] right-[-16%] sm:right-[10%] -translate-y-1/2 `}>
