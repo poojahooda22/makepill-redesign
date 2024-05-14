@@ -15,13 +15,16 @@ import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap/gsap-core';
 import Cursor1 from '@/components/cursor1/Index';
 
-// import dynamic from 'next/dynamic';
-
-// const DynamicCursor = dynamic(() => import("../components/Cursor1"), {
-//   ssr: false,
-// });
-
 export default function Home() {
+
+  useEffect(() => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import ('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
 
   // const ThemeContext = createContext('light');
   // const [theme, setTheme] = useState('dark'); 
@@ -80,7 +83,6 @@ export default function Home() {
   return (
     <main>
       <div 
-       
         className="section text-white font-[mainfont] bg-primary-main "
       >
         {/* Your content here */}
