@@ -31,7 +31,6 @@ export default function Home() {
   //   const locomotiveScroll = (await import('locomotive-scroll')).default;
   //   new locomotiveScroll({
   //       lenisOptions: {
-  //           lerp: 0.05,
 
   // })
 
