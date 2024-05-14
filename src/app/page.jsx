@@ -29,8 +29,6 @@ export default function Home() {
   // useEffect(() => {
   //   async function initializeLocomotive() {
   //   const locomotiveScroll = (await import('locomotive-scroll')).default;
-  //   new locomotiveScroll({
-
   // })
 
   useGSAP(()=>{
