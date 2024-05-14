@@ -9,7 +9,7 @@
     left: calc(var(--circle-size) / 2 * -1);
     pointer-events: none;
     mix-blend-mode: difference;
-    z-index: 10;
+    z-index: 10000;
     transition: all 0.1s ease;
     display: flex;
     justify-content: center;
