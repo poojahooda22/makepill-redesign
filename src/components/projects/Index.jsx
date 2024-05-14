@@ -18,7 +18,35 @@ function Projects() {
     const videosRef = useRef([]);
 
 
+    useEffect(() => {
+        const cursor = document.querySelector('.cursor');
     
+        const videoDiv = document.querySelectorAll('.pjtFull');
+        
+        videoDiv.forEach((videoDiv) => {
+            videoDiv.addEventListener('mouseenter', function () {
+                console.log('mouse enter');
+                cursor.innerHTML = "See project"
+                gsap.to(cursor, {
+                  width: '140px',
+                  height: '140px',
+                  duration: 0.5,
+                  mixBlenMode: 'none',
+               
+                })
+              })
+              videoDiv.addEventListener('mouseleave', function () {
+                console.log('mouse enter');
+                cursor.innerHTML = ""
+                gsap.to(cursor, {
+                  width: '16px',
+                  height: '16px',
+                  duration: 0.5,
+                mixBlenMode: 'difference',
+                })
+              })
+            })
+        })
     
 
     const data = [
@@ -153,14 +181,14 @@ function Projects() {
                 {data.map((item, index) => {
                    return (
                     <div key={index} className='w-full sm:flex sm:flex-col items-center justify-center '>
-                        <div  className={`projectVideoDiv ${style.projectVideoDiv} absolute top-0 left-0 w-full h-[120vh] `}>
+                        <div  className={`projectVideoDiv ${style.projectVideoDiv} absolute top-0 left-0 w-full h-[140vh] `}>
                             <video  className={`w-full h-full object-cover relative`} 
                              autoPlay
                              ref={el => videosRef.current[index] = el}
                              data-id={item.index}
                             loop muted src={item.videoLink}></video>  
                         </div>
-                        <div className={`projectheadDiv w-full sm:w-2/3 sm:flex items-center justify-between z-[10] sm:pt-[3vw] pt-[16vw] px-[5vw]`}>
+                        <div className={`projectheadDiv w-full sm:w-3/4 sm:flex items-center justify-between z-[9] sm:pt-[6vw] pt-[16vw] px-[5vw]`}>
                             <div
                                  data-cursor-text="Explore"    
                                 onMouseEnter={() => setActive(item.id)} 
@@ -168,7 +196,7 @@ function Projects() {
                                 onMouseLeave={handleMouseLeave}
                                 className={`pjtFull ${style.pjtFull}  ${active === item.id ? 'text-[#fff]' : 'text-[#333]'} w-full h-full  flex items-center justify-between sm:py-[1vw] `}
                             >
-                                <h1 data-image={item.id} className={`text-[10vw] sm:text-[5vw]  `}>{item.name}</h1>
+                                <h1 data-image={item.id} className={`text-[10vw] leading-[10vw] sm:text-[5vw] sm:leading-[6vw] `}>{item.name}</h1>
                                 <div className=' flex flex-col sm:items-end gap-[1vw] '>
                                     <div className='projectrightDiv flex items-center gap-[.4vw] text-[1vw]'>
                                         <div className={`pjtRttxt ${style.pjtRttxt} overflow-hidden`}><h3>{item.id1}</h3></div>
