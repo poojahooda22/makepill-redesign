@@ -32,7 +32,6 @@ export default function Home() {
   //   new locomotiveScroll({
   //       lenisOptions: {
   //           lerp: 0.05,
-  //       }
   //   });
   //   }
   // })
