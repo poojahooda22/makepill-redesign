@@ -17,10 +17,11 @@ import { createContext } from 'react';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap/gsap-core';
 import dynamic from 'next/dynamic';
+import Cursor1 from '@/components/cursor1/Index';
 
-const DynamicCursor = dynamic(() => import("../components/cursor1/Index"), {
-  ssr: false,
-});
+// const DynamicCursor = dynamic(() => import("../components/cursor1"), {
+//   ssr: false,
+// });
 
 export default function Home() {
 
@@ -70,7 +71,7 @@ export default function Home() {
         className="section text-white font-[mainfont] bg-primary-main "
       >
         {/* Your content here */}
-        <DynamicCursor/>
+        <Cursor1/>
         {/* <Loader/> */}
         <LandingPage/>
         <Video/>
