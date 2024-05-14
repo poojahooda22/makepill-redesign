@@ -19,35 +19,35 @@ function Projects() {
     const videosRef = useRef([]);
 
 
-    useEffect(() => {
-        const cursor = document.querySelector('.cursor');
+    // useEffect(() => {
+    //     const cursor = document.querySelector('.cursor');
     
-        const videoDiv = document.querySelectorAll('.pjtFull');
+    //     const videoDiv = document.querySelectorAll('.pjtFull');
         
-        videoDiv.forEach((videoDiv) => {
-            videoDiv.addEventListener('mouseenter', function () {
+    //     videoDiv.forEach((videoDiv) => {
+    //         videoDiv.addEventListener('mouseenter', function () {
                 
-                cursor.innerHTML = "See project"
-                gsap.to(cursor, {
-                  width: '140px',
-                  height: '140px',
-                  duration: 0.5,
+    //             cursor.innerHTML = "See project"
+    //             gsap.to(cursor, {
+    //               width: '140px',
+    //               height: '140px',
+    //               duration: 0.5,
                   
                
-                })
-              })
-              videoDiv.addEventListener('mouseleave', function () {
+    //             })
+    //           })
+    //           videoDiv.addEventListener('mouseleave', function () {
                 
-                cursor.innerHTML = ""
-                gsap.to(cursor, {
-                  width: '16px',
-                  height: '16px',
-                  duration: 0.5,
+    //             cursor.innerHTML = ""
+    //             gsap.to(cursor, {
+    //               width: '16px',
+    //               height: '16px',
+    //               duration: 0.5,
                 
-                })
-              })
-            })
-        })
+    //             })
+    //           })
+    //         })
+    // })
     
 
     const data = [
