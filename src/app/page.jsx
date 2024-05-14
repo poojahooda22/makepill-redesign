@@ -16,7 +16,11 @@ import Footer from '@/components/footer/Index';
 import { createContext } from 'react';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap/gsap-core';
-import Cursor1 from '@/components/cursor1/Index';
+import dynamic from 'next/dynamic';
+
+const DynamicCursor = dynamic(() => import("../components/cursor1/Index"), {
+  ssr: false,
+});
 
 export default function Home() {
 
@@ -66,7 +70,7 @@ export default function Home() {
         className="section text-white font-[mainfont] bg-primary-main "
       >
         {/* Your content here */}
-        <Cursor/>
+        <DynamicCursor/>
         {/* <Loader/> */}
         <LandingPage/>
         <Video/>
