@@ -8,6 +8,7 @@ import { useGSAP } from '@gsap/react';
 import MouseFollower from "mouse-follower";
 
 
+
 function Video() {
   // const cursor = new MouseFollower();
   
@@ -22,13 +23,14 @@ function Video() {
     const cursor = document.querySelector('.cursor');
 
     const videoDiv = document.querySelector('.videoDiv');
+    const video = document.querySelector('.videoDiv video');
 
     videoDiv.addEventListener('mouseenter', function () {
       console.log('mouse enter');
-      cursor.innerHTML = "View More"
+      cursor.innerHTML = "play"
       gsap.to(cursor, {
-        width: '160px',
-        height: '160px',
+        width: '140px',
+        height: '140px',
         duration: 0.5,
       })
     })
@@ -40,6 +42,15 @@ function Video() {
         height: '16px',
         duration: 0.5,
       })
+    })
+
+    var flag =0;
+    videoDiv.addEventListener('click', function() {
+      if(flag == 0) {
+        video.play();
+      } else {
+        video.pause();
+      }
     })
 
   
