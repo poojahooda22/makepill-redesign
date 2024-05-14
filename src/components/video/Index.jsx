@@ -19,43 +19,43 @@ function Video() {
   // }
 
 
-  // useEffect(() => {
-  //   const cursor = document.querySelector('.cursor');
+  useEffect(() => {
+    const cursor = document.querySelector('.cursor');
 
-  //   const videoDiv = document.querySelector('.videoDiv');
-  //   const video = document.querySelector('.videoDiv video');
+    const videoDiv = document.querySelector('.videoDiv');
+    const video = document.querySelector('.videoDiv video');
 
-  //   videoDiv.addEventListener('mouseenter', function () {
+    videoDiv.addEventListener('mouseenter', function () {
      
-  //     cursor.innerHTML = "play"
-  //     gsap.to(cursor, {
-  //       width: '140px',
-  //       height: '140px',
-  //       duration: 0.5,
-  //     })
-  //   })
-  //   videoDiv.addEventListener('mouseleave', function () {
-  //     cursor.innerHTML = ""
-  //     gsap.to(cursor, {
-  //       width: '16px',
-  //       height: '16px',
-  //       duration: 0.5,
-  //     })
-  //   })
+      cursor.innerHTML = "play"
+      gsap.to(cursor, {
+        width: '140px',
+        height: '140px',
+        duration: 0.5,
+      })
+    })
+    videoDiv.addEventListener('mouseleave', function () {
+      cursor.innerHTML = ""
+      gsap.to(cursor, {
+        width: '16px',
+        height: '16px',
+        duration: 0.5,
+      })
+    })
 
-  //   var flag =0;
-  //   videoDiv.addEventListener('click', function() {
-  //     if(flag == 0) {
-  //       video.play()
-  //       flag = 1
-  //     } else {
-  //       video.pause()
-  //       flag=0
-  //     }
-  //   })
+    var flag =0;
+    videoDiv.addEventListener('click', function() {
+      if(flag == 0) {
+        video.play()
+        flag = 1
+      } else {
+        video.pause()
+        flag=0
+      }
+    })
 
   
-  // })
+  })
   
   return (
     <div  data-scroll data-scroll-section  className=' videoDiv w-full'>
