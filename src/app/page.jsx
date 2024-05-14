@@ -45,7 +45,7 @@ export default function Home() {
     gsap.to(".header",{
       color: "#000",
       scrollTrigger:{
-        trigger: '.aboutSec .rightDiv',
+        trigger: '.aboutSec',
         start: 'top 30%',
         end: 'top 30%',
         scrub:3,
@@ -63,7 +63,16 @@ export default function Home() {
     gsap.to(".header",{
       color: "#fff",
       scrollTrigger:{
-        trigger: '.aboutSec .rightDiv',
+        trigger: '.aboutSec',
+        start: 'top -30%',
+        end: 'bottom -30%',
+        scrub:3,
+      }
+    })
+    gsap.to(".header",{
+      color: "#fff",
+      scrollTrigger:{
+        trigger: '.serviceSec',
         start: 'top -30%',
         end: 'bottom -30%',
         scrub:3,
