@@ -26,7 +26,7 @@ function Video() {
     const video = document.querySelector('.videoDiv video');
 
     videoDiv.addEventListener('mouseenter', function () {
-      console.log('mouse enter');
+     
       cursor.innerHTML = "play"
       gsap.to(cursor, {
         width: '140px',
@@ -35,7 +35,7 @@ function Video() {
       })
     })
     videoDiv.addEventListener('mouseleave', function () {
-      console.log('mouse enter');
+      
       cursor.innerHTML = ""
       gsap.to(cursor, {
         width: '16px',
@@ -47,9 +47,11 @@ function Video() {
     var flag =0;
     videoDiv.addEventListener('click', function() {
       if(flag == 0) {
-        video.play();
+        video.play()
+        flag = 1
       } else {
-        video.pause();
+        video.pause()
+        flag=0
       }
     })
 
@@ -68,6 +70,7 @@ function Video() {
           autoPlay
           loop
           muted
+          
           className='w-full h-full object-cover'
           src="https://res.cloudinary.com/mkpill/video/upload/v1691655828/makepill_showreel_opti_a5c666148b.mp4"
         >
