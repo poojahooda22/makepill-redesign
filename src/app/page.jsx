@@ -6,40 +6,37 @@ import LandingPage from '@/components/hero/Index';
 import Video from '@/components/video/Index';
 import About from '@/components/services/Index';
 import Cursor from '@/components/cursor/Index';
-import LocomotiveScroll from 'locomotive-scroll';
 import Projects from '@/components/projects/Index';
 import ReverseService from '@/components/ReverseService/Index';
 import AwardsSection from '@/components/Awards/Index';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Social from '@/components/social/Index';
 import Footer from '@/components/footer/Index';
-import { createContext } from 'react';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap/gsap-core';
-import dynamic from 'next/dynamic';
+import Cursor1 from '@/components/cursor1/Index';
 
-const DynamicCursor = dynamic(() => import("../components/Cursor1"), {
-  ssr: false,
-});
+// import dynamic from 'next/dynamic';
+
+// const DynamicCursor = dynamic(() => import("../components/Cursor1"), {
+//   ssr: false,
+// });
 
 export default function Home() {
 
-  const ThemeContext = createContext('light');
-  const [theme, setTheme] = useState('dark'); 
-  const scrollRef = useRef(null);
+  // const ThemeContext = createContext('light');
+  // const [theme, setTheme] = useState('dark'); 
+  // const scrollRef = useRef(null);
 
-  useEffect(() => {
-    if (scrollRef.current) {
-      const scroll = new LocomotiveScroll({
-        el: scrollRef.current,
-        smooth: true, 
-      });
-
-      return () => {
-        scroll.destroy();
-      };
-    }
-  }, []);
+  // useEffect(() => {
+  //   async function initializeLocomotive() {
+  //   const locomotiveScroll = (await import('locomotive-scroll')).default;
+  //   new locomotiveScroll({
+  //       lenisOptions: {
+  //           lerp: 0.05,
+  //       }
+  //   });
+  //   }
+  // })
 
   useGSAP(()=>{
     gsap.to(".header",{
@@ -83,12 +80,11 @@ export default function Home() {
   return (
     <main>
       <div 
-        ref={scrollRef} 
-        value={theme} 
+       
         className="section text-white font-[mainfont] bg-primary-main "
       >
         {/* Your content here */}
-        <DynamicCursor/>
+        <Cursor1/>
         <Loader/>
         <LandingPage/>
         <Video/>
