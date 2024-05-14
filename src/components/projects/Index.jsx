@@ -9,6 +9,7 @@ import Image from 'next/image';
 import img from '../../../public/image/svg.svg'
 
 
+
 function Projects() {   
     
     
@@ -31,7 +32,7 @@ function Projects() {
                   width: '140px',
                   height: '140px',
                   duration: 0.5,
-                  mixBlenMode: 'none',
+                  
                
                 })
               })
@@ -42,7 +43,7 @@ function Projects() {
                   width: '16px',
                   height: '16px',
                   duration: 0.5,
-                mixBlenMode: 'difference',
+                
                 })
               })
             })
