@@ -27,7 +27,7 @@ export default function Home() {
   }, [])
 
   // const ThemeContext = createContext('light');
-  // const [theme, setTheme] = useState('dark'); 
+  // const [theme, setTheme] = 
 
 
   // useEffect(() => {
