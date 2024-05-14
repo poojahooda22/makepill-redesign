@@ -30,7 +30,6 @@ export default function Home() {
   //   async function initializeLocomotive() {
   //   const locomotiveScroll = (await import('locomotive-scroll')).default;
   //   new locomotiveScroll({
-  //       lenisOptions: {
 
   // })
 
