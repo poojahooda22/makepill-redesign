@@ -48,6 +48,7 @@ export default function Home() {
         trigger: '.aboutSec',
         start: 'top top',
         end: 'top 30%',
+       
         scrub:3,
       }
     })
@@ -73,8 +74,8 @@ export default function Home() {
       color: "#fff",
       scrollTrigger:{
         trigger: '.serviceSec',
-        start: 'top 100%',
-        end: 'bottom -100%',
+        start: 'top 10%',
+        end: 'bottom -30%',
         scrub:3,
       }
     })
