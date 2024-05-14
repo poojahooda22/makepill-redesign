@@ -8,7 +8,7 @@
     top: calc(var(--circle-size) / 2 * -1);
     left: calc(var(--circle-size) / 2 * -1);
     pointer-events: none;
-    /* mix-blend-mode: difference; */
+    mix-blend-mode: difference;
     z-index: 10;
     transition: all 0.1s ease;
     display: flex;
@@ -18,4 +18,3 @@
     color: black;
   
   }
-  
