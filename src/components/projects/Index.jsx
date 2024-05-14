@@ -26,7 +26,7 @@ function Projects() {
         
         videoDiv.forEach((videoDiv) => {
             videoDiv.addEventListener('mouseenter', function () {
-                console.log('mouse enter');
+                
                 cursor.innerHTML = "See project"
                 gsap.to(cursor, {
                   width: '140px',
@@ -37,7 +37,7 @@ function Projects() {
                 })
               })
               videoDiv.addEventListener('mouseleave', function () {
-                console.log('mouse enter');
+                
                 cursor.innerHTML = ""
                 gsap.to(cursor, {
                   width: '16px',
