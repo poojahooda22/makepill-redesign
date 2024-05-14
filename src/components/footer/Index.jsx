@@ -8,46 +8,46 @@ import styles from './Style.module.css'
 function Footer() {
   const footerStyle = useRef();
 
-  useEffect(() => {
-    const cursor = document.querySelector('.cursor');
+  // useEffect(() => {
+  //   const cursor = document.querySelector('.cursor');
 
-    const videoDiv = document.querySelector('.footVideo');
+  //   const videoDiv = document.querySelector('.footVideo');
 
-    videoDiv.addEventListener('mouseenter', function () {
-      const tl = gsap.timeline();
+  //   videoDiv.addEventListener('mouseenter', function () {
+  //     const tl = gsap.timeline();
       
-      cursor.innerHTML = "Let's talk"
-      tl.to(cursor, {
-        width: '100px',
-        height: '100px',
-        duration: 0.5,
-        backgroundColor: '#deff00'
-      })
-      tl.to('.footVideo', {
-        rotate: 10,
-        scale: 1.1,
-        duration: 0.5,
-      })
-    })
-    videoDiv.addEventListener('mouseleave', function () {
+  //     cursor.innerHTML = "Let's talk"
+  //     tl.to(cursor, {
+  //       width: '100px',
+  //       height: '100px',
+  //       duration: 0.5,
+  //       backgroundColor: '#deff00'
+  //     })
+  //     tl.to('.footVideo', {
+  //       rotate: 10,
+  //       scale: 1.1,
+  //       duration: 0.5,
+  //     })
+  //   })
+  //   videoDiv.addEventListener('mouseleave', function () {
       
-      const tl = gsap.timeline();
-      cursor.innerHTML = ""
-      gsap.to(cursor, {
-        width: '16px',
-        height: '16px',
-        duration: 0.5,
-        backgroundColor: '#fff'
-      })
-      tl.to('.footVideo', {
-        rotate: 0,
-        scale: 1,
-        duration: 0.5,
-      })
-    })
+  //     const tl = gsap.timeline();
+  //     cursor.innerHTML = ""
+  //     gsap.to(cursor, {
+  //       width: '16px',
+  //       height: '16px',
+  //       duration: 0.5,
+  //       backgroundColor: '#fff'
+  //     })
+  //     tl.to('.footVideo', {
+  //       rotate: 0,
+  //       scale: 1,
+  //       duration: 0.5,
+  //     })
+  //   })
 
   
-  })
+  // })
 
 
   useGSAP(() => {
