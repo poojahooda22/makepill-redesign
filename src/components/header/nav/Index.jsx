@@ -16,27 +16,33 @@ function Nav() {
     {
       id: 1,
       title: 'Home',
-      image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm'
+      image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/index_x1_vp9_2cf8cc21e4.webm',
+      link: '/aboutPage'
     },
     {
       id: 2,
       title: 'Works',
-      image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm'
+      image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/works_x1_vp9_801e93b806.webm',
+      link: '/about'
     },
     {
       id: 3,
       title: 'Services',
-      image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm'
+      image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377144/expertises_x1_vp9_11ee1f3431.webm',
+      link: '/about'
     },
     {
       id: 4,
       title: 'contact',
-      image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm'
+      image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/contact_x1_vp9_cc7a99e029.webm',
+      link: '/about'
+      
     },
     {
       id: 5,
       title: 'Vision',
-      image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm'
+      image: 'https://res.cloudinary.com/mkpill/video/upload/v1689377143/about_x1_vp9_af33c15d4f.webm',
+      link: '/about'
     },
   ]
 
@@ -119,7 +125,7 @@ function Nav() {
             {data.map((item, index) => (
               <div key={index}>
                 <div className='link flex flex-col gap-10'>
-                  <Link href="/">
+                  <Link href={item.link}>
                     <h4 id={`${index}`}  className={` textmain ${styles.textmain} text-[10vw] sm:text-[4.5vw] text-[#333]`}>
                       {item.title}
                     </h4>
