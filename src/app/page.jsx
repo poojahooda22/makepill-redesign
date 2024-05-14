@@ -72,7 +72,7 @@ export default function Home() {
       >
         {/* Your content here */}
         <Cursor1/>
-        {/* <Loader/> */}
+        <Loader/>
         <LandingPage/>
         <Video/>
         <About/>
