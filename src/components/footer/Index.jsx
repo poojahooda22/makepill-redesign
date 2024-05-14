@@ -15,7 +15,7 @@ function Footer() {
 
     videoDiv.addEventListener('mouseenter', function () {
       const tl = gsap.timeline();
-      console.log('mouse enter');
+      
       cursor.innerHTML = "Let's talk"
       tl.to(cursor, {
         width: '100px',
@@ -30,7 +30,7 @@ function Footer() {
       })
     })
     videoDiv.addEventListener('mouseleave', function () {
-      console.log('mouse enter');
+      
       const tl = gsap.timeline();
       cursor.innerHTML = ""
       gsap.to(cursor, {
