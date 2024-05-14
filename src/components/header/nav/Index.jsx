@@ -97,7 +97,7 @@ function Nav() {
       <div className='wrapper flex items-center justify-between py-[2vw] overflow-hidden '>
         <div className='m-0 w-1/5 h-[95vh] flex flex-col items-start justify-between sm:gap-[13.5vw] sm:border-r-[.02vw] border-[#333] '>
           <div>
-            <Link href="/"> 
+            <Link to="/"> 
                 <h2 className='text-[4.5vw] sm:text-[1.3vw] font-semibold
                   tracking-wider leading-[2vw]'
                 >makepill</h2>
@@ -125,7 +125,7 @@ function Nav() {
             {data.map((item, index) => (
               <div key={index}>
                 <div className='link flex flex-col gap-10'>
-                  <Link href={item.link}>
+                  <Link to={item.link}>
                     <h4 id={`${index}`}  className={` textmain ${styles.textmain} text-[10vw] sm:text-[4.5vw] text-[#333]`}>
                       {item.title}
                     </h4>
