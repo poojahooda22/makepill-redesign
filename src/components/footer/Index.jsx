@@ -1,12 +1,53 @@
 'use client'
 
 import { useGSAP } from '@gsap/react';
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import gsap from 'gsap';
 import styles from './Style.module.css'
 
 function Footer() {
   const footerStyle = useRef();
+
+  useEffect(() => {
+    const cursor = document.querySelector('.cursor');
+
+    const videoDiv = document.querySelector('.footVideo');
+
+    videoDiv.addEventListener('mouseenter', function () {
+      const tl = gsap.timeline();
+      console.log('mouse enter');
+      cursor.innerHTML = "Let's talk"
+      tl.to(cursor, {
+        width: '100px',
+        height: '100px',
+        duration: 0.5,
+        backgroundColor: '#deff00'
+      })
+      tl.to('.footVideo', {
+        rotate: 10,
+        scale: 1.1,
+        duration: 0.5,
+      })
+    })
+    videoDiv.addEventListener('mouseleave', function () {
+      console.log('mouse enter');
+      const tl = gsap.timeline();
+      cursor.innerHTML = ""
+      gsap.to(cursor, {
+        width: '16px',
+        height: '16px',
+        duration: 0.5,
+        backgroundColor: '#fff'
+      })
+      tl.to('.footVideo', {
+        rotate: 0,
+        scale: 1,
+        duration: 0.5,
+      })
+    })
+
+  
+  })
 
 
   useGSAP(() => {
@@ -34,7 +75,7 @@ function Footer() {
   return (
     <div className='footerSec w-full relative pt-[8vw] sm:pt-[5vw]'>
       <div className='w-full flex items-center justify-center relative pb-[8vw] sm:pb-[5vw]'>
-        <div className='w-[80vw] sm:w-[20vw] sm:rotate-0'>
+        <div className='footVideo w-[90vw] sm:w-[20vw] sm:rotate-0'>
           <video className='w-full h-full object-cover' autoPlay loop muted src="https://res.cloudinary.com/mkpill/video/upload/v1689376834/footer_x1_vp9_4d2ebedd3d.webm"></video>
         </div>
         <div className='w-full absolute top-1/2 left-1/2 -translate-x-1/2 sm:-translate-y-2/3'>
