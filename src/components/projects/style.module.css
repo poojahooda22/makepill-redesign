@@ -28,6 +28,9 @@
     opacity: 1;
     transform: translateY(0);
 }
+.pjtFull:hover {
+    color: white;
+}
 
 .arrowDiv {
     transform-origin: top right;

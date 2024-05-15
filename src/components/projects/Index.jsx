@@ -169,12 +169,12 @@ function Projects() {
                              data-id={item.index}
                             loop muted src={item.videoLink}></video>  
                         </div>
-                        <div className={`projectheadDiv w-full sm:w-3/4 sm:flex items-center justify-between z-[9] sm:pt-[6vw] pt-[16vw] px-[5vw] `}>
+                        <div className={`projectheadDiv w-full sm:w-3/4 sm:flex items-center justify-between z-[9] sm:pt-[4vw] pt-[16vw] px-[5vw] sm:px-[0vw] `}>
                             <div   
                                 onMouseEnter={() => setActive(item.id)} 
                                 onMouseOver={() => handleMouseEnter(index)}
                                 onMouseLeave={handleMouseLeave}
-                                className={`pjtFull ${style.pjtFull}  ${active === item.id ? 'text-[#fff]' : 'text-[#333]'} w-full h-full  flex items-center justify-between sm:py-[1vw] `}
+                                className={`pjtFull ${style.pjtFull} text-[#333] w-full h-full  flex items-center justify-between sm:py-[1vw] `}
                             >
                                 <h1 data-image={item.id} className={`text-[10vw] leading-[10vw] sm:text-[5vw] sm:leading-[6vw] `}>{item.name}</h1>
                                 <div className=' flex flex-col sm:items-end gap-[1vw] '>
@@ -195,9 +195,11 @@ function Projects() {
                     </div>
                    )
                 })}
-                <div className={`hidden sm:flex items-center justify-center mt-[3vw] mb-[5vw]`}>
-                    <div className={`container ${style.container} w-3/4  px-[5vw] flex items-center justify-between py-[2vw]  text-[#333] hover:text-[#fff] relative`}>
-                        <h2 className='text-[5vw]'>See all our projects</h2>
+                
+        </div>  
+        <div className={`hidden sm:flex items-center justify-center mt-[4vw] mb-[5vw] `}>
+                    <div className={`container ${style.container} w-3/4   px-[0vw] flex items-center justify-between text-[#333] hover:text-[#fff] relative`}>
+                        <h2 className='text-[5vw] leading-[6vw]'>See all our projects</h2>
                         <div className={`relative w-[74px] h-[74px] `}>
                             <div className={`arrowDiv ${style.arrowDiv} w-[100%] h-[100%]  absolute top-0 left-0`}>
                                 <svg data-v-fa88415f="" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60"><path fill="currentColor" d="M50.017 17.041 7.06 60 0 52.941 42.959 9.983H5.095V0H60v54.905h-9.983V17.04Z"></path></svg>
@@ -212,8 +214,7 @@ function Projects() {
                     <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#838282] flex items-center justify-center'>
                         <h3 className='sm:text-[.9vw]'>See all</h3>  
                     </div>  
-                </div> 
-        </div>    
+                </div>   
         
     </div>
   )
