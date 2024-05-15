@@ -28,3 +28,28 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+.arrowDiv {
+    transform-origin: top right;
+    transition: all .5s;
+}
+
+.arrowDiv1 {
+    transform: scale(0);
+    transform-origin: left bottom;
+   transition: all .5s;  
+}
+
+.container:hover {
+  color: '#fff';
+}
+
+.container:hover .arrowDiv  {
+    transform: scale(0);
+
+}
+
+.container:hover .arrowDiv1  {
+    transform: scale(1);
+
+}
