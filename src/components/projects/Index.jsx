@@ -7,7 +7,7 @@ import { useGSAP } from '@gsap/react';
 import style from './style.module.css'
 import Image from 'next/image';
 import img from '../../../public/image/svg.svg'
-
+import { LuArrowUpRight } from "react-icons/lu";
 
 
 function Projects() {   
@@ -23,21 +23,19 @@ function Projects() {
         const cursor = document.querySelector('.cursor');
     
         const videoDiv = document.querySelectorAll('.pjtFull');
+
+        const seeDiv = document.querySelector('.container');
         
         videoDiv.forEach((videoDiv) => {
             videoDiv.addEventListener('mouseenter', function () {
-                
                 cursor.innerHTML = "See project"
                 gsap.to(cursor, {
                   width: '140px',
                   height: '140px',
                   duration: 0.5,
-                  
-               
                 })
-              })
-              videoDiv.addEventListener('mouseleave', function () {
-                
+            })
+            videoDiv.addEventListener('mouseleave', function () {
                 cursor.innerHTML = ""
                 gsap.to(cursor, {
                   width: '16px',
@@ -45,8 +43,28 @@ function Projects() {
                   duration: 0.5,
                 
                 })
-              })
             })
+        })
+
+        seeDiv.addEventListener('mouseenter', function() {
+            cursor.innerHTML = "See project"
+            gsap.to(cursor, {
+                width: '140px',
+                height: '140px',
+                duration: 0.5,
+                
+            })
+        })
+
+        seeDiv.addEventListener('mouseleave', function () {
+            cursor.innerHTML = ""
+            gsap.to(cursor, {
+              width: '16px',
+              height: '16px',
+              duration: 0.5,
+            
+            })
+        })
     })
     
 
@@ -111,6 +129,7 @@ function Projects() {
             duration: 1,
             ease: Power3.easeOut
         })
+        
 
         // gsap.to('.projectVideoDiv', {
         //     scrollTrigger: {
@@ -182,16 +201,15 @@ function Projects() {
                 {data.map((item, index) => {
                    return (
                     <div key={index} className='w-full sm:flex sm:flex-col items-center justify-center '>
-                        <div  className={`projectVideoDiv ${style.projectVideoDiv} absolute top-0 left-0 w-full h-[140vh] `}>
+                        <div  className={`projectVideoDiv ${style.projectVideoDiv} absolute top-0 left-0 w-full h-[180vh] `}>
                             <video  className={`w-full h-full object-cover relative`} 
                              autoPlay
                              ref={el => videosRef.current[index] = el}
                              data-id={item.index}
                             loop muted src={item.videoLink}></video>  
                         </div>
-                        <div className={`projectheadDiv w-full sm:w-3/4 sm:flex items-center justify-between z-[9] sm:pt-[6vw] pt-[16vw] px-[5vw]`}>
-                            <div
-                                 data-cursor-text="Explore"    
+                        <div className={`projectheadDiv w-full sm:w-3/4 sm:flex items-center justify-between z-[9] sm:pt-[6vw] pt-[16vw] px-[5vw] `}>
+                            <div   
                                 onMouseEnter={() => setActive(item.id)} 
                                 onMouseOver={() => handleMouseEnter(index)}
                                 onMouseLeave={handleMouseLeave}
@@ -216,11 +234,24 @@ function Projects() {
                     </div>
                    )
                 })}
+                <div className={`hidden sm:flex items-center justify-center mt-[3vw] mb-[5vw]`}>
+                    <div className={`container ${style.container} w-3/4  px-[5vw] flex items-center justify-between py-[2vw]  text-[#333] hover:text-[#fff] relative`}>
+                        <h2 className='text-[5vw]'>See all our projects</h2>
+                        <div className={`relative w-[74px] h-[74px] `}>
+                            <div className={`arrowDiv ${style.arrowDiv} w-[100%] h-[100%]  absolute top-0 left-0`}>
+                                <svg data-v-fa88415f="" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60"><path fill="currentColor" d="M50.017 17.041 7.06 60 0 52.941 42.959 9.983H5.095V0H60v54.905h-9.983V17.04Z"></path></svg>
+                            </div>
+                            <div className={`arrowDiv1 ${style.arrowDiv1} absolute top-0 left-0`}>
+                                <svg data-v-fa88415f="" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60"><path fill="currentColor" d="M50.017 17.041 7.06 60 0 52.941 42.959 9.983H5.095V0H60v54.905h-9.983V17.04Z"></path></svg>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
                 <div className='flex items-center justify-center sm:hidden my-[10vw] pb-[20vw] '>
                         <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#838282] flex items-center justify-center'>
                             <h3 className='sm:text-[.9vw]'>See all</h3>  
                         </div>  
-                    </div> 
+                </div> 
         </div>    
         
     </div>
