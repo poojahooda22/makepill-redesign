@@ -209,9 +209,9 @@ function Projects() {
                     </div>
                 </div>
                 <div className='flex items-center justify-center sm:hidden my-[10vw] pb-[20vw] '>
-                        <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#838282] flex items-center justify-center'>
-                            <h3 className='sm:text-[.9vw]'>See all</h3>  
-                        </div>  
+                    <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#838282] flex items-center justify-center'>
+                        <h3 className='sm:text-[.9vw]'>See all</h3>  
+                    </div>  
                 </div> 
         </div>    
         
