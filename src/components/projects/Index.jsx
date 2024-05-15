@@ -154,8 +154,6 @@ function Projects() {
 
     //             gsap.set(mainVideo, {
     //             });
-
-
     //             currentImageIdd = targetImageId;
     //         })
 
