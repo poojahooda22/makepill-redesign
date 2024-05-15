@@ -134,7 +134,7 @@ function Projects() {
     // useEffect(() => {
     //     let currentImageIdd = 1;
     //     const clip = 
-    //             currentImageIdd = 
+    //      
     // })
 
     useEffect(() => {
