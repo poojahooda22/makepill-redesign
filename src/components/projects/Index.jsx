@@ -155,7 +155,7 @@ function Projects() {
     //             gsap.set(mainVideo, {
     //             });
 
-    //             gsap.set(`.projectVideoDiv video[data-id='${targetImageId}']`, {
+    //             gsap.set(`.projectVideoDiv video[data-id='${targetImag
 
 
     //             ease: "power4.inOut",
