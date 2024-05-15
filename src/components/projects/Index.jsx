@@ -157,7 +157,7 @@ function Projects() {
 
     //             gsap.set(`.projectVideoDiv video[data-id='${targetImageId}']`, {
     //             zIndex: 10,
-    //             opacity: 1,
+
     //             ease: "power4.inOut",
     //             })
     //             currentImageIdd = targetImageId;
