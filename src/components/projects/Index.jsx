@@ -148,7 +148,7 @@ function Projects() {
     //     const clip = document.querySelectorAll('.pjtFull h1');
 
     //     clip.forEach(elem => {
-    //         elem.addEventListener('mouseenter', () => {
+    //         elem.addEventListener('mouseenter', 
     //             currentImageIdd = targetImageId;
     //         })
 
