@@ -156,7 +156,6 @@ function Projects() {
     //             });
 
     //             gsap.set(
-    //             ease:
     //             })
     //             currentImageIdd = targetImageId;
     //         })
