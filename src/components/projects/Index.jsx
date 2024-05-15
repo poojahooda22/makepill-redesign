@@ -149,9 +149,6 @@ function Projects() {
 
     //     clip.forEach(elem => {
     //             currentImageIdd = targetImageId;
-    //         })
-
-        
     // })
 
     useEffect(() => {
