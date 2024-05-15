@@ -152,7 +152,6 @@ function Projects() {
     //             const targetImageId = document.querySelector("data-image");
     //             const videoDiv = document.querySelector(';
 
-    //             gsap.set(mainVideo, {
     //             currentImageIdd = targetImageId;
     //         })
 
