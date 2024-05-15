@@ -132,13 +132,7 @@ function Projects() {
         
 
         // gsap.to('.projectVideoDiv', {
-        //     scrollTrigger: {
-        //         trigger: '.projectSec',
-        //         start: 'top 20%',
-        //         end: 'bottom -50%',
-        //         scrub: 1,
-                
-        //     },
+        //     
         //     opacity: 0,
         // })
     })
