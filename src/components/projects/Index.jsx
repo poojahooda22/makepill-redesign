@@ -158,7 +158,7 @@ function Projects() {
 
     //             currentImageIdd = targetImageId;
     //         })
-    //     })
+
         
     // })
 
