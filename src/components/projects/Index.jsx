@@ -155,7 +155,7 @@ function Projects() {
     //             gsap.set(mainVideo, {
     //             });
 
-    //             gsap.set(`.projectVideoD
+    //             gsap.set(
     //             ease: "power4.inOut",
     //             })
     //             currentImageIdd = targetImageId;
