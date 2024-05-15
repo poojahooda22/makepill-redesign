@@ -151,7 +151,6 @@ function Projects() {
     //         elem.addEventListener('mouseenter', () => {
     //             const targetImageId = document.querySelector("data-image");
     //             const videoDiv = document.querySelector(';
-    //             const
 
     //             gsap.set(mainVideo, {
     //             zIndex: 0,
