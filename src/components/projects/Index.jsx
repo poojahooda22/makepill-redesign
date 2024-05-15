@@ -131,9 +131,7 @@ function Projects() {
         })
         
 
-        // gsap.to('.projectVideoDiv', {
-        //     
-        //     opacity: 0,
+
         // })
     })
 
