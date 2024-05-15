@@ -133,7 +133,7 @@ function Projects() {
 
     // useEffect(() => {
     //     let currentImageIdd = 1;
-    //     const clip = document.querySelectorAll('.pjtFull h1');
+    //     const clip = 
     //             currentImageIdd = 
     // })
 
