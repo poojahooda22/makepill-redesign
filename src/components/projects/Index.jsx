@@ -131,12 +131,6 @@ function Projects() {
         })
     })
 
-    // useEffect(() => {
-    //     let currentImageIdd = 1;
-    //     const clip = 
-    //      
-    // })
-
     useEffect(() => {
         videosRef.current.forEach((video, index) => {
             gsap.to(video, {
