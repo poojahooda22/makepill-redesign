@@ -129,10 +129,6 @@ function Projects() {
             duration: 1,
             ease: Power3.easeOut
         })
-        
-
-
-        // })
     })
 
     // useEffect(() => {
