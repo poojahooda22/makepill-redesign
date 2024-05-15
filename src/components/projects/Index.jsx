@@ -153,7 +153,6 @@ function Projects() {
     //             const videoDiv = document.querySelector(';
     //             const
 
-
     //             gsap.set(mainVideo, {
     //             zIndex: 0,
     //             opacity: 0,
