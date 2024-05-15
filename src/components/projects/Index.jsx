@@ -154,7 +154,6 @@ function Projects() {
 
     //             gsap.set(mainVideo, {
     //             zIndex: 0,
-    //             opacity: 0,
     //             });
 
     //             gsap.set(`.projectVideoDiv video[data-id='${targetImageId}']`, {
