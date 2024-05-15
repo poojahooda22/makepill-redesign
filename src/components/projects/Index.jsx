@@ -149,8 +149,6 @@ function Projects() {
 
     //     clip.forEach(elem => {
     //         elem.addEventListener('mouseenter', () => {
-    //      
-
     //             currentImageIdd = targetImageId;
     //         })
 
