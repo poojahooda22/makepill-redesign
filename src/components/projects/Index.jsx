@@ -156,7 +156,7 @@ function Projects() {
     //             });
 
     //             gsap.set(`.projectVideoDiv video[data-id='${targetImageId}']`, {
-    //             zIndex: 10,
+
 
     //             ease: "power4.inOut",
     //             })
