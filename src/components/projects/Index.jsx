@@ -153,7 +153,6 @@ function Projects() {
     //             const videoDiv = document.querySelector(';
 
     //             gsap.set(mainVideo, {
-    //             zIndex: 0,
     //             });
 
     //             gsap.set(`.projectVideoDiv video[data-id='${targetImageId}']`, {
