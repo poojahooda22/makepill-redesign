@@ -43,16 +43,16 @@
    transition: all .5s;  
 }
 
-.container:hover {
+.containerprj:hover {
   color: '#fff';
 }
 
-.container:hover .arrowDiv  {
+.containerprj:hover .arrowDiv  {
     transform: scale(0);
 
 }
 
-.container:hover .arrowDiv1  {
+.containerprj:hover .arrowDiv1  {
     transform: scale(1);
 
 }
