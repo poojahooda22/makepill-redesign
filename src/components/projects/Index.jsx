@@ -24,7 +24,7 @@ function Projects() {
     
         const videoDiv = document.querySelectorAll('.pjtFull');
 
-        const seeDiv = document.querySelector('.container');
+        const seeDiv = document.querySelector('.containerprj');
         
         videoDiv.forEach((videoDiv) => {
             videoDiv.addEventListener('mouseenter', function () {
@@ -162,7 +162,7 @@ function Projects() {
                 {data.map((item, index) => {
                    return (
                     <div key={index} className='w-full sm:flex sm:flex-col items-center justify-center '>
-                        <div  className={`projectVideoDiv ${style.projectVideoDiv} absolute top-0 left-0 w-full h-[180vh] `}>
+                        <div  className={`projectVideoDiv ${style.projectVideoDiv} fixed top-0 left-0 w-full h-[100vh] `}>
                             <video  className={`w-full h-full object-cover relative`} 
                              autoPlay
                              ref={el => videosRef.current[index] = el}
@@ -197,19 +197,19 @@ function Projects() {
                 })}
                 
         </div>  
-        <div className={`hidden sm:flex items-center justify-center mt-[4vw] mb-[5vw] `}>
-                    <div className={`container ${style.container} w-3/4   px-[0vw] flex items-center justify-between text-[#333] hover:text-[#fff] relative`}>
-                        <h2 className='text-[5vw] leading-[6vw]'>See all our projects</h2>
-                        <div className={`relative w-[74px] h-[74px] `}>
-                            <div className={`arrowDiv ${style.arrowDiv} w-[100%] h-[100%]  absolute top-0 left-0`}>
-                                <svg data-v-fa88415f="" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60"><path fill="currentColor" d="M50.017 17.041 7.06 60 0 52.941 42.959 9.983H5.095V0H60v54.905h-9.983V17.04Z"></path></svg>
-                            </div>
-                            <div className={`arrowDiv1 ${style.arrowDiv1} absolute top-0 left-0`}>
-                                <svg data-v-fa88415f="" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60"><path fill="currentColor" d="M50.017 17.041 7.06 60 0 52.941 42.959 9.983H5.095V0H60v54.905h-9.983V17.04Z"></path></svg>
-                            </div>    
-                        </div>
+        <div className={`hidden w-full sm:flex mt-[4vw] mb-[5vw] px-[12.5vw] cursor-pointer relative`}>
+            <div className={`containerprj ${style.containerprj} sm:w-full h-full flex items-center justify-between text-[#333] hover:text-[#fff] relative`}>
+                <h2 className='text-[5vw] leading-[6vw]'>See all our projects</h2>
+                <div className={`relative w-[74px] h-[74px] `}>
+                    <div className={`arrowDiv ${style.arrowDiv} w-[100%] h-[100%]  absolute top-0 left-0 flex items-center justify-center`}>
+                        <svg data-v-fa88415f="" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60"><path fill="currentColor" d="M50.017 17.041 7.06 60 0 52.941 42.959 9.983H5.095V0H60v54.905h-9.983V17.04Z"></path></svg>
                     </div>
+                    <div className={`arrowDiv1 ${style.arrowDiv1} w-[100%] h-[100%]  absolute top-0 left-0 flex items-center justify-center`}>
+                        <svg data-v-fa88415f="" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60"><path fill="currentColor" d="M50.017 17.041 7.06 60 0 52.941 42.959 9.983H5.095V0H60v54.905h-9.983V17.04Z"></path></svg>
+                    </div>    
                 </div>
+            </div>
+        </div>
                 <div className='flex items-center justify-center sm:hidden my-[10vw] pb-[20vw] '>
                     <div className='serviceBtn w-[28vw] h-[28vw] sm:w-[8vw] sm:h-[8vw] rounded-full border-[.8px] border-[#838282] flex items-center justify-center'>
                         <h3 className='sm:text-[.9vw]'>See all</h3>  
